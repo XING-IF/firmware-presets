@@ -1,5 +1,5 @@
 #$ TITLE: Chimera7 Pro
-#$ FIRMWARE_VERSION: 4.2.9
+#$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: iflight, nazgul, chimera
