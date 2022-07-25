@@ -450,6 +450,23 @@
       "priority": 1000000
     },
     {
+      "fullPath": "presets/4.3/bnf/Chimera7 Pro.txt",
+      "hash": "ab99c03bdd5c198810eb7acc4c8b88fda0dced1539024219ae16307ed3fd15ab",
+      "title": "Chimera7",
+      "firmware_version": [
+        "4.2.9"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "iflight",
+        "nazgul",
+        "chimera"
+      ],
+      "author": "XING, iFlight",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.3/rates/defaults.txt",
       "hash": "9d063433102e8340d3d0ad396f6dc998c7030c0b9ecc4bb2a6c5b86a5def07fe",
       "title": "Default rates",
