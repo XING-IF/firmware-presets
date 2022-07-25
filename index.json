@@ -451,10 +451,10 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Chimera7 Pro.txt",
-      "hash": "e801913f5fb64ecedbe33b3310e26aeb0b145b12658155fbf06247b879a75233",
+      "hash": "c70bb2a6da53eaa27ec6c86b8e88a48b4312e752bad1aa27e1158354b191d20e",
       "title": "Chimera7 Pro",
       "firmware_version": [
-        "4.2.9"
+        "4.3"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
