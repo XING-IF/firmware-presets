@@ -9,6 +9,10 @@
 #$ DESCRIPTION: These are the iFlight BNF factory defaults for Chimera7.
 #$ DESCRIPTION: Check the options for your individual setup. ALL your personal settings will be reset to iFlight defaults and can not be restored if not saved!
 #$ DISCUSSION: https://drive.google.com/drive/u/1/folders/1jQlSfYY74gaQku_EMYRsBpU7gqcCcCZK
+#$ DESCRIPTION:
+#$ DESCRIPTION: Recommended BLHeli32 Setup:
+#$ DESCRIPTION:
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180699595-3795e97b-8e0d-40f1-9cd6-b737ad890812.JPG"><img src="https://user-images.githubusercontent.com/31681897/180699595-3795e97b-8e0d-40f1-9cd6-b737ad890812.JPG" width="500px" style="margin-left: auto; margin-right: auto; display: block;"/></a>
 
 
 #$ OPTION BEGIN (UNCHECKED): 0a/Analog 1300kV
