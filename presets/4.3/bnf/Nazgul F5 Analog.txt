@@ -13,11 +13,32 @@
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
 #$ DESCRIPTION: Version: 2022.07.22-V2.0 (BMI270)
 #$ DESCRIPTION:
-#$ DESCRIPTION: Recommended BLHeli32 Settings:
+#$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/183231915-373b8592-64aa-43f0-a9bb-d3b77c1ac1f8.png"><img src="https://user-images.githubusercontent.com/31681897/183231915-373b8592-64aa-43f0-a9bb-d3b77c1ac1f8.png" width="250px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
+#$ DESCRIPTION: * Use the recommended factory settings!
+#$ DESCRIPTION: * 24kHz PWM speed usually has more authority than 48kHz.
+#$ DESCRIPTION: * You can use 48kHz for longer flight times!
+#$ DESCRIPTION: * 48kHz PWM speeds needsto add thrust_linear
 #$ DESCRIPTION:
+#$ DESCRIPTION: Radio Setup: 
+#$ DESCRIPTION: ------------
+#$ DESCRIPTION: * Tuned with TBS Tango2 Crossfire (firmware 6.17), Nano RX 50hz locked, CRSF 50hz preset
+#$ DESCRIPTION: * **Do NOT** use CRSF dynamic RF-mode!
+#$ DESCRIPTION: * **Manually** apply your receiver protocol if necessary!
+#$ DESCRIPTION: * **Do NOT forget to manually apply** the BF 4.3 RC_LINK preset for your protocol and packet rate!
+#$ DESCRIPTION: * Wrong configuration for your packet rate can cause noisy inputs or issues with your gyro setpoint!
+#$ DESCRIPTION:
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png"><img src="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png" height="100px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png"><img src="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png" height="100px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: Tuning aspects:
+#$ DESCRIPTION: ---------------
+#$ DESCRIPTION: * PID tuning with minimal overshoot, minimum Setpoint delay
+#$ DESCRIPTION: * Smooth forward flights with bigger batteries
+#$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
+#$ DESCRIPTION: * Priorized flight performance over flight time
 #$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
 #$ DISCUSSION: https://github.com/XING-IF/firmware-presets/pull/11
 
