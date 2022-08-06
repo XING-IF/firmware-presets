@@ -244,6 +244,8 @@
       "blackbox",
       "BMI270",
       "BMSThomas",
+      "bob",
+      "bob57",
       "brushless",
       "camera",
       "camera_control",
@@ -281,6 +283,7 @@
       "expert",
       "express",
       "f5",
+      "f6",
       "feisar",
       "filter",
       "filtering",
@@ -756,8 +759,26 @@
       "priority": 1000000
     },
     {
+      "fullPath": "presets/4.3/bnf/BOB57.txt",
+      "hash": "a3f9f328ea50e8234b5375d5420db204494eb7243c7d3923b3df7cb141743d13",
+      "title": "BOB57",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "bob",
+        "bob57"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.3/bnf/Chimera7 Pro.txt",
-      "hash": "dbc0ec8434950901de9c628d500d75950c7c6507c9c2175b39c410dc0d4d8181",
+      "hash": "fede63d001ec47ac33e3280df1526a6a9042d775423901b01df15a23c361af86",
       "title": "Chimera7 Pro",
       "firmware_version": [
         "4.3"
@@ -768,6 +789,112 @@
         "xing",
         "iflight",
         "chimera"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/Nazgul F5 Analog.txt",
+      "hash": "c15ad75528ee637f26017a7af33380abff8a7026e0b6b7c5da0c83615303051f",
+      "title": "Nazgul F5 Analog",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "nazgul",
+        "f5"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/Nazgul F5 Digital.txt",
+      "hash": "887c1d3112d056338f95e929a4c2d4fa3631040b6c61c898b112185e9d88730d",
+      "title": "Nazgul F5 HD",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "nazgul",
+        "f5"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/Nazgul F6 Analog.txt",
+      "hash": "c7cc80ac48918157489e1882c514c013d04a2728bb05b271a6748c7a3647dec6",
+      "title": "Nazgul F6 Analog",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "nazgul",
+        "f6"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/Nazgul F6 Digital.txt",
+      "hash": "14825104e39471c8fb577c04dc51a50e33e2952e157728774979df60c1fd02a9",
+      "title": "Nazgul F6 Analog",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "nazgul",
+        "f6"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/ProTek35 Analog.txt",
+      "hash": "956c053908c798a6c169d54f585f13c58c3cb7c4d8c820f5e027e382a80dc48f",
+      "title": "ProTek35 Analog",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "protek"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/ProTek35 Digital.txt",
+      "hash": "64ec34cc957017045192633df2857fdcbb2c6b10c6ee0d3d38cbd84cd1c8406f",
+      "title": "ProTek35 Digital",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "protek"
       ],
       "author": "Patrick XING (iFlight)",
       "priority": 0
