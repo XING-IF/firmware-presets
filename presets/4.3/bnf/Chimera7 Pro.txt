@@ -15,7 +15,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/183231123-397b83e1-f5c6-4f53-981a-d78dd51c9e32.png"><img src="https://user-images.githubusercontent.com/31681897/183231123-397b83e1-f5c6-4f53-981a-d78dd51c9e32.png" width="250px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/183231123-397b83e1-f5c6-4f53-981a-d78dd51c9e32.png"><img src="https://user-images.githubusercontent.com/31681897/183231123-397b83e1-f5c6-4f53-981a-d78dd51c9e32.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
 #$ DESCRIPTION: * Use the recommended factory settings!
 #$ DESCRIPTION: * 24kHz PWM speed usually has more authority than 48kHz.
