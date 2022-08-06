@@ -153,21 +153,17 @@
     "author": [
       "Alex Campbell (Chief)",
       "Alex Vanover",
-      "AyyyKayyy - Anthony Knight",
       "Betaflight",
       "BMSThomas",
       "ctzsnooze",
       "Daniel Appel / Tehllama",
       "Directory",
-      "DusKing1 (Hugo Chiang), Pitronic",
       "Evan Turner (Headsup)",
       "Feisar",
-      "FPVian",
       "Garban",
       "IllusionFpv",
       "Ivan Efimov (Limon)",
       "Joshua Bardwell",
-      "Justice - Gary Kent",
       "Jye Smith",
       "KMfpv",
       "LeadFingers",
@@ -178,7 +174,6 @@
       "Patrick XING (iFlight)",
       "Sjoer van der Ploeg",
       "sugarK",
-      "SupaflyFPV",
       "UAV Tech (Mark Spatz)",
       "XING, iFlight"
     ],
@@ -188,92 +183,53 @@
       "150Hz",
       "15Hz",
       "166Hz",
-      "1S",
       "20ms",
       "250Hz",
-      "2in",
       "2ms",
       "2S",
-      "3 Inch",
-      "3.5in",
-      "3\"",
-      "3in",
       "3S",
-      "4in",
-      "4S",
-      "5 In",
-      "5 Inch",
-      "5\"",
       "500Hz",
       "50Hz",
       "533",
       "55Hz",
-      "5in",
-      "6 Inch",
-      "6\"",
-      "65mm",
       "666Hz",
-      "6in",
-      "6S",
-      "7 Inch",
-      "7\"",
-      "7in",
-      "8\"",
-      "8in",
-      "8S",
-      "9\"",
-      "9in",
       "9ms",
-      "acro",
       "Acrobaix",
       "actual",
       "adjustments",
       "AlexFPV",
       "analog",
-      "AOS",
-      "AOS T3",
       "Audio TBS",
       "aux",
-      "AyyyKayyy",
       "baby nazgul",
-      "bando",
       "bardwell",
-      "basher",
       "basic",
       "betaflight",
       "blackbox",
-      "BMI270",
       "BMSThomas",
       "bob",
       "bob57",
-      "brushless",
       "camera",
       "camera_control",
       "Cgo",
       "Chief",
       "chimera",
-      "cinelifter",
       "cinematic",
-      "cinewhoop",
       "clean",
       "clear",
       "Configure",
       "control",
       "Crossfire",
       "CRSF",
-      "ctzsnooze",
-      "CTZsoonze",
       "DDC",
       "default",
       "defaults",
       "diatone",
-      "Digipick",
       "digital",
       "disable",
       "divimath",
       "DJI",
       "DShot telemetry",
-      "dual",
       "E7082VM",
       "eachine",
       "ELRS",
@@ -289,26 +245,16 @@
       "filtering",
       "filters",
       "five33",
-      "FPVCycle",
-      "FPVCycle TP3",
-      "fpvian",
-      "freedom",
-      "freedom spec",
       "FreedomSpec",
       "freestyle",
-      "freesytle",
       "freetyle",
       "frsky",
       "Garban",
       "ghost",
       "GHST",
-      "GoPro",
       "GPS",
       "GTB339",
-      "gyro",
       "gyroflow",
-      "gyros",
-      "gyroscope",
       "HD",
       "HDzero",
       "Headsup",
@@ -321,9 +267,7 @@
       "immersionRC",
       "IRC",
       "IRC Tramp",
-      "justice",
-      "karate",
-      "KarateBrot",
+      "karatebrot",
       "launch",
       "launch_mode",
       "LeadFingers",
@@ -336,12 +280,10 @@
       "logging",
       "Long Range",
       "mamba",
-      "meteor",
       "MinChan",
       "mode",
       "modes",
       "Motor",
-      "mouse fpv",
       "Multi",
       "MultiGP",
       "MultiVoltage",
@@ -362,7 +304,6 @@
       "partial",
       "Passthrough",
       "pid",
-      "PIDtoolbox",
       "pro32",
       "profile",
       "protek",
@@ -370,7 +311,7 @@
       "Pure Race",
       "quaddiction",
       "quick",
-      "race",
+      "Race",
       "race rates ctzsnooze actual",
       "race v1",
       "race v2",
@@ -385,7 +326,7 @@
       "Redpine",
       "reset",
       "reset statistics",
-      "RPM",
+      "rpm",
       "rush",
       "rush tank",
       "rushfpv",
@@ -400,8 +341,6 @@
       "Safe",
       "sbus",
       "SBUS fast",
-      "settings",
-      "shames",
       "Smart",
       "smart audio",
       "smartaudio",
@@ -414,15 +353,10 @@
       "Street",
       "Street League",
       "StreetLeague",
-      "suagrK",
-      "sub 250",
       "succex force",
       "sugarK",
-      "Supafly",
-      "SupaflyFPV",
       "switch",
       "SWPR",
-      "T3",
       "tank solo",
       "tank ultimate",
       "TBS",
@@ -430,22 +364,16 @@
       "Team Black Sheep",
       "Texas",
       "Throttle cap",
-      "tiny",
       "tiny tank",
-      "TinyTrainer",
-      "toothpic",
       "Toothpick",
       "Tracer",
-      "trainer",
       "tramp",
       "transmitter",
       "Tune",
-      "twig",
       "tx5m.1",
       "tx800",
       "ultra",
       "ultra 1000",
-      "ultralite",
       "unify",
       "unify pro",
       "utility",
@@ -453,16 +381,12 @@
       "very",
       "very clean",
       "very noisy",
-      "viper",
-      "viper lite",
       "Voltage",
       "vtx",
       "vtx table",
       "vtxtable",
       "whoop",
       "whoop lite",
-      "whooptopia",
-      "world champion",
       "xing",
       "youtube"
     ]
@@ -900,25 +824,6 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.3/filters/ctzsnooze_race.txt",
-      "hash": "751a6f316eb81fd94215291eb35b719cc52d9ca66baa53668d495f8351e1156c",
-      "title": "ctzsnooze's race filter settings",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "FILTERS",
-      "status": "OFFICIAL",
-      "keywords": [
-        "race",
-        "filter",
-        "filters",
-        "ctzsnooze",
-        "RPM"
-      ],
-      "author": "Betaflight",
-      "priority": 100
-    },
-    {
       "fullPath": "presets/4.3/filters/defaults.txt",
       "hash": "365d91285f53f2ad0a1521a158d498840143f2d566d511397ab19f2f402a920e",
       "title": "Default 4.3 Filter settings",
@@ -1162,74 +1067,6 @@
         "betaflight"
       ],
       "author": "Betaflight",
-      "priority": 100
-    },
-    {
-      "fullPath": "presets/4.3/filters/dusking_BMI270.txt",
-      "hash": "0dd77e8e1baed07019f836352818d0b8eccb1125f5123511cc25cb0118591a8d",
-      "title": "DusKing's BMI270 filter settings",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "FILTERS",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "BMI270",
-        "filter",
-        "filters",
-        "gyroscope",
-        "gyro",
-        "gyros",
-        "settings",
-        "RPM"
-      ],
-      "author": "DusKing1 (Hugo Chiang), Pitronic",
-      "priority": 100
-    },
-    {
-      "fullPath": "presets/4.3/filters/dusking_BMI270_dual.txt",
-      "hash": "359a3d4d5391cb3c30bec79cc00db8dbb39de19c587bd8584930c1d21e06cb3e",
-      "title": "DusKing's dual BMI270 filter settings",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "FILTERS",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "BMI270",
-        "filter",
-        "filters",
-        "dual",
-        "gyroscope",
-        "gyro",
-        "gyros",
-        "settings",
-        "RPM"
-      ],
-      "author": "DusKing1 (Hugo Chiang), Pitronic",
-      "priority": 100
-    },
-    {
-      "fullPath": "presets/4.3/filters/karate_array.txt",
-      "hash": "7d4913bf9839cc9bb055ab942a22c3c015a2f258e30633a07edcaaf98eb85df0",
-      "title": "the Karate array",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "FILTERS",
-      "status": "OFFICIAL",
-      "keywords": [
-        "filter",
-        "filters",
-        "karate",
-        "race",
-        "freesytle",
-        "suagrK",
-        "CTZsoonze",
-        "KarateBrot",
-        "5\""
-      ],
-      "author": "sugarK",
       "priority": 100
     },
     {
@@ -2802,29 +2639,6 @@
       "priority": 10000000000
     },
     {
-      "fullPath": "presets/4.3/tune/ctzsnooze_5in_4S_race.txt",
-      "hash": "c2291123e94d95c6de677d8b4ce618c074306bfa35b2f801c4a2743fddcae69d",
-      "title": "4S, 3\" to 5\" race tune by ctzsznooze",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "3in",
-        "4in",
-        "5in",
-        "twig",
-        "4S",
-        "race",
-        "tune",
-        "ctzsnooze"
-      ],
-      "author": "ctzsnooze",
-      "force_options_review": true,
-      "priority": 1000000000000
-    },
-    {
       "fullPath": "presets/4.3/tune/defaults.txt",
       "hash": "828b9a4b14377cd9d59d803afb9c6ae3eda6d5cb7865cbf21c95c5f55acdaa05",
       "title": "Tune defaults for Basic 4.3 TUNES",
@@ -2843,224 +2657,6 @@
       ],
       "author": "Betaflight",
       "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/tune/fpvian_basher_freestyle.txt",
-      "hash": "596fb4e7745a7719916c34759fa7a7e7af7982363d4c26c69f0dee309c509a1a",
-      "title": "Basher Freestyle 6S 5\" by FPVian",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "COMMUNITY",
-      "keywords": [
-        "basher",
-        "freestyle",
-        "5 Inch",
-        "5 In",
-        "5\"",
-        "bando",
-        "fpvian"
-      ],
-      "author": "FPVian",
-      "force_options_review": true,
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/freedom_spec_460g.txt",
-      "hash": "5ac3216c39f3b1b630d6938ac943e3b00c38e15585394413d0d424f634db5e16",
-      "title": "Freedom Spec 460 - 500g",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "COMMUNITY",
-      "keywords": [
-        "sugarK",
-        "limon",
-        "ctzsnooze",
-        "freedom",
-        "freedom spec",
-        "headsup",
-        "five33",
-        "533",
-        "racing",
-        "race",
-        "5\""
-      ],
-      "author": "Ivan Efimov (Limon)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/karate_freestyle_5_inch.txt",
-      "hash": "93602c5a24a653093e3ef37d10554d3138acb4da4de60ecabbe2ad0640f72831",
-      "title": "Freestyle 5\" Karate Style",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "karate",
-        "6S",
-        "5 inch",
-        "5\"",
-        "sugarK",
-        "limon",
-        "ctzsnooze",
-        "karateBrot",
-        "freestyle"
-      ],
-      "author": "sugarK",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/karate_race.txt",
-      "hash": "04687315755456c9b599692b0ddafe64eec8d93372dcf992141b4adf38658c9b",
-      "title": "Karate Race 6s 5\"",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "karate",
-        "6S",
-        "race",
-        "world champion",
-        "5 inch",
-        "5\"",
-        "sugarK",
-        "limon",
-        "ctzsnooze",
-        "KarateBrot"
-      ],
-      "author": "sugarK",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/karate_race_lite.txt",
-      "hash": "046940c9aead3ece7db64f4fd79abab02d5f9c144d2e37aa572694b54ecd2625",
-      "title": "Karate 'Viper Lite' Race  5\"",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "karate",
-        "race",
-        "5 inch",
-        "5\"",
-        "sugarK",
-        "limon",
-        "ctzsnooze",
-        "KarateBrot",
-        "ultralite",
-        "viper",
-        "viper lite"
-      ],
-      "author": "sugarK",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/mouseFPV_AOS_35_tune_filters.txt",
-      "hash": "0dd026ca9f1a4eaa24c758f4c1b3840401a4fb4e6ce3f5ed617fc42da23c352d",
-      "title": "AOS 3.5 V1 4s Tune | mouseFPV",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "AOS",
-        "4s",
-        "freestyle",
-        "sub 250"
-      ],
-      "author": "mouseFPV",
-      "force_options_review": true,
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/mouseFPV_Digipick_braced.txt",
-      "hash": "16897a988ba9317a6b02beb81b3c9b5042aa4e3eee00187e37c54738502980e4",
-      "title": "Braced Toothpick/Digipick 3s/4s | mouseFPV",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "FPVCycle TP3",
-        "Digipick",
-        "Toothpick",
-        "3s",
-        "3 Inch",
-        "4s",
-        "AOS T3",
-        "T3"
-      ],
-      "author": "mouseFPV",
-      "force_options_review": true,
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/mouseFPV_FFVCycle_Incisor_PT5_tune_filters.txt",
-      "hash": "843d79c8635d2ed5eddab912bb7aeff174faf6619321c110f19b5dc37930e884",
-      "title": "FPVCycle Incisor/Prototype 5 6s Tune | mouseFPV",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "FPVCycle",
-        "5 inch",
-        "5in",
-        "6S",
-        "freestyle",
-        "GoPro",
-        "mouse fpv"
-      ],
-      "author": "mouseFPV",
-      "force_options_review": true,
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/mouseFPV_FPVCycle_Sonicare_tune_filters.txt",
-      "hash": "687d0579012fe8e2bd5bb1c5a6eb4f7ef9a9f2b02566a32eb304c6566b19ce89",
-      "title": "FPVCycle Sonicare 6s Tune | mouseFPV",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "FPVCycle"
-      ],
-      "author": "mouseFPV",
-      "force_options_review": true,
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/mouseFPV_toothpick3_3s.txt",
-      "hash": "385d6c89bd737aaf3c56ff5312443b41e4a11d9887b8b23d47d1cf420a04e5d2",
-      "title": "FPVCycle Toothpick 3 3s | mouseFPV",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "FPVCycle TP3",
-        "Toothpick",
-        "3s",
-        "3 inch"
-      ],
-      "author": "mouseFPV",
-      "force_options_review": true,
-      "priority": 1000000000000
     },
     {
       "fullPath": "presets/4.3/tune/reset_all.txt",
@@ -3101,313 +2697,6 @@
       ],
       "author": "Betaflight",
       "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/tune/Street_League_LeadFingers.txt",
-      "hash": "89cad2a7ae168d8ffa1d007e5c968c9306941fe720f4cf5bb77b72da1c430a97",
-      "title": "Street League LeadFingers PIDtoolbox tune",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "Street League",
-        "StreetLeague",
-        "Street",
-        "League",
-        "LeadFingers",
-        "PIDtoolbox",
-        "7\""
-      ],
-      "author": "LeadFingers",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/SupaflyFPV_Freestyle_5_Inch_EasyTune.txt",
-      "hash": "e11eff91a7ec38053f58d146d2db90ee4d7f1aea39b6de5336616298095cb3b7",
-      "title": "SupaflyFPV Freestyle 5 Inch",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "Supafly",
-        "SupaflyFPV",
-        "4S",
-        "6S",
-        "Freestyle",
-        "5 inch",
-        "5\""
-      ],
-      "author": "SupaflyFPV",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/SupaflyFPV_Freestyle_6_and_EasyTune.txt",
-      "hash": "1c8a3f90e2a53138e52a97147ea9ac89f479ba0958fbb527174ac4e53d712913",
-      "title": "SupaflyFPV Freestyle 6 Inch",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "Supafly",
-        "SupaflyFPV",
-        "Freestyle",
-        "6\"",
-        "6 Inch"
-      ],
-      "author": "SupaflyFPV",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/SupaflyFPV_Freestyle_7_Inch_EasyTune.txt",
-      "hash": "476f1fcc6bf39ad883a85c31ebbc5788fecb72703a7f929e8b52fe40b96110c7",
-      "title": "SupaflyFPV Freestyle 7 Inch",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "Supafly",
-        "SupaflyFPV",
-        "Freestyle",
-        "7\"",
-        "7 Inch"
-      ],
-      "author": "SupaflyFPV",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/Tehllama_533_TinyTrainer_3in_3S_TUNE_Options.txt",
-      "hash": "d16893206254ce89e24740b3b3b932abd8cacf8427c4e811cb4aecf053d60a1f",
-      "title": "FlyFive33 3in TinyTrainer 3S Tune",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "TinyTrainer",
-        "533",
-        "Spec",
-        "Race",
-        "Llama"
-      ],
-      "author": "Daniel Appel / Tehllama",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/tiny_karate.txt",
-      "hash": "ea36e5b17538af8d3218aedc1ee228e3b00234876ad7ae7ccad074a8a05cd4f9",
-      "title": "533 TinyTrainer Karate",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "karate",
-        "race",
-        "533",
-        "3 inch",
-        "3\"",
-        "sugarK",
-        "shames",
-        "tiny",
-        "trainer",
-        "spec",
-        "tinyTrainer"
-      ],
-      "author": "sugarK",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/UAV_tech_5in.txt",
-      "hash": "2ee1b7451191cb5ff16560b379254136cb8f5eeaf73d6895e71ee19ff90feb49",
-      "title": "UAV Tech - 5in (590-630g AUW)",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "COMMUNITY",
-      "keywords": [
-        "4S",
-        "6S",
-        "5in",
-        "5\"",
-        "freestyle"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/UAV_tech_6-7in.txt",
-      "hash": "7e7c3901d6989dfabd8bb91fe13a9983eef5d425a2f6da1ad079357096be1a2e",
-      "title": "UAV Tech - 6-7in (~700g AUW)",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "COMMUNITY",
-      "keywords": [
-        "4S",
-        "6S",
-        "6in",
-        "7in",
-        "6\"",
-        "7\"",
-        "freestyle",
-        "long range"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/UAV_tech_8-9in.txt",
-      "hash": "7a86ab26a50a7e3fe1d2e506a4486e03672787ecd63b1a233989cf900fb72cea",
-      "title": "UAV Tech - 8-9in (~750g AUW)",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "4S",
-        "6S",
-        "8in",
-        "9in",
-        "8\"",
-        "9\"",
-        "freestyle",
-        "long range"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/UAV_tech_8-9in_Cinelifter.txt",
-      "hash": "3095ffbd6584fe3af610bbc7cc9a14b002082e644b20e7a36cffb5d792288cab",
-      "title": "UAV Tech - 8-9in Cinelifter (>2,000g AUW)",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "6S",
-        "8S",
-        "8in",
-        "9in",
-        "8\"",
-        "9\"",
-        "cinelifter"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/UAV_tech_Cinewhoop.txt",
-      "hash": "d408ae55e64986f84cf8d07428200b4dc88b44e3b30ef2df711818d2ecc17c4d",
-      "title": "UAV Tech - Cinewhoop",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "cinewhoop"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/UAV_tech_Toothpic.txt",
-      "hash": "4453e4d8a25f97a96de25e53ef29e77961cd2f2335e15205251599a28aa740af",
-      "title": "UAV Tech - Toothpic (2in to 4in)",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "2S",
-        "4S",
-        "6S",
-        "toothpic",
-        "2in",
-        "3in",
-        "3.5in",
-        "4in"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/UAV_tech_Whoop.txt",
-      "hash": "bb4f0552015b1e5109dac54610a82759bceba8f84fbd28909bd342095cf5347f",
-      "title": "UAV Tech - Whoop (1S & 2S)",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "whoop"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/whoop_ayyykayyy.txt",
-      "hash": "18a0a21b675f4c2e4719bae8d448684e58b51981f657755fe4c2f95e7eaea2c7",
-      "title": "Whoop race tune by AyyyKayyy",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "whoop",
-        "65mm",
-        "1S",
-        "race",
-        "acro",
-        "tune",
-        "AyyyKayyy",
-        "meteor",
-        "whooptopia",
-        "brushless"
-      ],
-      "author": "AyyyKayyy - Anthony Knight",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.3/tune/whoop_justice.txt",
-      "hash": "043daa42cb5e8811871b0d2a855a9ef26c31485792ba6d79bdfb7089f2a150d2",
-      "title": "Whoop race tune by Justice",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "TUNE",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "whoop",
-        "65mm",
-        "1S",
-        "race",
-        "acro",
-        "tune",
-        "justice",
-        "meteor"
-      ],
-      "author": "Justice - Gary Kent",
-      "force_options_review": true,
-      "priority": 1000000000000
     },
     {
       "fullPath": "presets/4.3/vtx/Baby_Nazgul_50mW.txt",
