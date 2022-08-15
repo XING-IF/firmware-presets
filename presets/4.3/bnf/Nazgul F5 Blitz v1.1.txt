@@ -74,6 +74,10 @@ feature -RX_PARALLEL_PWM
 feature TELEMETRY
 feature LED_STRIP
 
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
 # led
 led 0 0,0::L:5
 led 1 1,0::C:5
@@ -82,7 +86,8 @@ led 3 3,0::C:5
 led 4 4,0::C:5
 
 # color
-color 5 109,0,255
+color 5 91,0,255
+color 6 108,0,255
 
 # aux
 aux 0 0 0 1700 2100 0 0
@@ -99,6 +104,8 @@ set gyro_lpf1_dyn_min_hz = 0
 set mag_hardware = NONE
 set baro_hardware = NONE
 set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT600
+set vbat_max_cell_voltage = 440
 set yaw_motors_reversed = ON
 set small_angle = 180
 set osd_warn_core_temp = OFF
