@@ -825,12 +825,12 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Universal 5inch.txt",
-      "hash": "a07e78f7bda96247b9e5325452b3b4d4412ba94c2d6cd5cc091c9b85efc0e0a1",
+      "hash": "6d50563ca917b510a2980c1785185abfca0466f7b1e9ca636c691c8fc94bfca0",
       "title": "Universal 5inch tune RC1 (Cidora, Nazgul5)",
       "firmware_version": [
         "4.3"
       ],
-      "category": "BNF",
+      "category": "TUNE",
       "status": "EXPERIMENTAL",
       "keywords": [
         "xing",
@@ -839,7 +839,7 @@
         "f5"
       ],
       "author": "Patrick XING (iFlight)",
-      "priority": 0
+      "priority": 1000000000000
     },
     {
       "fullPath": "presets/4.3/filters/defaults.txt",

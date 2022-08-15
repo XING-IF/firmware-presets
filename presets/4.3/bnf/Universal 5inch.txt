@@ -1,6 +1,6 @@
 #$ TITLE: Universal 5inch tune RC1 (Cidora, Nazgul5)
 #$ FIRMWARE_VERSION: 4.3
-#$ CATEGORY: BNF
+#$ CATEGORY: TUNE
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: xing, iflight, nazgul, f5
 #$ AUTHOR: Patrick XING (iFlight)
