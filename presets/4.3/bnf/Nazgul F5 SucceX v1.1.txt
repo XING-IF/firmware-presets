@@ -130,7 +130,7 @@ set osd_disarmed_pos = 2336
 
 set debug_mode = GYRO_SCALED
 set gyro_2_align_yaw = 900
-set name = F5 Evoque HD
+set name = Nazgul F5
 
 profile 0
 
