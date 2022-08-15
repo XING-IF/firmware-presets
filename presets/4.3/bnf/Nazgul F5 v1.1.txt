@@ -1,4 +1,4 @@
-#$ TITLE: Nazgul F5 SucceX v1.1
+#$ TITLE: Nazgul F5 SucceX XINGtune RC1
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL

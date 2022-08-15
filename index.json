@@ -684,7 +684,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/BOB57.txt",
-      "hash": "94e150c4542abd7aeaed5a30587fc0786009ad02991117e5395bdb8a06158ac3",
+      "hash": "6e39d535ab95c950af6452fdb7e760366dca5ee64ce9e96298672d59747c8f68",
       "title": "BOB57",
       "firmware_version": [
         "4.3"
@@ -702,7 +702,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Chimera7 Pro.txt",
-      "hash": "85baf1fac7b2c8e24349cad09e327117558910e28afa8156b3eb2c76f8f0dcc7",
+      "hash": "a478827e31b3b1e6450eb9354e0a3d3b4cefd8c67c478970e033f9320c2ed094",
       "title": "Chimera7 Pro",
       "firmware_version": [
         "4.3"
@@ -719,7 +719,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F5 Analog.txt",
-      "hash": "657bcffa633896238aa92272e8c2c3ed1b37643c0635f27b6c6d985db9fd01b9",
+      "hash": "4739e2372c3a29ac1b619e43a469b691c4074731de18fa09d8f7c2bede006179",
       "title": "Nazgul F5 Analog",
       "firmware_version": [
         "4.3"
@@ -737,7 +737,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F5 Digital.txt",
-      "hash": "3307947014bd0b83da99bbfa9e8233f99b462c4c08398b026987183b30a9c0b8",
+      "hash": "431c609452c800795fb6fa0d857ccacd66d5e6138bc0bf77a59d71ad3000c701",
       "title": "Nazgul F5 HD",
       "firmware_version": [
         "4.3"
@@ -755,8 +755,8 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F5 v1.1.txt",
-      "hash": "ba6466f32a0073d250f7f2bf2251491a23b4e31c0fe6ebf5c1a4672819ecf3aa",
-      "title": "Nazgul F5 SucceX v1.1",
+      "hash": "42c60f725c50bfa6688c07cb0fc01ba7ad116b0c2defdee4380e3c2df5a903a9",
+      "title": "Nazgul F5 SucceX XINGtune RC1",
       "firmware_version": [
         "4.3"
       ],
@@ -773,7 +773,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F6 Analog.txt",
-      "hash": "88ce712011741c9ed95714a89a2ac76fe1f712edd89bab9e4f309418aa3302ae",
+      "hash": "f8febbcce1e29d4f2cac5b304c46f3eac1fc99d89142dc5f1ba6b7bfcda0e8e1",
       "title": "Nazgul F6 Analog",
       "firmware_version": [
         "4.3"
@@ -791,7 +791,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F6 Digital.txt",
-      "hash": "065da49a0452c7352755157a919463247e76134774564f5823971bd4075c9940",
+      "hash": "fc09fdbba2b37174dd873abf4c36b4bd64beb7cfb99e114d5949ceb221d4c0e8",
       "title": "Nazgul F6 Analog",
       "firmware_version": [
         "4.3"
@@ -809,7 +809,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/ProTek35 Analog.txt",
-      "hash": "8a524def8773dad6f6bb957eb696dc015ba22f1750509cf44b0804bfa007c886",
+      "hash": "a572050e26ad2b248f595f184430bb2b25e739de9b548f4bb8fb6d1d6b180e33",
       "title": "ProTek35 Analog",
       "firmware_version": [
         "4.3"
@@ -826,7 +826,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/ProTek35 Digital.txt",
-      "hash": "400010a28e8a622557dd04cb7131caaf113bda1747e28707c78c8da19a3b95b3",
+      "hash": "c06798081eae55dc6ce146a077ebd628017b7bb79e2d5d32f8d9a25e1364d773",
       "title": "ProTek35 Digital",
       "firmware_version": [
         "4.3"
