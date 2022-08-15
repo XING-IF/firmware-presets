@@ -108,23 +108,26 @@ set motor_pwm_protocol = DSHOT600
 set vbat_max_cell_voltage = 440
 set yaw_motors_reversed = ON
 set small_angle = 180
+
+#OSD
 set osd_warn_core_temp = OFF
 set osd_warn_rssi = ON
 set osd_warn_over_cap = ON
-set osd_rssi_pos = 2459
+set osd_rssi_pos = 2427
 set osd_link_quality_pos = 311
 set osd_rssi_dbm_pos = 299
 set osd_tim_2_pos = 405
-set osd_flymode_pos = 2478
+set osd_flymode_pos = 2477
 set osd_throttle_pos = 245
 set osd_vtx_channel_pos = 373
 set osd_current_pos = 2401
 set osd_mah_drawn_pos = 2433
-set osd_craft_name_pos = 2542
+set osd_craft_name_pos = 2543
 set osd_power_pos = 388
-set osd_warnings_pos = 14732
+set osd_warnings_pos = 14730
 set osd_avg_cell_voltage_pos = 2369
 set osd_disarmed_pos = 2336
+
 set debug_mode = GYRO_SCALED
 set name = F5 Evoque HD
 
@@ -269,11 +272,11 @@ serial 3 2 115200 115200 0 115200
 set gps_provider = UBLOX
 set gps_ublox_use_galileo = ON
 #OSD
-set osd_gps_speed_pos = 342
-set osd_gps_sats_pos = 2326
-set osd_home_dir_pos = 2347
-set osd_home_dist_pos = 2350
-set osd_altitude_pos = 2293
+set osd_gps_speed_pos = 2362
+set osd_gps_sats_pos = 2394
+set osd_home_dir_pos = 2510
+set osd_home_dist_pos = 2511
+set osd_altitude_pos = 2327
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): GPS Rescue (experimental)
