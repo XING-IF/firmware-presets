@@ -1,0 +1,272 @@
+#$ TITLE: Nazgul F5 BLITZ XINGtune RC1
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: xing, iflight, nazgul, f5
+#$ AUTHOR: Patrick XING (iFlight)
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: This is the official iFlight factory tune (4.3 XINGtune) for the Nazgul F5 BLITZ FC Version!
+#$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION:
+#$ DESCRIPTION: Factory Dump Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: XING 2022.08.15 (Only for BLITZ MPU6000 & BMI270 FCs)
+#$ DESCRIPTION:
+#$ DESCRIPTION: BNF Build Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* SucceX Stack (FC+ESC) 2021.7-2021.8
+#$ DESCRIPTION:* SucceX FC + BLITZ ESC 2021.9-2021.10
+#$ DESCRIPTION:* BLITZ Stack (MPU6000) 2021.11-2022.3
+#$ DESCRIPTION:* BLITZ Stack (BMI270) 2022.3-
+#$ DESCRIPTION:
+#$ DESCRIPTION: D-term Filter Tuning:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: * 2 different D-term filter approaches; Stacked PT1 (default), Single BIQUAD (less delay)
+#$ DESCRIPTION: * Dynamic Idle is turned on, helps to control low end of motor rpm
+#$ DESCRIPTION:
+#$ DESCRIPTION: Recommended ESC Settings:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png"><img src="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: * Use the recommended factory settings! Motor timing 20 (high) or 23 (aggressive)
+#$ DESCRIPTION: * 24kHz PWM speed usually has more authority than 48kHz.
+#$ DESCRIPTION: * You can use 48kHz for longer flight times!
+#$ DESCRIPTION: * 48kHz PWM option adds thrust_linear
+#$ DESCRIPTION:
+#$ DESCRIPTION: Radio Setup: 
+#$ DESCRIPTION: ------------
+#$ DESCRIPTION: * Tuned with TBS Tango2 Crossfire (firmware 6.17), Nano RX 50hz locked, CRSF 50hz preset
+#$ DESCRIPTION: * **Do NOT** use CRSF dynamic RF-mode!
+#$ DESCRIPTION: * **Manually** apply your receiver protocol!
+#$ DESCRIPTION: * **Do NOT forget to apply** the BF 4.3 RC_LINK preset for your protocol and packet rate!
+#$ DESCRIPTION: * Wrong configuration for your packet rate can cause noisy inputs or issues with your gyro setpoint!
+#$ DESCRIPTION:
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png"><img src="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png" height="100px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png"><img src="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png" height="100px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: Tuning aspects:
+#$ DESCRIPTION: ---------------
+#$ DESCRIPTION: * PID tuning with minimal overshoot, minimum Setpoint delay
+#$ DESCRIPTION: * Smooth forward flights with bigger batteries
+#$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
+#$ DESCRIPTION: * Priorized flight performance over flight time
+#$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
+#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/pull/11
+
+#$ OPTION BEGIN (CHECKED): Reset (default)
+defaults nosave
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Restore Settings (default)
+board_name IFLIGHT_BLITZ_F722
+
+# name: F5 Evoque HD
+
+# feature
+feature -SOFTSERIAL
+feature -RX_PARALLEL_PWM
+feature TELEMETRY
+feature LED_STRIP
+
+# led
+led 0 0,0::L:5
+led 1 1,0::C:5
+led 2 2,0::C:5
+led 3 3,0::C:5
+led 4 4,0::C:5
+
+# color
+color 5 109,0,255
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 900 2100 0 0
+
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 0
+set dyn_notch_count = 2
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 120
+set dyn_notch_max_hz = 500
+set gyro_lpf1_dyn_min_hz = 0
+set mag_hardware = NONE
+set baro_hardware = NONE
+set dshot_bidir = ON
+set yaw_motors_reversed = ON
+set small_angle = 180
+set osd_warn_core_temp = OFF
+set osd_warn_rssi = ON
+set osd_warn_over_cap = ON
+set osd_rssi_pos = 2459
+set osd_link_quality_pos = 311
+set osd_rssi_dbm_pos = 299
+set osd_tim_2_pos = 405
+set osd_flymode_pos = 2478
+set osd_throttle_pos = 245
+set osd_vtx_channel_pos = 373
+set osd_current_pos = 2401
+set osd_mah_drawn_pos = 2433
+set osd_craft_name_pos = 2542
+set osd_gps_speed_pos = 313
+set osd_gps_sats_pos = 2426
+set osd_home_dir_pos = 2511
+set osd_home_dist_pos = 2512
+set osd_altitude_pos = 2391
+set osd_power_pos = 388
+set osd_warnings_pos = 14732
+set osd_avg_cell_voltage_pos = 2369
+set osd_disarmed_pos = 2336
+set debug_mode = GYRO_SCALED
+set name = F5 Evoque HD
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_expo = 7
+set iterm_relax_cutoff = 10
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set p_pitch = 61
+set i_pitch = 87
+set d_pitch = 55
+set f_pitch = 97
+set p_roll = 58
+set i_roll = 83
+set d_roll = 48
+set f_roll = 93
+set p_yaw = 90
+set i_yaw = 90
+set f_yaw = 90
+set d_min_roll = 39
+set d_min_pitch = 44
+set d_max_advance = 0
+set simplified_pids_mode = RP
+set simplified_master_multiplier = 130
+set simplified_i_gain = 80
+set simplified_dmax_gain = 70
+set simplified_feedforward_gain = 60
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set thr_mid = 40
+set thr_expo = 30
+set roll_rc_rate = 12
+set pitch_rc_rate = 12
+set yaw_rc_rate = 10
+set roll_expo = 20
+set pitch_expo = 20
+set yaw_expo = 20
+set tpa_rate = 60
+set tpa_breakpoint = 1300
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Dynamic Idle (default)
+set dyn_idle_min_rpm = 35
+set dyn_idle_p_gain = 35
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): HD DJI VTX
+# serial
+serial 0 1 115200 57600 0 115200
+serial 3 2 115200 115200 0 115200
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): ANALOG VTX
+# serial
+serial 0 8192 115200 57600 0 115200
+serial 3 2 115200 115200 0 115200
+#defaultpower
+set vtx_band = 5
+set vtx_channel = 3
+set vtx_power = 1
+set vtx_freq = 5732
+# vtxtable
+vtxtable bands 5
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665    0 5885 5905    0    0
+vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable powerlevels 4
+vtxtable powervalues 25 200 400 600
+vtxtable powerlabels 25 200 400 600
+set osd_warn_core_temp = OFF
+set osd_warn_rssi = ON
+set osd_warn_link_quality = ON
+set osd_rssi_pos = 2390
+set osd_link_quality_pos = 2358
+set osd_rssi_dbm_pos = 299
+set osd_tim_2_pos = 2421
+set osd_flymode_pos = 2381
+set osd_vtx_channel_pos = 2272
+set osd_current_pos = 2369
+set osd_mah_drawn_pos = 2401
+set osd_craft_name_pos = 2410
+set osd_warnings_pos = 14538
+set osd_avg_cell_voltage_pos = 2337
+set osd_disarmed_pos = 2304
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): BIQUAD D-term filter (optional)
+set dterm_lpf1_dyn_min_hz = 80
+set dterm_lpf1_dyn_max_hz = 110
+set dterm_lpf1_dyn_expo = 8
+set dterm_lpf1_type = BIQUAD
+set dterm_lpf2_static_hz = 0
+set dterm_notch_hz = 0
+set dterm_notch_cutoff = 0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 48kHz PWM Speed (optional)
+set thrust_linear = 20
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): GPS functionality (optional)
+#feature
+feature GPS
+#serial
+serial 3 2 115200 115200 0 115200
+#master
+set gps_provider = UBLOX
+set gps_ublox_use_galileo = ON
+#OSD
+set osd_gps_speed_pos = 342
+set osd_gps_sats_pos = 2326
+set osd_home_dir_pos = 2347
+set osd_home_dist_pos = 2350
+set osd_altitude_pos = 2293
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): GPS Rescue (experimental)
+set failsafe_procedure = GPS-RESCUE
+set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
+set gps_rescue_min_sats = 5
+set gps_rescue_allow_arming_without_fix = ON
+#$ OPTION END
