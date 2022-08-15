@@ -736,6 +736,24 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.3/bnf/Nazgul F5 Digital v1.1.txt",
+      "hash": "875c0fc976d6414ee87b18803aef6c944069129ed304057e89921bcfdaf58e36",
+      "title": "Nazgul F5 HD v1.1",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "nazgul",
+        "f5"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.3/bnf/Nazgul F5 Digital.txt",
       "hash": "3307947014bd0b83da99bbfa9e8233f99b462c4c08398b026987183b30a9c0b8",
       "title": "Nazgul F5 HD",
