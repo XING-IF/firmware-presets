@@ -736,9 +736,9 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.3/bnf/Nazgul F5 Digital v1.1.txt",
-      "hash": "0f1c002e001656d6dc6a51b096ee5b0ac7d3c56b182278efb7252bcd7b6096bd",
-      "title": "Nazgul F5 HD v1.1",
+      "fullPath": "presets/4.3/bnf/Nazgul F5 Digital.txt",
+      "hash": "3307947014bd0b83da99bbfa9e8233f99b462c4c08398b026987183b30a9c0b8",
+      "title": "Nazgul F5 HD",
       "firmware_version": [
         "4.3"
       ],
@@ -754,9 +754,9 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.3/bnf/Nazgul F5 Digital.txt",
-      "hash": "3307947014bd0b83da99bbfa9e8233f99b462c4c08398b026987183b30a9c0b8",
-      "title": "Nazgul F5 HD",
+      "fullPath": "presets/4.3/bnf/Nazgul F5 v1.1.txt",
+      "hash": "9e8dd178dd7fee00a0f15ead55ff23e6b57ce8aa031491e2176271777885daa8",
+      "title": "Nazgul F5 SucceX v1.1",
       "firmware_version": [
         "4.3"
       ],
