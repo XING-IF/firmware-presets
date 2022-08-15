@@ -105,7 +105,7 @@ set mag_hardware = NONE
 set baro_hardware = AUTO
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT600
-set vbat_max_cell_voltage = 440
+set vbat_max_cell_voltage = 422
 set yaw_motors_reversed = ON
 set small_angle = 180
 
