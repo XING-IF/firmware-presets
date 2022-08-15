@@ -26,7 +26,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: D-term Filter Tuning:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: * 2 different D-term filter approaches; Stacked PT1 (default), Single BIQUAD (less delay)
+#$ DESCRIPTION: * 2 different D-term filter approaches; Stacked PT1 (default), Single BIQUAD (less filtering <200hz, more filtering >200hz)
 #$ DESCRIPTION: * Dynamic Idle is turned on, helps to control low end of motor rpm
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
@@ -74,6 +74,10 @@ feature -RX_PARALLEL_PWM
 feature TELEMETRY
 feature LED_STRIP
 
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
 # led
 led 0 0,0::L:5
 led 1 1,0::C:5
@@ -82,7 +86,8 @@ led 3 3,0::C:5
 led 4 4,0::C:5
 
 # color
-color 5 109,0,255
+color 5 91,0,255
+color 6 108,0,255
 
 # aux
 aux 0 0 0 1700 2100 0 0

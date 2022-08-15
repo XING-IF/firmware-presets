@@ -25,7 +25,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: D-term Filter Tuning:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: * 2 different D-term filter approaches; Stacked PT1 (default), Single BIQUAD (less delay)
+#$ DESCRIPTION: * 2 different D-term filter approaches; Stacked PT1 (default), Single BIQUAD (less filtering <200hz, more filtering >200hz)
 #$ DESCRIPTION: * Dynamic Idle is turned on, helps to control low end of motor rpm
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
