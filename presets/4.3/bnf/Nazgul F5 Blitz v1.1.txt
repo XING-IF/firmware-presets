@@ -191,6 +191,14 @@ set dyn_idle_min_rpm = 35
 set dyn_idle_p_gain = 35
 #$ OPTION END
 
+#$ OPTION BEGIN (UNCHECKED): CRSF protocol
+set serialrx_provider = CRSF
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): SBUS protocol 
+set serialrx_provider = SBUS
+#$ OPTION END
+
 #$ OPTION BEGIN (UNCHECKED): HD DJI VTX
 # serial
 serial 0 1 115200 57600 0 115200
@@ -269,4 +277,14 @@ set failsafe_procedure = GPS-RESCUE
 set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
 set gps_rescue_min_sats = 5
 set gps_rescue_allow_arming_without_fix = ON
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): XING AUX setup (custom)
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 1300 1700 0 0
+aux 2 46 1 1700 2100 0 0
+aux 3 13 3 1700 2100 0 0
+aux 4 31 2 1700 2100 0 0
+aux 5 35 3 1700 2100 0 0
 #$ OPTION END
