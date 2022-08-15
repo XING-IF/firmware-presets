@@ -11,11 +11,15 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: This is the official iFlight factory tune (4.3 XINGtune) for the Nazgul F5 HD!
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
-#$ DESCRIPTION: Version: 2022.07.22-V2.0 (BMI270)
 #$ DESCRIPTION:
-#$ DESCRIPTION: 2 different D-term filter approaches: Stacked PT1 (default), Single BIQUAD (less delay)
-#$ DESCRIPTION: Dynamic Idle is turned on, helps to control low end of motor rpm.
+#$ DESCRIPTION: Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: XING 2022.08.15 (MPU6000)
 #$ DESCRIPTION:
+#$ DESCRIPTION: D-term Filter Tuning:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: * 2 different D-term filter approaches; Stacked PT1 (default), Single BIQUAD (less delay)
+#$ DESCRIPTION: * Dynamic Idle is turned on, helps to control low end of motor rpm
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
