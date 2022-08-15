@@ -12,6 +12,7 @@
 #$ DESCRIPTION: This is the universal filter and PID tune for Cidora and Nazgul5 versions until the official factory tunes are released.
 #$ DESCRIPTION: This is NO factory dump, but only a ported 4.3.1 tune from the already released XINGtune for the Nazgul F5!
 #$ DESCRIPTION: Please read the instructions, test carefully and leave us a feedback in our facebook group.
+#$ DESCRIPTION: We can NOT guarantee a perfect fit for your BNF; Please use at your own risk!
 #$ DESCRIPTION: **Only for advanced users!**
 #$ DESCRIPTION:
 #$ DESCRIPTION: Checklist for you:
