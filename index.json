@@ -718,45 +718,9 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.3/bnf/Nazgul F5 Analog.txt",
-      "hash": "4739e2372c3a29ac1b619e43a469b691c4074731de18fa09d8f7c2bede006179",
-      "title": "Nazgul F5 Analog",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "BNF",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "xing",
-        "iflight",
-        "nazgul",
-        "f5"
-      ],
-      "author": "Patrick XING (iFlight)",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.3/bnf/Nazgul F5 Blitz v1.1.txt",
       "hash": "d28d373fb22bc3553c416545d1e715ea3db20151e9657bcf83f1aea2c73af591",
       "title": "Nazgul F5 BLITZ XINGtune RC1",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "BNF",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "xing",
-        "iflight",
-        "nazgul",
-        "f5"
-      ],
-      "author": "Patrick XING (iFlight)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/bnf/Nazgul F5 Digital.txt",
-      "hash": "431c609452c800795fb6fa0d857ccacd66d5e6138bc0bf77a59d71ad3000c701",
-      "title": "Nazgul F5 HD",
       "firmware_version": [
         "4.3"
       ],
