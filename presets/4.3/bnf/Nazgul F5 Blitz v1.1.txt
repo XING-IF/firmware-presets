@@ -280,7 +280,6 @@ set osd_altitude_pos = 2293
 set failsafe_procedure = GPS-RESCUE
 set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
 set gps_rescue_min_sats = 5
-set gps_rescue_allow_arming_without_fix = ON
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): XING AUX setup (custom)
