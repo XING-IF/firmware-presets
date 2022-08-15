@@ -719,7 +719,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F5 Blitz v1.1.txt",
-      "hash": "d2069d3f9bcf97b173a49da2a4336e80b1a4af1100db90f7c55d022003ea01d2",
+      "hash": "d9475c36152d14f2b63da300abf8b926ae108129bc2163670d9444f8126f36ea",
       "title": "Nazgul F5 BLITZ XINGtune RC1",
       "firmware_version": [
         "4.3"
@@ -737,7 +737,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F5 SucceX v1.1.txt",
-      "hash": "1eced3164e3a5da93bcb917da24f0394359f5d93b1d750093027354f61c6d97e",
+      "hash": "292b7ffd81bae63ff482a2eee0acb12daf8d94868bf466d0ff365f5a3db5545a",
       "title": "Nazgul F5 SucceX XINGtune RC1",
       "firmware_version": [
         "4.3"
