@@ -58,6 +58,8 @@
 #$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
 #$ DESCRIPTION: * Priorized flight performance over flight time
 #$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
+#$ INCLUDE: presets/4.3/tune/defaults.txt
+#$ INCLUDE: presets/4.3/filters/defaults.txt
 
 #$ OPTION BEGIN (CHECKED): Universal 5inch
 # master
