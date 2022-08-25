@@ -73,7 +73,7 @@ defaults nosave
 #$ OPTION BEGIN (CHECKED): Restore Settings (default)
 board_name IFLIGHT_F722_TWING
 
-# name: F5 Evoque HD
+# name: Nazgul F5
 
 # feature
 feature -SOFTSERIAL

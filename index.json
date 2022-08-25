@@ -301,6 +301,7 @@
       "output limit",
       "OVX300",
       "OVX303",
+      "P35",
       "partial",
       "Passthrough",
       "pid",
@@ -719,7 +720,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F5 Blitz v1.1.txt",
-      "hash": "d9475c36152d14f2b63da300abf8b926ae108129bc2163670d9444f8126f36ea",
+      "hash": "febe91c8642b71539c770412d0ab5cbfd8582c78cccf1bc4637694dbd8d2c7dd",
       "title": "Nazgul F5 BLITZ XINGtune RC1",
       "firmware_version": [
         "4.3"
@@ -737,7 +738,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F5 SucceX v1.1.txt",
-      "hash": "292b7ffd81bae63ff482a2eee0acb12daf8d94868bf466d0ff365f5a3db5545a",
+      "hash": "100d08ac239238e14126bd6158334bfd6db170c8b1c1bf618a3cd8021cbaa5a1",
       "title": "Nazgul F5 SucceX XINGtune RC1",
       "firmware_version": [
         "4.3"
@@ -757,6 +758,24 @@
       "fullPath": "presets/4.3/bnf/Nazgul F6 Analog.txt",
       "hash": "f8febbcce1e29d4f2cac5b304c46f3eac1fc99d89142dc5f1ba6b7bfcda0e8e1",
       "title": "Nazgul F6 Analog",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "nazgul",
+        "f6"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/Nazgul F6 Blitz v1.1.txt",
+      "hash": "a6b6417ac77d0cc0b3009aec145f1575921e24392de2cf5db67604ab389068ab",
+      "title": "Nazgul F6 BLITZ tune RC1",
       "firmware_version": [
         "4.3"
       ],
@@ -802,6 +821,42 @@
         "xing",
         "iflight",
         "protek"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/ProTek35 Beast F7 v1.0.txt",
+      "hash": "1cbeb06ef340d76a823ae5bf36f57feda1d8f621e4d1268c24245bc68dd219c0",
+      "title": "ProTek35 Beast F7 AIO V1 tune RC1",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "ProTek35",
+        "P35"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/ProTek35 Beast F7 v2.0.txt",
+      "hash": "defebe805dd5f2c400c8eb48834ca8476e7d77fdad703fd8688762f82075a0a9",
+      "title": "ProTek35 Beast F7 AIO V2 tune RC1",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "ProTek35",
+        "P35"
       ],
       "author": "Patrick XING (iFlight)",
       "priority": 0
