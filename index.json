@@ -301,7 +301,6 @@
       "output limit",
       "OVX300",
       "OVX303",
-      "P35",
       "partial",
       "Passthrough",
       "pid",
@@ -821,42 +820,6 @@
         "xing",
         "iflight",
         "protek"
-      ],
-      "author": "Patrick XING (iFlight)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/bnf/ProTek35 Beast F7 v1.0.txt",
-      "hash": "cd6fb0b11e81748d7b8b1fb2a3852a0421e6b6469bd908d937ead34689780487",
-      "title": "ProTek35 Beast F7 AIO V1 tune RC1",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "BNF",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "xing",
-        "iflight",
-        "ProTek35",
-        "P35"
-      ],
-      "author": "Patrick XING (iFlight)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/bnf/ProTek35 Beast F7 v2.0.txt",
-      "hash": "fab5120558fdeb2397df318c7a8d8a4facbb6de46275d901e471c22d95fef20e",
-      "title": "ProTek35 Beast F7 AIO V2 tune RC1",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "BNF",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "xing",
-        "iflight",
-        "ProTek35",
-        "P35"
       ],
       "author": "Patrick XING (iFlight)",
       "priority": 0
