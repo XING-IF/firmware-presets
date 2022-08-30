@@ -773,27 +773,9 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.3/bnf/Nazgul F6 BLITZ V1.1 Preset 2022.8.30.txt",
-      "hash": "a8a7fee0ff6f2b29d0f145286105dfcaba63bb5b9044d9a2c54bbb3b09acd15c",
+      "fullPath": "presets/4.3/bnf/Nazgul F6 BLITZ V1.1 RC2.txt",
+      "hash": "f47c8833dad6e614821a82ed8dffaaf9b92307b10dd7d08bece41a6b5b884db7",
       "title": "Nazgul F6 BLITZ tune RC2",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "BNF",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "xing",
-        "iflight",
-        "nazgul",
-        "f6"
-      ],
-      "author": "Patrick XING (iFlight)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/bnf/Nazgul F6 Blitz v1.1.txt",
-      "hash": "cf847fd5f1cf28230e98d2b8846515972077154fafb8964f9d7e0de5bda9c389",
-      "title": "Nazgul F6 BLITZ tune RC1",
       "firmware_version": [
         "4.3"
       ],
