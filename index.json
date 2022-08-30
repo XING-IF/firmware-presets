@@ -754,45 +754,9 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.3/bnf/Nazgul F6 Analog.txt",
-      "hash": "f8febbcce1e29d4f2cac5b304c46f3eac1fc99d89142dc5f1ba6b7bfcda0e8e1",
-      "title": "Nazgul F6 Analog",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "BNF",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "xing",
-        "iflight",
-        "nazgul",
-        "f6"
-      ],
-      "author": "Patrick XING (iFlight)",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.3/bnf/Nazgul F6 BLITZ V1.1 RC2.txt",
       "hash": "f47c8833dad6e614821a82ed8dffaaf9b92307b10dd7d08bece41a6b5b884db7",
       "title": "Nazgul F6 BLITZ tune RC2",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "BNF",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "xing",
-        "iflight",
-        "nazgul",
-        "f6"
-      ],
-      "author": "Patrick XING (iFlight)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/bnf/Nazgul F6 Digital.txt",
-      "hash": "5d12110651a914a3e8aff9910740188052f6b8d3720fb7c90bd305a52b661154",
-      "title": "Nazgul F6 HD",
       "firmware_version": [
         "4.3"
       ],
