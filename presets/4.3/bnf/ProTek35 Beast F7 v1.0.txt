@@ -18,7 +18,11 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: BNF Build Version:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION:* Beast F7 AIO V1 2020.10-2021.7
+#$ DESCRIPTION: * Beast F7 AIO V1 2020.10-2021.7
+#$ DESCRIPTION:
+#$ DESCRIPTION: D-term Filter Tuning:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: * Dynamic Idle can be turned on, helps to control low end of motor rpm
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
@@ -201,6 +205,11 @@ rateprofile 5
 
 # restore original rateprofile selection
 rateprofile 0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Dynamic Idle
+set dyn_idle_min_rpm = 35
+set dyn_idle_p_gain = 35
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): CRSF protocol & HD DJI VTX
