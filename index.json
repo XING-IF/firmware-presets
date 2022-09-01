@@ -301,6 +301,7 @@
       "output limit",
       "OVX300",
       "OVX303",
+      "P35",
       "partial",
       "Passthrough",
       "pid",
@@ -772,6 +773,24 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.3/bnf/ProTek 35 Beast F7 V2 Preset 2022.9.1.txt",
+      "hash": "541a63de808ffaf0b1676ea0406ad3e9c1a8e07edc1019b6f026305264d67827",
+      "title": "ProTek35 AIO-V2 tune RC1",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "ProTek35",
+        "P35"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.3/bnf/ProTek35 Analog.txt",
       "hash": "a572050e26ad2b248f595f184430bb2b25e739de9b548f4bb8fb6d1d6b180e33",
       "title": "ProTek35 Analog",
@@ -801,6 +820,24 @@
         "xing",
         "iflight",
         "protek"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/ProTel 35 Beast F7 V1 Preset 2022.9.1.txt",
+      "hash": "9c15b033ce4a7da2a6f6315526bb2a43633703e99c606c41f8f8aff81b1cbb55",
+      "title": "ProTek35 AIO-V1.x tune RC1",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "ProTek35",
+        "P35"
       ],
       "author": "Patrick XING (iFlight)",
       "priority": 0
