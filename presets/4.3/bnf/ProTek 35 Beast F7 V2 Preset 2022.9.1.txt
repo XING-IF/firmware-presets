@@ -15,6 +15,7 @@
 #$ DESCRIPTION: Factory Dump Version:
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION: 2022.08.23 (Only for Beast F7 AIO V2 MPU6000 & BMI270 FCs)
+#$ DESCRIPTION: **RPM-Filter enabled! Please update your ESC from BLHeliS to Bluejay!**
 #$ DESCRIPTION:
 #$ DESCRIPTION: BNF Build Version:
 #$ DESCRIPTION:-------------
@@ -26,7 +27,7 @@
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png"><img src="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/184627696-84318f23-9bfe-4671-b7a8-90ff757785c0.png"><img src="https://user-images.githubusercontent.com/31681897/184627696-84318f23-9bfe-4671-b7a8-90ff757785c0.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: * Use the recommended factory settings! 
-#$ DESCRIPTION: * Use Bluejay ESC firmware: Motor timing 7.5°（MediumLow），Demag Compensation High.
+#$ DESCRIPTION: * **Use Bluejay ESC firmware:** Motor timing 7.5°（MediumLow），Demag Compensation High.
 #$ DESCRIPTION: * 24kHz PWM speed usually has more authority than 48kHz.
 #$ DESCRIPTION: * You can use 48kHz for longer flight times!
 #$ DESCRIPTION:
