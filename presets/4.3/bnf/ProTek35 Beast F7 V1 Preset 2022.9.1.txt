@@ -1,4 +1,4 @@
-#$ TITLE: ProTek35 AIO-V2 tune RC1
+#$ TITLE: ProTek35 AIO-V1.x tune RC1
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
@@ -9,23 +9,21 @@
 
 #$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
-#$ DESCRIPTION: This is the official iFlight factory tune (4.3 tune) for the ProTek35 Beast F7 AIO V2 Version!
+#$ DESCRIPTION: This is the official iFlight factory tune (4.3 tune) for the ProTek35 Beast F7 AIO V1.x Version!
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
 #$ DESCRIPTION:
 #$ DESCRIPTION: Factory Dump Version:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: 2022.08.23 (Only for Beast F7 AIO V2 MPU6000 & BMI270 FCs)
+#$ DESCRIPTION: 2022.08.23 (Only for Beast F7 AIO V1 and V1.2 FC)
 #$ DESCRIPTION: **RPM-Filter enabled! Please update your ESC from BLHeliS to Bluejay!**
 #$ DESCRIPTION:
 #$ DESCRIPTION: BNF Build Version:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION:* Beast F7 AIO V2 (MPU6000) 2021.7-
-#$ DESCRIPTION:* Beast F7 AIO V2 (BMI270) 2021.7-
+#$ DESCRIPTION:* Beast F7 AIO V1 2020.10-2021.7
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png"><img src="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png" width="200px" style="display: block; float: right;"/></a>
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/184627696-84318f23-9bfe-4671-b7a8-90ff757785c0.png"><img src="https://user-images.githubusercontent.com/31681897/184627696-84318f23-9bfe-4671-b7a8-90ff757785c0.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/187928120-f94cb9b2-c95e-422c-bbec-e934ca3222e9.png"><img src="https://user-images.githubusercontent.com/31681897/187928120-f94cb9b2-c95e-422c-bbec-e934ca3222e9.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: * Use the recommended factory settings! 
 #$ DESCRIPTION: * **Use Bluejay ESC firmware:** Motor timing 7.5°（MediumLow），Demag Compensation High.
 #$ DESCRIPTION: * 24kHz PWM speed usually has more authority than 48kHz.
@@ -49,14 +47,14 @@
 #$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
 #$ DESCRIPTION: * Priorized flight performance over flight time
 #$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
-#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/pull/11
+#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
 
 #$ OPTION BEGIN (CHECKED): Reset (default)
 defaults nosave
 #$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): Restore Settings (default)
-board_name IFLIGHT_F745_AIO_V2
+board_name IFLIGHT_F745_AIO_V1
 
 # name: ProTek35
 

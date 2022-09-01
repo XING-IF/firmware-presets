@@ -685,7 +685,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/BOB57.txt",
-      "hash": "6e39d535ab95c950af6452fdb7e760366dca5ee64ce9e96298672d59747c8f68",
+      "hash": "cd36217aa29289c4cc165da1defcca2b9c8d4f5a651d593858d8531e15033a7c",
       "title": "BOB57",
       "firmware_version": [
         "4.3"
@@ -703,7 +703,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Chimera7 Pro.txt",
-      "hash": "a478827e31b3b1e6450eb9354e0a3d3b4cefd8c67c478970e033f9320c2ed094",
+      "hash": "4247c0124747bff1a9e5fe69ab67d1622ff6ac75d159d6efb4ff76e0ce45dabc",
       "title": "Chimera7 Pro",
       "firmware_version": [
         "4.3"
@@ -720,7 +720,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F5 Blitz v1.1.txt",
-      "hash": "febe91c8642b71539c770412d0ab5cbfd8582c78cccf1bc4637694dbd8d2c7dd",
+      "hash": "bfcd3722b9dd6d6d63e5b5f5a9e467480c73100f0ce8d0c2e27fbfa81f42d652",
       "title": "Nazgul F5 BLITZ XINGtune RC1",
       "firmware_version": [
         "4.3"
@@ -738,7 +738,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F5 SucceX v1.1.txt",
-      "hash": "100d08ac239238e14126bd6158334bfd6db170c8b1c1bf618a3cd8021cbaa5a1",
+      "hash": "bf8e4011aba859333e89057223f7986fb0061086becf5f037875d94f85c214b3",
       "title": "Nazgul F5 SucceX XINGtune RC1",
       "firmware_version": [
         "4.3"
@@ -756,7 +756,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F6 BLITZ V1.1 RC2.txt",
-      "hash": "8f2c5760fd63c919bfb775ecfec4a5917c764eb3ffab325909518c40a946d8ad",
+      "hash": "149b7f39c825b153a00978b738d9183eef23a2accf92a8475ccf8537c210f217",
       "title": "Nazgul F6 BLITZ tune RC2",
       "firmware_version": [
         "4.3"
@@ -773,9 +773,9 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.3/bnf/ProTek 35 Beast F7 V2 Preset 2022.9.1.txt",
-      "hash": "df1b3319732dcd38527f51bad0c9aec15ad4692451d5c773526960ec35627561",
-      "title": "ProTek35 AIO-V2 tune RC1",
+      "fullPath": "presets/4.3/bnf/ProTek35 Beast F7 V1 Preset 2022.9.1.txt",
+      "hash": "b370eb52f28d8250642236b124564d4be002054945c4fff56e7d1e463422ac34",
+      "title": "ProTek35 AIO-V1.x tune RC1",
       "firmware_version": [
         "4.3"
       ],
@@ -791,43 +791,9 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.3/bnf/ProTek35 Analog.txt",
-      "hash": "a572050e26ad2b248f595f184430bb2b25e739de9b548f4bb8fb6d1d6b180e33",
-      "title": "ProTek35 Analog",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "BNF",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "xing",
-        "iflight",
-        "protek"
-      ],
-      "author": "Patrick XING (iFlight)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/bnf/ProTek35 Digital.txt",
-      "hash": "c06798081eae55dc6ce146a077ebd628017b7bb79e2d5d32f8d9a25e1364d773",
-      "title": "ProTek35 Digital",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "BNF",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "xing",
-        "iflight",
-        "protek"
-      ],
-      "author": "Patrick XING (iFlight)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.3/bnf/ProTel 35 Beast F7 V1 Preset 2022.9.1.txt",
-      "hash": "c9f3c999d29f46337673664a73459d22c3edffb5cc1c6e4c5160405af7c80d04",
-      "title": "ProTek35 AIO-V1.x tune RC1",
+      "fullPath": "presets/4.3/bnf/ProTek35 Beast F7 V2 Preset 2022.9.1.txt",
+      "hash": "946d9c723d76fa10befcaf6bb2257848660b3a28441debabed998a199135b25d",
+      "title": "ProTek35 AIO-V2 tune RC1",
       "firmware_version": [
         "4.3"
       ],
