@@ -25,7 +25,7 @@
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png"><img src="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/184627696-84318f23-9bfe-4671-b7a8-90ff757785c0.png"><img src="https://user-images.githubusercontent.com/31681897/184627696-84318f23-9bfe-4671-b7a8-90ff757785c0.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: * Use the recommended factory settings! 
-#$ DESCRIPTION: * Analog use Bluejay: Motor timing 7.5°（MediumLow），Demag Compensation High.
+#$ DESCRIPTION: * Use Bluejay ESC firmware: Motor timing 7.5°（MediumLow），Demag Compensation High.
 #$ DESCRIPTION: * 24kHz PWM speed usually has more authority than 48kHz.
 #$ DESCRIPTION: * You can use 48kHz for longer flight times!
 #$ DESCRIPTION:
@@ -63,6 +63,7 @@ feature -SOFTSERIAL
 feature -RX_PARALLEL_PWM
 feature TELEMETRY
 feature LED_STRIP
+feature AIRMODE
 
 # beacon
 beacon RX_LOST
@@ -91,9 +92,6 @@ set dyn_notch_q = 500
 set gyro_lpf1_dyn_min_hz = 300
 set gyro_lpf1_dyn_max_hz = 600
 set mag_hardware = NONE
-set rc_smoothing_auto_factor = 100
-set rc_smoothing_auto_factor_throttle = 28
-set rc_smoothing_throttle_cutoff = 20
 set blackbox_sample_rate = 1/16
 set dshot_idle_value = 650
 set dshot_bidir = ON
