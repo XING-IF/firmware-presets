@@ -302,6 +302,7 @@
       "OVX300",
       "OVX303",
       "P35",
+      "P60",
       "partial",
       "Passthrough",
       "pid",
@@ -309,6 +310,7 @@
       "profile",
       "protek",
       "protek35",
+      "ProTek60 Pro",
       "Pure Race",
       "quaddiction",
       "quick",
@@ -360,6 +362,7 @@
       "SWPR",
       "tank solo",
       "tank ultimate",
+      "Taurus X8 V3",
       "TBS",
       "tbs sa",
       "Team Black Sheep",
@@ -388,6 +391,7 @@
       "vtxtable",
       "whoop",
       "whoop lite",
+      "X8",
       "xing",
       "youtube"
     ]
@@ -804,6 +808,42 @@
         "iflight",
         "ProTek35",
         "P35"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/ProTek60 4.3 Preset 2022.9.7.txt",
+      "hash": "78485b8d695f83fe76ad5506d421d258b301f08513434032ecd735b3e8ceee3f",
+      "title": "ProTek60 Pro tune RC1",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "ProTek60 Pro",
+        "P60"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/Taurus X8 V3 4.3 Preset 2022.9.6.txt",
+      "hash": "1afb39a5a257bd40183a802dbbca34c302ba228657eca6609c856afa9cfbed6b",
+      "title": "Taurus X8 V3 tune RC1",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "Taurus X8 V3",
+        "X8"
       ],
       "author": "Patrick XING (iFlight)",
       "priority": 0
