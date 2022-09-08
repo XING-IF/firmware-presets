@@ -21,8 +21,9 @@
 #$ DESCRIPTION:* BLITZ Stack (MPU6000) 2022.5-2022.6
 #$ DESCRIPTION:* BLITZ Stack (BMI270) 2022.7-
 #$ DESCRIPTION:
-#$ DESCRIPTION: D-term Filter Tuning:
+#$ DESCRIPTION: D-term Filter and other Tuning:
 #$ DESCRIPTION:-------------
+#$ DESCRIPTION: * D-term filter approaches; Stacked PT1 (default)
 #$ DESCRIPTION: * Dynamic Idle is turned on, helps to control low end of motor rpm
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
@@ -45,7 +46,7 @@
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png"><img src="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png" height="100px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png"><img src="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png" height="100px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
-#$ DESCRIPTION: GPS functionality:
+#$ DESCRIPTION: GPS Options:
 #$ DESCRIPTION: ---------------
 #$ DESCRIPTION: * GPS functionality; enables the GPS module and OSD values
 #$ DESCRIPTION: * GPS Rescue; Enables the Failsafe GPS Rescue feature (Min. 5 sats to arm)
@@ -64,19 +65,6 @@
 defaults nosave
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): GPS functionality (default)
-set failsafe_procedure = GPS-RESCUE
-set gps_rescue_throttle_hover = 1500
-set gps_rescue_min_sats = 5
-set gps_rescue_min_dth = 50
-#$ OPTION END
-
-#$ OPTION BEGIN (CHECKED): HD DJI VTX (default)
-# serial
-serial 0 1 115200 57600 0 115200
-serial 3 2 115200 115200 0 115200
-#$ OPTION END
-
 #$ OPTION BEGIN (CHECKED): Restore Settings (default)
 board_name IFLIGHT_BLITZ_F7_PRO
 
@@ -85,9 +73,11 @@ board_name IFLIGHT_BLITZ_F7_PRO
 # feature
 feature -SOFTSERIAL
 feature -RX_PARALLEL_PWM
-feature GPS
 feature TELEMETRY
 feature LED_STRIP
+
+# serial
+serial 0 1 115200 57600 0 115200
 
 # beacon
 beacon RX_LOST
@@ -123,11 +113,6 @@ set vbat_warning_cell_voltage = 340
 set ibata_scale = 100
 set yaw_motors_reversed = ON
 set small_angle = 180
-set gps_provider = UBLOX
-set gps_sbas_mode = AUTO
-set gps_ublox_use_galileo = ON
-
-
 
 #OSD
 set osd_warn_rssi = ON
@@ -140,11 +125,6 @@ set osd_throttle_pos = 245
 set osd_current_pos = 2401
 set osd_mah_drawn_pos = 2433
 set osd_craft_name_pos = 2543
-set osd_gps_speed_pos = 2456
-set osd_gps_sats_pos = 2424
-set osd_home_dir_pos = 2415
-set osd_home_dist_pos = 2489
-set osd_altitude_pos = 2359
 set osd_power_pos = 388
 set osd_warnings_pos = 14765
 set osd_avg_cell_voltage_pos = 2369
@@ -176,8 +156,6 @@ set d_min_roll = 102
 set d_min_pitch = 110
 set d_max_advance = 0
 set thrust_linear = 10
-set dyn_idle_min_rpm = 40
-set dyn_idle_p_gain = 35
 set simplified_master_multiplier = 180
 set simplified_i_gain = 55
 set simplified_d_gain = 190
@@ -224,10 +202,43 @@ rateprofile 5
 rateprofile 0
 #$ OPTION END
 
+#$ OPTION BEGIN (CHECKED): HD DJI VTX (default)
+# serial
+serial 0 1 115200 57600 0 115200
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Dynamic Idle (optional)
+set dyn_idle_min_rpm = 40
+set dyn_idle_p_gain = 35
+#$ OPTION END
+
 #$ OPTION BEGIN (UNCHECKED): CRSF protocol
 set serialrx_provider = CRSF
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): SBUS protocol 
 set serialrx_provider = SBUS
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): GPS functionality (default)
+#feature
+feature GPS
+#master
+set gps_provider = UBLOX
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
+#OSD
+set osd_gps_speed_pos = 2456
+set osd_gps_sats_pos = 2424
+set osd_home_dir_pos = 2415
+set osd_home_dist_pos = 2489
+set osd_altitude_pos = 2359
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): GPS Rescue (experimental)
+set failsafe_procedure = GPS-RESCUE
+set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
+set gps_rescue_throttle_hover = 1500
+set gps_rescue_min_sats = 5
+set gps_rescue_min_dth = 50
 #$ OPTION END
