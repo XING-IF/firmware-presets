@@ -21,6 +21,12 @@
 #$ DESCRIPTION:* BLITZ Stack (MPU6000) 2021.12-
 #$ DESCRIPTION:* BLITZ Stack (BMI270) 2022.3-
 #$ DESCRIPTION:
+#$ DESCRIPTION: WARNING! MOTOR DIRECTION:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: The Default Motor Direction seems to improve flight performance, flight time and decrease motor heat.
+#$ DESCRIPTION: ProTek60 BNFs until August 2022 have been shipped with Reversed Motor Direction.
+#$ DESCRIPTION: Please change your Motor direction to default if bought before this date!
+#$ DESCRIPTION:
 #$ DESCRIPTION: D-term Filter and other Tuning:
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION: * D-term filter approaches; Stacked PT1 (default)
@@ -198,6 +204,14 @@ rateprofile 5
 
 # restore original rateprofile selection
 rateprofile 0
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Default Motor Direction (default)
+set yaw_motors_reversed = OFF
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Reversed Motor Direction (outdated)
+set yaw_motors_reversed = ON
 #$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): HD DJI VTX (default)
