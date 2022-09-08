@@ -28,8 +28,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png"><img src="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png" width="200px" style="display: block; float: right;"/></a>
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/184627696-84318f23-9bfe-4671-b7a8-90ff757785c0.png"><img src="https://user-images.githubusercontent.com/31681897/184627696-84318f23-9bfe-4671-b7a8-90ff757785c0.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/189126572-ad95a058-f2e4-4f15-94ef-1b2df3cecfe5.png"><img src="https://user-images.githubusercontent.com/31681897/189126572-ad95a058-f2e4-4f15-94ef-1b2df3cecfe5.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: * Use the recommended factory settings! 
 #$ DESCRIPTION: * Use BLHeli32: Motor timing 20 (high) ，Rampup Power 30，Demag Compensation High
 #$ DESCRIPTION: * 24kHz PWM speed usually has more authority than 48kHz.

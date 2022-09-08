@@ -23,6 +23,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: WARNING! MOTOR DIRECTION:
 #$ DESCRIPTION:-------------
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/189126315-79d65909-1487-4bab-9ceb-690603514366.jpg"><img src="https://user-images.githubusercontent.com/31681897/189126315-79d65909-1487-4bab-9ceb-690603514366.jpg" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: The Default Motor Direction seems to improve flight performance, flight time and decrease motor heat.
 #$ DESCRIPTION: ProTek60 BNFs until August 2022 have been shipped with Reversed Motor Direction.
 #$ DESCRIPTION: Please change your Motor Direction to default if bought before this date!
@@ -34,8 +35,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png"><img src="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png" width="200px" style="display: block; float: right;"/></a>
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/184627696-84318f23-9bfe-4671-b7a8-90ff757785c0.png"><img src="https://user-images.githubusercontent.com/31681897/184627696-84318f23-9bfe-4671-b7a8-90ff757785c0.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/189126081-e71dc6bf-7ec8-425b-8eed-21a59f8ce2d9.png"><img src="https://user-images.githubusercontent.com/31681897/189126081-e71dc6bf-7ec8-425b-8eed-21a59f8ce2d9.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: * Use the recommended factory settings! 
 #$ DESCRIPTION: * Use BLHeli32: Rampup Power 20，Demag Compensation High，Motor timing Auto，PWM Frequency Low 48KHz
 #$ DESCRIPTION:

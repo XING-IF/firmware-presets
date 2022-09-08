@@ -814,7 +814,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/ProTek60 4.3 Preset 2022.9.7.txt",
-      "hash": "ea246c04cb38e196dfc365e0ed417d6de3ce30664e1bbabcc4cbc05914e35cb9",
+      "hash": "23f178496d6355d638253b936ec46840487b871c9c655765a44f0ebab45dfbf6",
       "title": "ProTek60 Pro tune RC1",
       "firmware_version": [
         "4.3"
@@ -832,7 +832,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Taurus X8 V3 4.3 Preset 2022.9.6.txt",
-      "hash": "2b204b14ef2193d3ed8484e705379e4442b1c864f113389741f3b0622b53824a",
+      "hash": "f90b19c8c4e865e33a2be974344a5fcf5d9b0e8f9867b4698d8639c3b6529aba",
       "title": "Taurus X8 V3 tune RC1",
       "firmware_version": [
         "4.3"
