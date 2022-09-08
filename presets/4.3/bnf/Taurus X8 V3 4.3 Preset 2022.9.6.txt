@@ -102,7 +102,6 @@ set gyro_lpf2_static_hz = 0
 set dyn_notch_q = 500
 set dyn_notch_min_hz = 80
 set dyn_notch_max_hz = 500
-set acc_calibration = 28,-45,26,1
 set mag_hardware = NONE
 set blackbox_sample_rate = 1/16
 set dshot_idle_value = 1000
@@ -165,10 +164,6 @@ set simplified_feedforward_gain = 80
 set simplified_pitch_d_gain = 95
 set simplified_pitch_pi_gain = 105
 
-profile 1
-
-profile 2
-
 # restore original profile selection
 profile 0
 
@@ -187,16 +182,6 @@ set roll_srate = 68
 set pitch_srate = 68
 set yaw_srate = 68
 set tpa_breakpoint = 1400
-
-rateprofile 1
-
-rateprofile 2
-
-rateprofile 3
-
-rateprofile 4
-
-rateprofile 5
 
 # restore original rateprofile selection
 rateprofile 0
@@ -221,6 +206,8 @@ set serialrx_provider = SBUS
 #$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): GPS functionality (default)
+#serial
+serial 3 2 115200 115200 0 115200
 #feature
 feature GPS
 #master
