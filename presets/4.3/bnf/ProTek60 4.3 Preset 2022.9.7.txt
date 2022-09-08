@@ -109,9 +109,7 @@ set gyro_lpf2_static_hz = 0
 set dyn_notch_q = 460
 set gyro_lpf1_dyn_min_hz = 350
 set gyro_lpf1_dyn_max_hz = 700
-set acc_calibration = 46,-26,21,1
 set mag_hardware = NONE
-set serialrx_provider = CRSF
 set blackbox_sample_rate = 1/16
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT600
@@ -170,10 +168,6 @@ set simplified_feedforward_gain = 50
 set simplified_pitch_d_gain = 95
 set simplified_pitch_pi_gain = 105
 
-profile 1
-
-profile 2
-
 # restore original profile selection
 profile 0
 
@@ -192,18 +186,6 @@ set yaw_srate = 58
 set tpa_rate = 70
 set tpa_breakpoint = 1650
 
-rateprofile 1
-
-rateprofile 2
-
-rateprofile 3
-
-rateprofile 4
-
-rateprofile 5
-
-# restore original rateprofile selection
-rateprofile 0
 #$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): Default Motor Direction (default)
@@ -235,7 +217,7 @@ set serialrx_provider = SBUS
 #feature
 feature GPS
 #serial
-serial 3 2 115200 57600 0 115200
+serial 3 2 115200 115200 0 115200
 #master
 set gps_provider = UBLOX
 set gps_sbas_mode = AUTO
