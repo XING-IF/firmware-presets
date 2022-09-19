@@ -18,8 +18,9 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: BNF Build Version:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION:* BLITZ Stack (MPU6000) 2022.5-2022.6
-#$ DESCRIPTION:* BLITZ Stack (BMI270) 2022.7-
+#$ DESCRIPTION: * PLEASE SELECT THE CORRECT VERSION IN THE OPTIONS! GYRO ORIENTATION IS DIFFERENT!
+#$ DESCRIPTION: * BLITZ Stack (MPU6000) 2022.5-2022.6
+#$ DESCRIPTION: * BLITZ Stack (BMI270) 2022.7-
 #$ DESCRIPTION:
 #$ DESCRIPTION: D-term Filter and other Tuning:
 #$ DESCRIPTION:-------------
@@ -184,6 +185,14 @@ set tpa_breakpoint = 1400
 
 # restore original rateprofile selection
 rateprofile 0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): MPU6000 GYRO
+set gyro_1_sensor_align = CW270
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): BMI20 GYRO
+set gyro_1_sensor_align = CW0FLIP
 #$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): HD DJI VTX (default)
