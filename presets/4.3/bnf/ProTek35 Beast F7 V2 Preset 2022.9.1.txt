@@ -26,6 +26,7 @@
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/187928120-f94cb9b2-c95e-422c-bbec-e934ca3222e9.png"><img src="https://user-images.githubusercontent.com/31681897/187928120-f94cb9b2-c95e-422c-bbec-e934ca3222e9.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: * Use the recommended factory settings! 
+#$ DESCRIPTION: * Updated Motor direction! Less Propwash and more flight time!
 #$ DESCRIPTION: * **Use Bluejay ESC firmware:** Motor timing 7.5°（MediumLow），Demag Compensation High.
 #$ DESCRIPTION: * 24kHz PWM speed usually has more authority than 48kHz.
 #$ DESCRIPTION: * You can use 48kHz for longer flight times!
@@ -195,6 +196,14 @@ rateprofile 0
 
 #$ OPTION BEGIN (CHECKED): Dynamic Idle (optional)
 set dyn_idle_min_rpm = 30
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Default Motor Direction
+set yaw_motors_reversed = OFF
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Reversed Motor Direction (OUTDATED!)
+set yaw_motors_reversed = ON
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): CRSF protocol & HD DJI VTX

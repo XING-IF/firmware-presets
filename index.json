@@ -778,7 +778,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/ProTek35 Beast F7 V1 Preset 2022.9.1.txt",
-      "hash": "647bca88eb78e5b2854acaf599acfce10f593ec35467a05fd09d252574dfae66",
+      "hash": "7416f6daf89c0f6eb720827a16054383d8b99a4ef922b51c06eb1543e571401b",
       "title": "ProTek35 AIO-V1.x tune RC1",
       "firmware_version": [
         "4.3"
@@ -796,7 +796,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/ProTek35 Beast F7 V2 Preset 2022.9.1.txt",
-      "hash": "946d9c723d76fa10befcaf6bb2257848660b3a28441debabed998a199135b25d",
+      "hash": "3a01d3651794f6c371d32b161a19541c8c66da327d9400f8b93b34e8437bb440",
       "title": "ProTek35 AIO-V2 tune RC1",
       "firmware_version": [
         "4.3"
