@@ -29,8 +29,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png"><img src="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png" width="200px" style="display: block; float: right;"/></a>
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/184627696-84318f23-9bfe-4671-b7a8-90ff757785c0.png"><img src="https://user-images.githubusercontent.com/31681897/184627696-84318f23-9bfe-4671-b7a8-90ff757785c0.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/197277846-287094a8-2feb-45f2-93f7-e234a346cb90.png"><img src="https://user-images.githubusercontent.com/31681897/197277846-287094a8-2feb-45f2-93f7-e234a346cb90.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: * Use the recommended factory settings! 
 #$ DESCRIPTION: * Use Bluejay: Motor timing 22.5（MediumHigh）or 15（Medium）
 #$ DESCRIPTION: * 24kHz PWM speed usually has more authority than 48kHz.
