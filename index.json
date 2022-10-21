@@ -194,10 +194,12 @@
       "55Hz",
       "666Hz",
       "9ms",
+      "A85",
       "Acrobaix",
       "actual",
       "adjustments",
       "AlexFPV",
+      "Alpha A85",
       "analog",
       "Audio TBS",
       "aux",
@@ -686,6 +688,24 @@
       ],
       "author": "XING, iFlight",
       "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.3/bnf/Alpha A85 SucceX F411 AIO Preset 2022.9.19.txt",
+      "hash": "a6aa70d2f0bf9e279035b4d3984b564aab6b3357979a745fb513e60bff38835a",
+      "title": "Alpha A85 tune RC1",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "Alpha A85",
+        "A85"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
     },
     {
       "fullPath": "presets/4.3/bnf/BOB57.txt",
