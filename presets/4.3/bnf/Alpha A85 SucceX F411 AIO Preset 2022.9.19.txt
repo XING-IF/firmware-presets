@@ -24,6 +24,7 @@
 #$ DESCRIPTION:* BLITZ AIO (BMI270)  2022.4-
 #$ DESCRIPTION:
 #$ DESCRIPTION: Dynamic Idle:
+#$ DESCRIPTION:-------------
 #$ DESCRIPTION: * Dynamic Idle is turned on, helps to control low end of motor rpm
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
