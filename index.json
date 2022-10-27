@@ -691,7 +691,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Alpha A85 SucceX F411 AIO Preset 2022.9.19.txt",
-      "hash": "2020f080417350290a3069103d90a5636a2afe949248ffe75238e9e998519e37",
+      "hash": "cc1cb12c92c264411c7de5f2415606fcaa6b52dfc9346b3dbbc1c058f32a087a",
       "title": "Alpha A85 tune RC1",
       "firmware_version": [
         "4.3"
@@ -744,7 +744,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F5 Blitz v1.1.txt",
-      "hash": "bfcd3722b9dd6d6d63e5b5f5a9e467480c73100f0ce8d0c2e27fbfa81f42d652",
+      "hash": "12f3dafc107a6c45052e1f19347dea5bb38f6e0c7777bd4e354804d1126f69ce",
       "title": "Nazgul F5 BLITZ XINGtune RC1",
       "firmware_version": [
         "4.3"
@@ -762,7 +762,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F5 SucceX v1.1.txt",
-      "hash": "bf8e4011aba859333e89057223f7986fb0061086becf5f037875d94f85c214b3",
+      "hash": "5263c1a0f2cc9bcb35ce2e5517383ca8ace4cd6c469214ab650c9102e0b7e7ca",
       "title": "Nazgul F5 SucceX XINGtune RC1",
       "firmware_version": [
         "4.3"
@@ -780,7 +780,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F6 BLITZ V1.1 RC2.txt",
-      "hash": "149b7f39c825b153a00978b738d9183eef23a2accf92a8475ccf8537c210f217",
+      "hash": "d03796f5b4bd30245c957d9febaa56cda414beff7b8fff93c71b5180fa9c384f",
       "title": "Nazgul F6 BLITZ tune RC2",
       "firmware_version": [
         "4.3"
@@ -798,7 +798,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/ProTek35 Beast F7 V1 Preset 2022.9.1.txt",
-      "hash": "7416f6daf89c0f6eb720827a16054383d8b99a4ef922b51c06eb1543e571401b",
+      "hash": "9f49462cf2a0e61f69477997607b37d5fd740b0adf1ddc3e1051147f395bdee1",
       "title": "ProTek35 AIO-V1.x tune RC1",
       "firmware_version": [
         "4.3"
@@ -816,7 +816,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/ProTek35 Beast F7 V2 Preset 2022.9.1.txt",
-      "hash": "3a01d3651794f6c371d32b161a19541c8c66da327d9400f8b93b34e8437bb440",
+      "hash": "de1efa6e23583c5920eabc351b0b8307a1548ae0b472a996219dcf56baa489a1",
       "title": "ProTek35 AIO-V2 tune RC1",
       "firmware_version": [
         "4.3"
@@ -834,7 +834,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/ProTek60 4.3 Preset 2022.9.7.txt",
-      "hash": "23f178496d6355d638253b936ec46840487b871c9c655765a44f0ebab45dfbf6",
+      "hash": "1a4cbc8e271901e644fb90b810aee56b0e1add2f778e062f980d31898108c1b1",
       "title": "ProTek60 Pro tune RC1",
       "firmware_version": [
         "4.3"
@@ -852,7 +852,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Taurus X8 V3 4.3 Preset 2022.9.6.txt",
-      "hash": "a8c7085a74da2fb324ab71115ab46a65c2e4fb4fa9c66a58126043304dd0a489",
+      "hash": "ed63193a8a1c7674381430f2f52a4ba9f4b815777ffb958cbe8a7d62e82b4984",
       "title": "Taurus X8 V3 tune RC1",
       "firmware_version": [
         "4.3"
