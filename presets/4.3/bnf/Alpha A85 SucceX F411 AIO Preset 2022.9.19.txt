@@ -191,7 +191,7 @@ rateprofile 5
 rateprofile 0
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Overclock F411 120MHZ (experimental)
+#$ OPTION BEGIN (UNCHECKED): Overclock F411 120MHZ (experimental)
 set cpu_overclock = 120MHZ
 #$ OPTION END
 
