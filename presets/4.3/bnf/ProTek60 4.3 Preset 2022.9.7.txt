@@ -205,11 +205,11 @@ serial 0 1 115200 57600 0 115200
 set dyn_idle_min_rpm = 30
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): CRSF protocol
+#$ OPTION BEGIN (UNCHECKED): CRSF/ELRS Receiver
 set serialrx_provider = CRSF
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): SBUS protocol 
+#$ OPTION BEGIN (UNCHECKED): SBUS/DJI Receiver
 set serialrx_provider = SBUS
 #$ OPTION END
 

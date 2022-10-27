@@ -191,7 +191,7 @@ rateprofile 5
 rateprofile 0
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Overclock F411 120MHZ (recommendation)
+#$ OPTION BEGIN (CHECKED): Overclock F411 120MHZ (experimental)
 set cpu_overclock = 120MHZ
 #$ OPTION END
 
@@ -215,11 +215,11 @@ set align_board_yaw = 90
 set dyn_idle_min_rpm = 60
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): CRSF protocol
+#$ OPTION BEGIN (UNCHECKED): CRSF/ELRS Receiver
 set serialrx_provider = CRSF
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): SBUS protocol 
+#$ OPTION BEGIN (UNCHECKED): SBUS/DJI Receiver
 set serialrx_provider = SBUS
 #$ OPTION END
 

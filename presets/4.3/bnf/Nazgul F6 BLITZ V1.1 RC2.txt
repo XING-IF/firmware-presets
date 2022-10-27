@@ -216,11 +216,11 @@ rateprofile 0
 set dyn_idle_min_rpm = 35
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): CRSF protocol
+#$ OPTION BEGIN (UNCHECKED): CRSF/ELRS Receiver
 set serialrx_provider = CRSF
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): SBUS protocol 
+#$ OPTION BEGIN (UNCHECKED): SBUS/DJI Receiver
 set serialrx_provider = SBUS
 #$ OPTION END
 
