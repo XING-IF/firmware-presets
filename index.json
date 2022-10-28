@@ -241,6 +241,7 @@
       "expert",
       "express",
       "f5",
+      "f5 V2",
       "f6",
       "feisar",
       "filter",
@@ -316,6 +317,8 @@
       "Pure Race",
       "quaddiction",
       "quick",
+      "r20",
+      "r25",
       "Race",
       "race rates ctzsnooze actual",
       "race v1",
@@ -779,6 +782,25 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.3/bnf/Nazgul F5 V2 Preset 2022.10.28.txt",
+      "hash": "bc5709be8510772ebd424b3ae00db6dfbbc89028d051d52c29432857158cc866",
+      "title": "Nazgul F5 V2 BLITZ XINGtune RC1",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "nazgul",
+        "evoque",
+        "f5 V2"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.3/bnf/Nazgul F6 BLITZ V1.1 RC2.txt",
       "hash": "d03796f5b4bd30245c957d9febaa56cda414beff7b8fff93c71b5180fa9c384f",
       "title": "Nazgul F6 BLITZ tune RC2",
@@ -792,6 +814,42 @@
         "iflight",
         "nazgul",
         "f6"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/ProTek R20 F411 AIO Preset 2022.10.28.txt",
+      "hash": "35c77539db17ba5f11765d9ea125b9b4c651f9605474bb23db0b25fce185755d",
+      "title": "ProTek R20 XINGtune RC1",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "protek",
+        "r20"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/ProTek R25 F411 AIO Preset 2022.10.28.txt",
+      "hash": "fff148a9e1c5956ae53aa359b80ac9cced22206ad1b924490a85c0b99e990847",
+      "title": "ProTek R25 XINGtune RC1",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "protek",
+        "r25"
       ],
       "author": "Patrick XING (iFlight)",
       "priority": 0
