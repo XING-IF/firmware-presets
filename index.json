@@ -243,6 +243,7 @@
       "f5",
       "f5 V2",
       "f6",
+      "f6 v2",
       "feisar",
       "filter",
       "filtering",
@@ -814,6 +815,25 @@
         "iflight",
         "nazgul",
         "f6"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/Nazgul F6 V2 Preset 221103.txt",
+      "hash": "cfccbbccb9c9f6572d2798fa92e0803030fc135f0f6d7a2773d35b5c5654253d",
+      "title": "Nazgul F6 V2 BLITZ tune RC1",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "nazgul",
+        "evoque",
+        "f6 v2"
       ],
       "author": "Patrick XING (iFlight)",
       "priority": 0
