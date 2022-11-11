@@ -211,11 +211,15 @@
       "BMSThomas",
       "bob",
       "bob57",
+      "C7 Pro V2",
       "camera",
       "camera_control",
       "Cgo",
       "Chief",
       "chimera",
+      "Chimera7",
+      "Chimera7 Pro",
+      "Chimera7 Pro V2",
       "cinematic",
       "clean",
       "clear",
@@ -730,6 +734,27 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.3/bnf/Chimera7 Pro V2 Preset 2022.11.10.txt",
+      "hash": "6460ed20d1c5632e918d8606e335a864d5035c3f49cab98c1cd0d92c507f150b",
+      "title": "Chimera7 Pro V2 BLITZ XINGtune RC1",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "Chimera",
+        "Chimera7",
+        "Chimera7 Pro",
+        "Chimera7 Pro V2",
+        "C7 Pro V2"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.3/bnf/Chimera7 Pro.txt",
       "hash": "4247c0124747bff1a9e5fe69ab67d1622ff6ac75d159d6efb4ff76e0ce45dabc",
       "title": "Chimera7 Pro",
@@ -821,7 +846,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F6 V2 Preset 221103.txt",
-      "hash": "cfccbbccb9c9f6572d2798fa92e0803030fc135f0f6d7a2773d35b5c5654253d",
+      "hash": "20c823981c80f9cde01ddbe053016eaadc7e42d48cd8615263d4292ec2adc697",
       "title": "Nazgul F6 V2 BLITZ tune RC1",
       "firmware_version": [
         "4.3"

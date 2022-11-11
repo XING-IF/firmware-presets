@@ -1,37 +1,35 @@
-#$ TITLE: Nazgul F6 V2 BLITZ tune RC1
+#$ TITLE: Chimera7 Pro V2 BLITZ XINGtune RC1
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: xing, iflight, nazgul, evoque , f6 v2
+#$ KEYWORDS: xing, iflight, Chimera, Chimera7, Chimera7 Pro, Chimera7 Pro V2, C7 Pro V2
 #$ AUTHOR: Patrick XING (iFlight)
 
 #$ PARSER: MARKED
 
 #$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
-#$ DESCRIPTION: This is the official iFlight factory tune (4.3 tune) for the Nazgul F6 V2 BLITZ FC Version!
+#$ DESCRIPTION: This is the official iFlight factory tune (4.3 XINGtune) for the Nazgul F5 BLITZ FC Version!
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
 #$ DESCRIPTION:
 #$ DESCRIPTION: Factory Dump Version:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: 2022.11.02 (Only for BLITZ BMI270 FCs)
+#$ DESCRIPTION: XING 2022.11.10 (Only for BLITZ BMI270 FCs)
 #$ DESCRIPTION:
 #$ DESCRIPTION: BNF Build Version:
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION:* BLITZ Stack (BMI270) 2022.11-
 #$ DESCRIPTION:
-#$ DESCRIPTION: D-term Filter Tuning:
-#$ DESCRIPTION:-------------
-#$ DESCRIPTION: * Dynamic Idle is turned on, helps to control low end of motor rpm
-#$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/187441506-9528300c-c605-4128-a935-672ec1672255.png"><img src="https://user-images.githubusercontent.com/31681897/187441506-9528300c-c605-4128-a935-672ec1672255.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png"><img src="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/184627696-84318f23-9bfe-4671-b7a8-90ff757785c0.png"><img src="https://user-images.githubusercontent.com/31681897/184627696-84318f23-9bfe-4671-b7a8-90ff757785c0.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: * Use the recommended factory settings! 
-#$ DESCRIPTION: * HD use BLHeli32: Motor timing 20 (high) or 23 (aggressive)
+#$ DESCRIPTION: * HD use BLHeli32: Motor timing 18 (high) or 20 (aggressive)
 #$ DESCRIPTION: * 24kHz PWM speed usually has more authority than 48kHz.
 #$ DESCRIPTION: * You can use 48kHz for longer flight times!
-#$ DESCRIPTION: * 【如果你的飞行环境风力较大，达到了4级或以上，可设置电调频率为16K-By RPM，这将让你的机子有更快的响应从而让机身姿态更加稳定；如果你的飞行环境有微风，且你是Freestyle Pilot，可以设置电调频率为24K-By RPM，这将让你的机子比16K有更长的续航；如果你是Longrange Pilot，可以设置电调频率为48K-By RPM，这将让机子的飞行最优效率，达到最高性能的续航时间】
+#$ DESCRIPTION: * 48kHz PWM option adds thrust_linear
+#$ DESCRIPTION: * GPS functionality; enables the GPS module and OSD value【因为C7 Pro V2 默认带了GPS，所以要提醒一下客户，我们默认出货就是有GPS functionality的设置】
 #$ DESCRIPTION:
 #$ DESCRIPTION: Radio Setup: 
 #$ DESCRIPTION: ------------
@@ -46,7 +44,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: GPS Options:
 #$ DESCRIPTION: ---------------
-#$ DESCRIPTION: * GPS functionality; enables the GPS module and OSD values
+#$ DESCRIPTION: * GPS functionality enabled by default!
 #$ DESCRIPTION: * GPS Rescue; Enables the Failsafe GPS Rescue feature (Min. 5 sats to arm)
 #$ DESCRIPTION: * Do your research about GPS Rescue! **Use at your own risk!**
 #$ DESCRIPTION:
@@ -66,26 +64,48 @@ defaults nosave
 #$ OPTION BEGIN (CHECKED): Restore Settings (default)
 board_name IFLIGHT_BLITZ_F722
 
-# name: Nazgul F6 V2
+# name: Chimera7 Pro V2
+
+# timer
+timer A00 AF2
+# pin A00: TIM5 CH1 (AF2)
+timer C06 AF3
+# pin C06: TIM8 CH1 (AF3)
+timer C07 AF3
+# pin C07: TIM8 CH2 (AF3)
+timer A01 AF1
+# pin A01: TIM2 CH2 (AF1)
+
+# dma
+dma pin A00 0
+# pin A00: DMA1 Stream 2 Channel 6
+dma pin C06 0
+# pin C06: DMA2 Stream 2 Channel 0
+dma pin C07 1
+# pin C07: DMA2 Stream 3 Channel 7
+dma pin A01 0
+# pin A01: DMA1 Stream 6 Channel 3
 
 # feature
 feature -RX_PARALLEL_PWM
 feature TELEMETRY
+feature GPS
 feature LED_STRIP
+
+# serial
+serial 0 1 115200 57600 0 115200
+serial 3 2 115200 115200 0 115200
+serial 5 1024 115200 57600 0 115200
 
 # beacon
 beacon RX_LOST
 beacon RX_SET
 
 # led
-led 0 0,0::L:5
-led 1 1,0::L:5
-led 2 2,0::L:5
-led 3 3,0::L:5
-led 4 4,0::L:5
-led 5 5,0::L:0
-led 6 6,0::L:0
-led 7 7,0::L:0
+led 0 0,0::L:0
+led 1 1,0::L:0
+led 2 2,0::L:0
+led 3 3,0::L:1
 
 # color
 color 5 91,0,255
@@ -96,81 +116,94 @@ aux 0 0 0 1700 2100 0 0
 aux 1 1 1 900 2100 0 0
 
 # master
-set gyro_lpf1_static_hz = 0
-set gyro_lpf2_type = PT2
+set gyro_lpf1_static_hz = 200
 set gyro_lpf2_static_hz = 0
-set dyn_notch_count = 2
 set dyn_notch_q = 500
-set dyn_notch_min_hz = 100
+set dyn_notch_min_hz = 80
+set dyn_notch_max_hz = 500
 set gyro_lpf1_dyn_min_hz = 0
 set gyro_lpf1_dyn_max_hz = 0
 set mag_hardware = NONE
 set blackbox_sample_rate = 1/16
-set dshot_idle_value = 600
+set dshot_idle_value = 800
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT600
-set vbat_max_cell_voltage = 422
+set failsafe_delay = 4
 set yaw_motors_reversed = ON
 set small_angle = 180
+set gps_provider = UBLOX
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
+set yaw_deadband = 5
+set simplified_gyro_filter = OFF
+set simplified_gyro_filter_multiplier = 105
 
 #OSD
 set osd_warn_core_temp = OFF
 set osd_warn_rssi = ON
 set osd_warn_over_cap = ON
 set osd_rssi_pos = 2459
-set osd_link_quality_pos = 311
+set osd_link_quality_pos = 2488
 set osd_rssi_dbm_pos = 299
 set osd_tim_2_pos = 405
 set osd_flymode_pos = 2478
 set osd_throttle_pos = 245
 set osd_vtx_channel_pos = 373
-set osd_current_pos = 2401
-set osd_mah_drawn_pos = 2433
-set osd_craft_name_pos = 2542
+set osd_current_pos = 2496
+set osd_mah_drawn_pos = 2528
+set osd_craft_name_pos = 2537
+set osd_gps_speed_pos = 2426
+set osd_gps_sats_pos = 2394
+set osd_home_dir_pos = 2509
+set osd_home_dist_pos = 2510
+set osd_altitude_pos = 18745
 set osd_power_pos = 388
 set osd_warnings_pos = 14732
-set osd_avg_cell_voltage_pos = 2369
-set osd_disarmed_pos = 2336
+set osd_avg_cell_voltage_pos = 2464
+set osd_disarmed_pos = 2432
+set osd_displayport_device = MSP
 
 set debug_mode = GYRO_SCALED
-set osd_displayport_device = MSP
 set displayport_msp_serial = 0
-set name = Nazgul F6
+set rpm_filter_min_hz = 90
+set name = Chimera7 Pro V2
 
 profile 0
 
 # profile 0
-set dterm_lpf1_dyn_min_hz = 90
-set dterm_lpf1_dyn_max_hz = 180
-set dterm_lpf1_static_hz = 0
-set dterm_lpf2_static_hz = 180
-set vbat_sag_compensation = 100
-set anti_gravity_gain = 3000
+set dterm_lpf1_dyn_min_hz = 0
+set dterm_lpf1_dyn_max_hz = 157
+set dterm_lpf1_static_hz = 63
+set dterm_lpf2_static_hz = 127
+set anti_gravity_gain = 2000
 set iterm_relax_cutoff = 10
 set pidsum_limit = 1000
-set p_pitch = 80
-set i_pitch = 136
-set d_pitch = 89
-set f_pitch = 160
-set p_roll = 70
-set i_roll = 118
-set d_roll = 81
-set f_roll = 140
-set p_yaw = 70
-set i_yaw = 118
-set f_yaw = 140
-set d_min_roll = 68
-set d_min_pitch = 73
-set thrust_linear = 20
-set simplified_master_multiplier = 130
-set simplified_i_gain = 95
-set simplified_d_gain = 175
+set pidsum_limit_yaw = 1000
+set yaw_lowpass_hz = 50
+set p_pitch = 99
+set i_pitch = 88
+set d_pitch = 110
+set f_pitch = 142
+set p_roll = 86
+set i_roll = 76
+set d_roll = 88
+set f_roll = 124
+set p_yaw = 100
+set i_yaw = 120
+set f_yaw = 76
+set d_min_roll = 81
+set d_min_pitch = 101
+set thrust_linear = 10
+set simplified_pids_mode = RP
+set simplified_master_multiplier = 160
+set simplified_i_gain = 50
+set simplified_d_gain = 170
 set simplified_pi_gain = 120
-set simplified_dmax_gain = 60
-set simplified_feedforward_gain = 90
-set simplified_pitch_d_gain = 95
+set simplified_dmax_gain = 25
+set simplified_feedforward_gain = 65
+set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
-set simplified_dterm_filter_multiplier = 120
+set simplified_dterm_filter_multiplier = 85
 
 profile 1
 
@@ -182,22 +215,21 @@ profile 0
 rateprofile 0
 
 # rateprofile 0
-set thr_mid = 40
-set thr_expo = 30
-set roll_rc_rate = 12
-set pitch_rc_rate = 12
-set yaw_rc_rate = 10
-set roll_expo = 20
-set pitch_expo = 20
-set yaw_expo = 20
+set roll_rc_rate = 18
+set pitch_rc_rate = 18
+set yaw_rc_rate = 18
+set roll_expo = 70
+set pitch_expo = 70
+set yaw_expo = 70
+set roll_srate = 75
+set pitch_srate = 75
+set yaw_srate = 75
 set tpa_rate = 50
-set tpa_breakpoint = 1280
+set tpa_breakpoint = 1200
 
 rateprofile 1
 
 # rateprofile 1
-set tpa_rate = 50
-set tpa_breakpoint = 1280
 
 rateprofile 2
 
@@ -211,10 +243,6 @@ rateprofile 5
 rateprofile 0
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Dynamic Idle (default)
-set dyn_idle_min_rpm = 35
-#$ OPTION END
-
 #$ OPTION BEGIN (UNCHECKED): CRSF/ELRS Receiver
 set serialrx_provider = CRSF
 #$ OPTION END
@@ -223,64 +251,8 @@ set serialrx_provider = CRSF
 set serialrx_provider = SBUS
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): HD DJI VTX
-# serial
-serial 0 1 115200 57600 0 115200
-serial 5 1024 115200 57600 0 115200
-#$ OPTION END
-
-#$ OPTION BEGIN (UNCHECKED): ANALOG VTX
-# serial
-serial 0 8192 115200 57600 0 115200
-serial 5 1024 115200 57600 0 115200
-#defaultpower
-set vtx_band = 5
-set vtx_channel = 3
-set vtx_power = 1
-set vtx_freq = 5732
-# vtxtable
-vtxtable bands 5
-vtxtable channels 8
-vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
-vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
-vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665    0 5885 5905    0    0
-vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
-vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
-vtxtable powerlevels 4
-vtxtable powervalues 25 400 800 1600
-vtxtable powerlabels 25 400 800 1.6
-set osd_warn_core_temp = OFF
-set osd_warn_no_gps_rescue = OFF
-set osd_warn_rssi = ON
-set osd_rssi_pos = 2390
-set osd_link_quality_pos = 2358
-set osd_rssi_dbm_pos = 299
-set osd_tim_2_pos = 2453
-set osd_flymode_pos = 2445
-set osd_vtx_channel_pos = 2421
-set osd_current_pos = 2400
-set osd_mah_drawn_pos = 2432
-set osd_craft_name_pos = 2474
-set osd_warnings_pos = 14698
-set osd_avg_cell_voltage_pos = 2369
-set osd_disarmed_pos = 2336
-set osd_stat_max_spd = OFF
-#$ OPTION END
-
-#$ OPTION BEGIN (CHECKED): GPS functionality (default)
-#feature
-feature GPS
-#serial
-serial 3 2 115200 115200 0 115200
-#master
-set gps_provider = UBLOX
-set gps_ublox_use_galileo = ON
-#OSD
-set osd_gps_speed_pos = 2362
-set osd_gps_sats_pos = 2394
-set osd_home_dir_pos = 2510
-set osd_home_dist_pos = 2511
-set osd_altitude_pos = 2327
+#$ OPTION BEGIN (UNCHECKED): 48kHz PWM Speed (optional)
+set thrust_linear = 20
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): GPS Rescue (experimental)
