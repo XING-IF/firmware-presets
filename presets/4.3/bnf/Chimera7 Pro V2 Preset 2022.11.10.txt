@@ -22,14 +22,14 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png"><img src="https://user-images.githubusercontent.com/31681897/183231921-b4f3f315-a259-4e1c-a315-b9ed5dc0c11b.png" width="200px" style="display: block; float: right;"/></a>
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/184627696-84318f23-9bfe-4671-b7a8-90ff757785c0.png"><img src="https://user-images.githubusercontent.com/31681897/184627696-84318f23-9bfe-4671-b7a8-90ff757785c0.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/202650342-80b76db3-e39c-40ff-817d-e43051a923cf.png"><img src="https://user-images.githubusercontent.com/31681897/202650342-80b76db3-e39c-40ff-817d-e43051a923cf.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: * Use the recommended factory settings! 
 #$ DESCRIPTION: * HD use BLHeli32: Motor timing 18 (high) or 20 (aggressive)
-#$ DESCRIPTION: * 24kHz PWM speed usually has more authority than 48kHz.
-#$ DESCRIPTION: * You can use 48kHz for longer flight times!
-#$ DESCRIPTION: * 48kHz PWM option adds thrust_linear
-#$ DESCRIPTION: * GPS functionality; enables the GPS module and OSD value【因为C7 Pro V2 默认带了GPS，所以要提醒一下客户，我们默认出货就是有GPS functionality的设置】
+#$ DESCRIPTION: * 48kHz PWM option adds thrust_linear!
+#$ DESCRIPTION: * Select your PWM speed setting below if necessary:
+#$ DESCRIPTION: * 16kHz-byRPM for best motor response, lowest efficiency. For max. stability, strong wind or freestyle but can have less flight time.
+#$ DESCRIPTION: * 24kHz-byRPM (default) for perfect balance of stability and efficiency.
+#$ DESCRIPTION: * 48kHz-byRPM for lower stability, best efficiency. For max. flight time, but can have some wobbles.
 #$ DESCRIPTION:
 #$ DESCRIPTION: Radio Setup: 
 #$ DESCRIPTION: ------------

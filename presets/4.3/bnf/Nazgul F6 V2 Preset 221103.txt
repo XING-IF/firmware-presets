@@ -1,4 +1,4 @@
-#$ TITLE: Nazgul F6 V2 BLITZ tune RC1
+#$ TITLE: Nazgul F6 V2 RC1
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
@@ -26,12 +26,13 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/187441506-9528300c-c605-4128-a935-672ec1672255.png"><img src="https://user-images.githubusercontent.com/31681897/187441506-9528300c-c605-4128-a935-672ec1672255.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/202650316-86e29882-e4de-4119-b414-273151335970.png"><img src="https://user-images.githubusercontent.com/31681897/202650316-86e29882-e4de-4119-b414-273151335970.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: * Use the recommended factory settings! 
 #$ DESCRIPTION: * HD use BLHeli32: Motor timing 20 (high) or 23 (aggressive)
-#$ DESCRIPTION: * 24kHz PWM speed usually has more authority than 48kHz.
-#$ DESCRIPTION: * You can use 48kHz for longer flight times!
-#$ DESCRIPTION: * 【如果你的飞行环境风力较大，达到了4级或以上，可设置电调频率为16K-By RPM，这将让你的机子有更快的响应从而让机身姿态更加稳定；如果你的飞行环境有微风，且你是Freestyle Pilot，可以设置电调频率为24K-By RPM，这将让你的机子比16K有更长的续航；如果你是Longrange Pilot，可以设置电调频率为48K-By RPM，这将让机子的飞行最优效率，达到最高性能的续航时间】
+#$ DESCRIPTION: * Select your PWM speed setting below if necessary:
+#$ DESCRIPTION: * 16kHz-byRPM for best motor response, lowest efficiency. For max. stability, strong wind or freestyle but can have less flight time.
+#$ DESCRIPTION: * 24kHz-byRPM (default) for perfect balance of stability and efficiency.
+#$ DESCRIPTION: * 48kHz-byRPM for lower stability, best efficiency. For max. flight time, but can have some wobbles.
 #$ DESCRIPTION:
 #$ DESCRIPTION: Radio Setup: 
 #$ DESCRIPTION: ------------

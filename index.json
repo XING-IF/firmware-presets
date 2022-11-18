@@ -735,7 +735,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Chimera7 Pro V2 Preset 2022.11.10.txt",
-      "hash": "dc2adbc45134b1f5532c5e36faadf164074eff4b26c8413e62c8ec12fbb7f5f1",
+      "hash": "5348b66d79bc4ef6a5967b8977009ac546c6ae1d2fecb85b5697a5c772027ff3",
       "title": "Chimera7 Pro V2 RC1",
       "firmware_version": [
         "4.3"
@@ -809,8 +809,8 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F5 V2 Preset 2022.10.28.txt",
-      "hash": "bc5709be8510772ebd424b3ae00db6dfbbc89028d051d52c29432857158cc866",
-      "title": "Nazgul F5 V2 BLITZ XINGtune RC1",
+      "hash": "a1e92c82014b271fa14994c0f6a96b925f4b34908af853a974e6cea587421ba5",
+      "title": "Nazgul F5 V2 RC1",
       "firmware_version": [
         "4.3"
       ],
@@ -846,8 +846,8 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F6 V2 Preset 221103.txt",
-      "hash": "20c823981c80f9cde01ddbe053016eaadc7e42d48cd8615263d4292ec2adc697",
-      "title": "Nazgul F6 V2 BLITZ tune RC1",
+      "hash": "945d88fa66f50169b6320b1ac34bd25f5e2f0c4a8ce5bf4e5fe8132a13a5a0b8",
+      "title": "Nazgul F6 V2 RC1",
       "firmware_version": [
         "4.3"
       ],
