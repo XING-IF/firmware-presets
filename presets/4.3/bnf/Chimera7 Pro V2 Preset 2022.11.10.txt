@@ -166,7 +166,7 @@ set osd_displayport_device = MSP
 set debug_mode = GYRO_SCALED
 set displayport_msp_serial = 0
 set rpm_filter_min_hz = 90
-set name = Chimera7 Pro V2
+set name = Chimera7 PROv2
 
 profile 0
 

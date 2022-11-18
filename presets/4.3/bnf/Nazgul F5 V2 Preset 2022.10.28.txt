@@ -137,7 +137,7 @@ set debug_mode = GYRO_SCALED
 set osd_displayport_device = MSP
 set displayport_msp_serial = 0
 set rpm_filter_fade_range_hz = 80
-set name = Nazgul F5 V2
+set name = Nazgul F5v2
 
 profile 0
 

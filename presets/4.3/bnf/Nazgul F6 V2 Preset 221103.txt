@@ -137,7 +137,7 @@ set osd_disarmed_pos = 2336
 set debug_mode = GYRO_SCALED
 set osd_displayport_device = MSP
 set displayport_msp_serial = 0
-set name = Nazgul F6
+set name = Nazgul F6v2
 
 profile 0
 
