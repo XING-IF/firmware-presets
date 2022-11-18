@@ -28,12 +28,13 @@
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/202650262-92aff478-aa2a-43e9-894c-68a4bc6cc47e.png"><img src="https://user-images.githubusercontent.com/31681897/202650262-92aff478-aa2a-43e9-894c-68a4bc6cc47e.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/202656400-6483a983-007e-4701-8005-01d5a8c74311.png"><img src="https://user-images.githubusercontent.com/31681897/202656400-6483a983-007e-4701-8005-01d5a8c74311.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: * Use the recommended factory settings! 
 #$ DESCRIPTION: * HD use BLHeli32: Motor timing 20 (high) or 23 (aggressive)
 #$ DESCRIPTION: * Analog use Bluejay: Motor timing 15
 #$ DESCRIPTION: * 24kHz PWM speed usually has more authority than 48kHz.
 #$ DESCRIPTION: * You can use 48kHz for longer flight times!
-#$ DESCRIPTION: * 48kHz PWM option adds thrust_linear
+#$ DESCRIPTION: * 48kHz PWM option adds thrust_linear.
 #$ DESCRIPTION:
 #$ DESCRIPTION: Radio Setup: 
 #$ DESCRIPTION: ------------
