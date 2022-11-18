@@ -24,7 +24,7 @@
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/202650342-80b76db3-e39c-40ff-817d-e43051a923cf.png"><img src="https://user-images.githubusercontent.com/31681897/202650342-80b76db3-e39c-40ff-817d-e43051a923cf.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: * Use the recommended factory settings! 
-#$ DESCRIPTION: * HD use BLHeli32: Motor timing 18 (high) or 20 (aggressive)
+#$ DESCRIPTION: * Motor timing 18 (high) or 20 (aggressive)
 #$ DESCRIPTION: * 48kHz PWM option adds thrust_linear!
 #$ DESCRIPTION: * Select your PWM speed setting below if necessary:
 #$ DESCRIPTION: * 16kHz-byRPM for best motor response, lowest efficiency. For max. stability, strong wind or freestyle but can have less flight time.

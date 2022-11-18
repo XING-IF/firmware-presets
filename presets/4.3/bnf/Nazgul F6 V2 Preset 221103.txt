@@ -28,7 +28,8 @@
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/202650316-86e29882-e4de-4119-b414-273151335970.png"><img src="https://user-images.githubusercontent.com/31681897/202650316-86e29882-e4de-4119-b414-273151335970.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: * Use the recommended factory settings! 
-#$ DESCRIPTION: * HD use BLHeli32: Motor timing 20 (high) or 23 (aggressive)
+#$ DESCRIPTION: * Motor timing 20 (high) or 23 (aggressive)
+#$ DESCRIPTION: * 48kHz PWM option adds thrust_linear!
 #$ DESCRIPTION: * Select your PWM speed setting below if necessary:
 #$ DESCRIPTION: * 16kHz-byRPM for best motor response, lowest efficiency. For max. stability, strong wind or freestyle but can have less flight time.
 #$ DESCRIPTION: * 24kHz-byRPM (default) for perfect balance of stability and efficiency.
@@ -266,6 +267,10 @@ set osd_warnings_pos = 14698
 set osd_avg_cell_voltage_pos = 2369
 set osd_disarmed_pos = 2336
 set osd_stat_max_spd = OFF
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 48kHz PWM Speed (optional)
+set thrust_linear = 20
 #$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): GPS functionality (default)

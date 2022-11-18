@@ -735,7 +735,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Chimera7 Pro V2 Preset 2022.11.10.txt",
-      "hash": "5348b66d79bc4ef6a5967b8977009ac546c6ae1d2fecb85b5697a5c772027ff3",
+      "hash": "6fbde4d87a103e35abcefdb87edc99b229bd3b95c8fff67e7b51eebb3ce717d2",
       "title": "Chimera7 Pro V2 RC1",
       "firmware_version": [
         "4.3"
@@ -846,7 +846,7 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F6 V2 Preset 221103.txt",
-      "hash": "945d88fa66f50169b6320b1ac34bd25f5e2f0c4a8ce5bf4e5fe8132a13a5a0b8",
+      "hash": "bc9a389aa9e961dec2e5c066487f670af51c4b5eb5f65de693defd1a1e09748d",
       "title": "Nazgul F6 V2 RC1",
       "firmware_version": [
         "4.3"
