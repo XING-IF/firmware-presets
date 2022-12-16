@@ -201,6 +201,7 @@
       "AlexFPV",
       "Alpha A85",
       "analog",
+      "AOS 5，AOS",
       "Audio TBS",
       "aux",
       "baby nazgul",
@@ -209,8 +210,8 @@
       "betaflight",
       "blackbox",
       "BMSThomas",
-      "bob",
-      "bob57",
+      "BOB",
+      "BOB57",
       "C7 Pro V2",
       "camera",
       "camera_control",
@@ -711,6 +712,41 @@
         "iflight",
         "Alpha A85",
         "A85"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/AOS 5 Preset 2022.12.15.txt",
+      "hash": "02402a2c3cb31c30f117b3acdde3b8aaa42b3780ea7f7fe274d67f6de56de873",
+      "title": "AOS 5 BLITZ RC1",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "XING",
+        "iFlight",
+        "AOS 5，AOS"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/BOB57 Preset 2022.12.14.txt",
+      "hash": "a16ebd4ddbe96ec286d66c54b544176bd9d7a50ae281367d67baf4c8a5fec95c",
+      "title": "BOB57 RC1 NEW",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "XING",
+        "iFlight",
+        "BOB57",
+        "BOB"
       ],
       "author": "Patrick XING (iFlight)",
       "priority": 0

@@ -1,0 +1,286 @@
+#$ TITLE: BOB57 RC1 NEW
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: XING, iFlight, BOB57, BOB
+#$ AUTHOR: Patrick XING (iFlight)
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: This is the official iFlight factory tune (4.3 XINGtune) for the BOB57 BLITZ FC Version!
+#$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION:
+#$ DESCRIPTION: Factory Dump Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: XING 2022.12.14 (Only for BLITZ BMI270 FCs)
+#$ DESCRIPTION:
+#$ DESCRIPTION: BNF Build Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* BLITZ Stack (BMI270) 2022.12-
+#$ DESCRIPTION:
+#$ DESCRIPTION: Recommended ESC Settings:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/202650342-80b76db3-e39c-40ff-817d-e43051a923cf.png"><img src="https://user-images.githubusercontent.com/31681897/202650342-80b76db3-e39c-40ff-817d-e43051a923cf.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: * Use the recommended factory settings! 
+#$ DESCRIPTION: * Motor timing 23 (aggressive)
+#$ DESCRIPTION: * Select your PWM speed setting below if necessary:
+#$ DESCRIPTION: * 16kHz-byRPM for best motor response, lowest efficiency. For max. stability, strong wind or freestyle but can have less flight time.
+#$ DESCRIPTION: * 24kHz-byRPM (default) for perfect balance of stability and efficiency.
+#$ DESCRIPTION: * 48kHz-byRPM for lower stability, best efficiency. For max. flight time, but can have some wobbles.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Radio Setup: 
+#$ DESCRIPTION: ------------
+#$ DESCRIPTION: * Tuned with TBS Tango2 Crossfire (firmware 6.17), Nano RX 50hz locked, CRSF 50hz preset
+#$ DESCRIPTION: * **Do NOT** use CRSF dynamic RF-mode!
+#$ DESCRIPTION: * **Manually** apply your receiver protocol!
+#$ DESCRIPTION: * **Do NOT forget to apply** the BF 4.3 RC_LINK preset for your protocol and packet rate!
+#$ DESCRIPTION: * Wrong configuration for your packet rate can cause noisy inputs or issues with your gyro setpoint!
+#$ DESCRIPTION:
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png"><img src="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png" height="100px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png"><img src="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png" height="100px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: GPS Options:
+#$ DESCRIPTION: ---------------
+#$ DESCRIPTION: * GPS functionality enabled by default!
+#$ DESCRIPTION: * GPS Rescue; Enables the Failsafe GPS Rescue feature (Min. 5 sats to arm)
+#$ DESCRIPTION: * Do your research about GPS Rescue! **Use at your own risk!**
+#$ DESCRIPTION:
+#$ DESCRIPTION: Tuning aspects:
+#$ DESCRIPTION: ---------------
+#$ DESCRIPTION: * PID tuning with minimal overshoot, minimum Setpoint delay
+#$ DESCRIPTION: * Smooth forward flights with bigger batteries
+#$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
+#$ DESCRIPTION: * Priorized flight performance over flight time
+#$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
+#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
+#$ OPTION BEGIN (CHECKED): Reset (default)
+defaults nosave
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Restore Settings (default)
+board_name IFLIGHT_BLITZ_F722
+
+# name: BOB57
+
+# timer
+timer A00 AF2
+# pin A00: TIM5 CH1 (AF2)
+timer C06 AF3
+# pin C06: TIM8 CH1 (AF3)
+timer C07 AF3
+# pin C07: TIM8 CH2 (AF3)
+timer A01 AF1
+# pin A01: TIM2 CH2 (AF1)
+
+# dma
+dma pin A00 0
+# pin A00: DMA1 Stream 2 Channel 6
+dma pin C06 0
+# pin C06: DMA2 Stream 2 Channel 0
+dma pin C07 1
+# pin C07: DMA2 Stream 3 Channel 7
+dma pin A01 0
+# pin A01: DMA1 Stream 6 Channel 3
+
+# feature
+feature -RX_PARALLEL_PWM
+feature GPS
+feature LED_STRIP
+
+# serial
+serial 0 1 115200 57600 0 115200
+serial 3 2 115200 115200 0 115200
+serial 5 1024 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# led
+led 0 0,0::L:0
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 900 2100 0 0
+
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 0
+set dyn_notch_count = 2
+set dyn_notch_min_hz = 90
+set gyro_lpf1_dyn_min_hz = 150
+set gyro_lpf1_dyn_max_hz = 300
+set mag_hardware = NONE
+set blackbox_sample_rate = 1/16
+set dshot_idle_value = 650
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT600
+set motor_output_reordering = 3,2,1,0,4,5,6,7
+set vbat_max_cell_voltage = 422
+set yaw_motors_reversed = ON
+set small_angle = 180
+set yaw_deadband = 5
+set simplified_gyro_filter_multiplier = 60
+
+#OSD
+set osd_warn_rssi = ON
+set osd_warn_link_quality = ON
+set osd_warn_rssi_dbm = ON
+set osd_warn_over_cap = ON
+set osd_rssi_pos = 2459
+set osd_link_quality_pos = 2488
+set osd_rssi_dbm_pos = 299
+set osd_tim_2_pos = 405
+set osd_flymode_pos = 2478
+set osd_throttle_pos = 245
+set osd_vtx_channel_pos = 373
+set osd_current_pos = 2496
+set osd_mah_drawn_pos = 2528
+set osd_craft_name_pos = 2539
+set osd_home_dir_pos = 2509
+set osd_home_dist_pos = 2510
+set osd_altitude_pos = 2327
+set osd_power_pos = 388
+set osd_warnings_pos = 14732
+set osd_avg_cell_voltage_pos = 2464
+set osd_disarmed_pos = 2432
+set osd_stat_endbatt = ON
+set osd_stat_battery = ON
+set osd_stat_max_alt = ON
+set osd_stat_min_link_quality = ON
+set osd_stat_total_flights = ON
+set osd_stat_total_time = ON
+set osd_stat_total_dist = ON
+set osd_stat_min_rssi_dbm = ON
+
+set debug_mode = GYRO_SCALED
+set rpm_filter_min_hz = 80
+set name = BOB57
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_min_hz = 82
+set dterm_lpf1_dyn_max_hz = 165
+set dterm_lpf1_static_hz = 82
+set dterm_lpf2_static_hz = 165
+set vbat_sag_compensation = 100
+set anti_gravity_gain = 4000
+set iterm_relax_cutoff = 8
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set p_pitch = 85
+set i_pitch = 91
+set d_pitch = 77
+set f_pitch = 170
+set p_roll = 74
+set i_roll = 79
+set d_roll = 64
+set f_roll = 148
+set p_yaw = 74
+set i_yaw = 79
+set f_yaw = 148
+set d_min_roll = 61
+set d_min_pitch = 73
+set d_max_advance = 0
+set thrust_linear = 10
+set simplified_master_multiplier = 165
+set simplified_i_gain = 60
+set simplified_d_gain = 125
+set simplified_dmax_gain = 15
+set simplified_feedforward_gain = 75
+set simplified_pitch_d_gain = 105
+set simplified_pitch_pi_gain = 110
+set simplified_dterm_filter_multiplier = 110
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set thr_mid = 40
+set thr_expo = 40
+set roll_rc_rate = 12
+set pitch_rc_rate = 12
+set yaw_rc_rate = 12
+set roll_expo = 20
+set pitch_expo = 20
+set yaw_expo = 20
+set tpa_rate = 60
+set tpa_breakpoint = 1300
+
+rateprofile 1
+
+# rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): CRSF/ELRS Receiver
+set serialrx_provider = CRSF
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): SBUS/DJI Receiver
+set serialrx_provider = SBUS
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): HD DJI O3 VTX
+# serial
+serial 0 1 115200 57600 0 115200
+serial 3 2 115200 115200 0 115200
+#OSD
+set osd_displayport_device = MSP
+set displayport_msp_serial = 0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): HD DJI VISTA VTX
+# serial
+serial 0 1 115200 57600 0 115200
+serial 3 2 115200 115200 0 115200
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): GPS functionality （default）
+#feature
+feature GPS
+#serial
+serial 5 1024 115200 57600 0 115200
+#master
+set gps_provider = UBLOX
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
+#OSD
+set osd_gps_speed_pos = 2426
+set osd_gps_sats_pos = 2394
+set osd_home_dir_pos = 2509
+set osd_home_dist_pos = 2510
+set osd_altitude_pos = 2327
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): GPS Rescue (experimental)
+set failsafe_procedure = GPS-RESCUE
+set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
+set gps_rescue_min_sats = 5
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Li-ion battery (experimental)
+# master
+set vbat_warning_cell_voltage = 300
+#OSD
+set osd_cap_alarm = 8000
+#$ OPTION END
