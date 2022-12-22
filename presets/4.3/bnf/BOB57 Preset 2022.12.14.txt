@@ -1,4 +1,4 @@
-#$ TITLE: BOB57 RC1 NEW
+#$ TITLE: BOB57 RC1
 #$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
@@ -19,6 +19,11 @@
 #$ DESCRIPTION: BNF Build Version:
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION:* BLITZ Stack (BMI270) 2022.12-
+#$ DESCRIPTION:
+#$ DESCRIPTION: Li-ion battery notice!
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* A lithium-ion or Li-ion battery can discharge to a lower voltage than a regular LiPo.
+#$ DESCRIPTION:* We've added an option to drop the threshold for OSD Warnings to an more accurate Voltage range.
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
@@ -278,7 +283,7 @@ set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
 set gps_rescue_min_sats = 5
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): Li-ion battery (experimental)
+#$ OPTION BEGIN (UNCHECKED): Li-ion battery 3.0V Warning
 # master
 set vbat_warning_cell_voltage = 300
 #OSD
