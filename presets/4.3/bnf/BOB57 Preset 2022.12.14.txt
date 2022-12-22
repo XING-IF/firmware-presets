@@ -285,7 +285,7 @@ set gps_rescue_min_sats = 5
 
 #$ OPTION BEGIN (UNCHECKED): Li-ion battery 3.0V Warning
 # master
-set vbat_warning_cell_voltage = 300
+set vbat_warning_cell_voltage = 315
 #OSD
 set osd_cap_alarm = 8000
 #$ OPTION END
