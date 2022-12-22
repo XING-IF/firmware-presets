@@ -22,7 +22,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/202650342-80b76db3-e39c-40ff-817d-e43051a923cf.png"><img src="https://user-images.githubusercontent.com/31681897/202650342-80b76db3-e39c-40ff-817d-e43051a923cf.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/209107284-15085bcd-40b0-4657-b06d-928e9e9117c1.jpg"><img src="https://user-images.githubusercontent.com/31681897/209107284-15085bcd-40b0-4657-b06d-928e9e9117c1.jpg" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: * Use the recommended factory settings! 
 #$ DESCRIPTION: * Motor timing 23 (aggressive)
 #$ DESCRIPTION: * Select your PWM speed setting below if necessary:
