@@ -752,24 +752,6 @@
       "priority": 0
     },
     {
-      "fullPath": "presets/4.3/bnf/BOB57.txt",
-      "hash": "cd36217aa29289c4cc165da1defcca2b9c8d4f5a651d593858d8531e15033a7c",
-      "title": "BOB57",
-      "firmware_version": [
-        "4.3"
-      ],
-      "category": "BNF",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "xing",
-        "iflight",
-        "bob",
-        "bob57"
-      ],
-      "author": "Patrick XING (iFlight)",
-      "priority": 0
-    },
-    {
       "fullPath": "presets/4.3/bnf/Chimera7 Pro V2 Preset 2022.11.18.txt",
       "hash": "a1439bddc5ddce4231a525358042fad4230c4bb7fe949f4865ca200571797a09",
       "title": "Chimera7 Pro V2 RC1",
