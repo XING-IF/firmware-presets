@@ -28,14 +28,20 @@
 #$ DESCRIPTION: * 24kHz PWM speed usually has more authority than 48kHz.
 #$ DESCRIPTION: * You can use 48kHz for longer flight times!
 #$ DESCRIPTION:
-#$ DESCRIPTION:（需要说明一下我们有两种电池，参数可以通用；需要说明CRSF 50Hz和ELRS 250Hz的信息，加上解释）
-#$ DESCRIPTION:
-#$ DESCRIPTION: Radio Setup: 
+#$ DESCRIPTION: ExpressLRS (ELRS) Setup: 
 #$ DESCRIPTION: ------------
-#$ DESCRIPTION: * Tuned with TBS Tango2 Crossfire (firmware 6.17), Nano RX 50hz locked, CRSF 50hz preset
+#$ DESCRIPTION: * Recommended to use 250hz packet rate!
+#$ DESCRIPTION: * This preset already includes a tested option
+#$ DESCRIPTION: * Please setup your Radio or TX module accordingly (ELRS Lua Script)
+#$ DESCRIPTION: * Wrong configuration for your packet rate can cause noisy inputs or issues with your gyro setpoint!
+#$ DESCRIPTION:
+#$ DESCRIPTION: TBS Crossfire Setup: 
+#$ DESCRIPTION: ------------
+#$ DESCRIPTION: * Recommended to use 50hz locked packet rate!
 #$ DESCRIPTION: * **Do NOT** use CRSF dynamic RF-mode!
-#$ DESCRIPTION: * **Manually** apply your receiver protocol!
-#$ DESCRIPTION: * **Do NOT forget to apply** the BF 4.3 RC_LINK preset for your protocol and packet rate!
+#$ DESCRIPTION: * This preset already includes a tested option
+#$ DESCRIPTION: * Please setup your Tango2 or TX module accordingly (TBS Lua Script)
+#$ DESCRIPTION: * Tested with TBS Tango2 Crossfire (firmware 6.17)
 #$ DESCRIPTION: * Wrong configuration for your packet rate can cause noisy inputs or issues with your gyro setpoint!
 #$ DESCRIPTION:
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png"><img src="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png" height="100px" style="display: block; float: right;"/></a>
@@ -83,8 +89,6 @@ led 0 0,0::L:8
 # aux
 aux 0 0 0 1700 2100 0 0
 aux 1 1 1 900 2100 0 0
-aux 2 40 7 900 2100 0 0
-aux 3 41 8 1725 2100 0 0
 
 # master
 set gyro_lpf1_static_hz = 337
@@ -195,6 +199,14 @@ rateprofile 5
 
 # restore original rateprofile selection
 rateprofile 0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): User1 VTX Switch
+aux 2 40 7 900 2100 0 0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): User2 GoPro Control
+aux 3 41 8 1725 2100 0 0
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): CRSF 50Hz Cinematic
