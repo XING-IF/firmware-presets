@@ -20,6 +20,16 @@
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION:* BLITZ AIO (ICM42688P) 2023.1-
 #$ DESCRIPTION:
+#$ DESCRIPTION: Modes User1 & User2 Controls:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: * Simply setup an AUX switch on your radio to control.
+#$ DESCRIPTION: * Can be accessed in your Betaflight Configurator, Modes Tab.
+#$ DESCRIPTION: * User1 controls the VTX Power Switch; Preventing the DJI O3 from overheating.
+#$ DESCRIPTION: * User1 inactive = VTX Power OFF; User1 active = VTX Power ON.
+#$ DESCRIPTION: * In case you need to wait for the Director GO or just simply got stuck in a tree.
+#$ DESCRIPTION: * User2 can control a naked GoPro or GoPro Bones.
+#$ DESCRIPTION: * Start or Stop recording with a momentary AUX switch.
+#$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/210650365-ade0eff1-05b8-4e82-9cfe-a9c55a33ce29.png"><img src="https://user-images.githubusercontent.com/31681897/210650365-ade0eff1-05b8-4e82-9cfe-a9c55a33ce29.png" width="200px" style="display: block; float: right;"/></a>
@@ -201,12 +211,14 @@ rateprofile 5
 rateprofile 0
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): User1 VTX Switch
-aux 2 40 7 900 2100 0 0
+#$ OPTION BEGIN (CHECKED): Modes User1 VTX Switch
+# Default AUX 9; Please change if necessary!
+aux 2 40 8 900 2100 0 0
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): User2 GoPro Control
-aux 3 41 8 1725 2100 0 0
+#$ OPTION BEGIN (UNCHECKED): Modes User2 GoPro Control
+# Default AUX 10; Please change if necessary!
+aux 3 41 9 1725 2100 0 0
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): CRSF 50Hz Cinematic

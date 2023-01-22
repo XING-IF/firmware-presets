@@ -20,6 +20,13 @@
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION:* BLITZ AIO (BMI270) 2023.1-
 #$ DESCRIPTION:
+#$ DESCRIPTION: Modes User2 Controls:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: * Simply setup an AUX switch on your radio to control.
+#$ DESCRIPTION: * Can be accessed in your Betaflight Configurator, Modes Tab.
+#$ DESCRIPTION: * User2 can control a naked GoPro or GoPro Bones.
+#$ DESCRIPTION: * Start or Stop recording with a momentary AUX switch.
+#$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/210650349-1c7bc6b4-00be-461d-a837-3166fdf2e016.png"><img src="https://user-images.githubusercontent.com/31681897/210650349-1c7bc6b4-00be-461d-a837-3166fdf2e016.png" width="200px" style="display: block; float: right;"/></a>
@@ -84,7 +91,6 @@ led 0 0,0::L:0
 # aux
 aux 0 0 0 1700 2100 0 0
 aux 1 1 1 900 2100 0 0
-aux 2 41 8 1700 2100 0 0
 
 # vtxtable
 vtxtable bands 5
@@ -206,6 +212,11 @@ rateprofile 5
 
 # restore original rateprofile selection
 rateprofile 0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Modes User2 GoPro Control
+# Default AUX 10; Please change if necessary!
+aux 2 41 9 1700 2100 0 0
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): CRSF 50Hz Cinematic
