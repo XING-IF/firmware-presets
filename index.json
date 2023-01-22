@@ -794,8 +794,8 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Defender 25 Analog Preset 2023.1.4.txt",
-      "hash": "b5f819bcb9762de48901f78cfad937ccbf34e0ec3725d9f688d977e0abe73ccf",
-      "title": "Defender 25 Analog RC1",
+      "hash": "8e81a909ea3a2ed659bb10107a591913bfcbe01ee999e6112577ffaede745733",
+      "title": "Defender 25 Analog RC2",
       "firmware_version": [
         "4.3"
       ],
@@ -813,8 +813,8 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Defender 25 HD Preset 2023.1.5 .txt",
-      "hash": "fbdc29e604f0639ada6a2212fd2567dc53524d110de0830a3df7d9c86087accb",
-      "title": "Defender 25 HD RC1",
+      "hash": "7f4af4ee008756a84c7d25ecde3d559c8e1893f03373fd1c756a9219100bb5a4",
+      "title": "Defender 25 HD RC2",
       "firmware_version": [
         "4.3"
       ],
