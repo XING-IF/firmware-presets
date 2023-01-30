@@ -1,7 +1,8 @@
 #$ TITLE: Redpine 666Hz
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: RC_LINK
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: Redpine, rc, link, 666Hz
 #$ AUTHOR: ctzsnooze
 #$ DESCRIPTION: Basic RC link settings for a 666Hz Redpine SPI link on a Deviation Tx

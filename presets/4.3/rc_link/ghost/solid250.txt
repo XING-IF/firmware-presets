@@ -1,7 +1,8 @@
 #$ TITLE: IRC Ghost (Solid250)
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: RC_LINK
-#$ STATUS: EXPERIMENTAL
+#$ STATUS: OFFICIAL
 #$ KEYWORDS: 250Hz, Solid250, ghost, rc, rx , link, ghost, IRC, GHST, immersionRC, immersion
 #$ AUTHOR: Ivan Efimov (Limon)
 

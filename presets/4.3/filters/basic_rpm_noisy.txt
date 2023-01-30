@@ -1,8 +1,9 @@
 #$ TITLE: 4.3 Filter settings for NOISY build with RPM FILTERING.
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: FILTERS
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: rpm, DShot telemetry, filter, filters, noisy, basic, default, betaflight
+#$ KEYWORDS: rpm, DShot telemetry, filter, filters, noisy, basic, betaflight
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: WARNING: Ensure that DShot Telemetry is working properly!
 #$ DESCRIPTION: Intended for slightly beaten up, or larger (7" and above), builds.
@@ -20,7 +21,7 @@ set gyro_lpf1_dyn_min_hz = 0
 set gyro_lpf1_dyn_max_hz = 250
 set gyro_lpf1_static_hz = 0
 set gyro_lpf2_static_hz = 250
- 
+
 # -- Gyro Sliders (on by default) --
 # only lpf2 is active
 set simplified_gyro_filter_multiplier = 50

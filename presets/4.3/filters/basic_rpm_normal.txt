@@ -1,8 +1,9 @@
 #$ TITLE: 4.3 Filter settings for NORMAL build with RPM FILTERING.
 #$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: FILTERS
 #$ STATUS: OFFICIAL
-#$ KEYWORDS: rpm, DShot telemetry, filter, filters, normal, basic, default, betaflight
+#$ KEYWORDS: rpm, DShot telemetry, filter, filters, normal, basic, betaflight
 #$ AUTHOR: Betaflight
 #$ DESCRIPTION: Intended for a well maintained build in good condition with RPM filtering.
 #$ DESCRIPTION: WARNING: Ensure that DShot Telemetry is working properly!
