@@ -3729,6 +3729,27 @@
       "priority": 1000000
     },
     {
+      "fullPath": "presets/4.4/bnf/Chimera7 Pro V2 Preset 2023.01.30.txt",
+      "hash": "b90c40ffdc1fc876526fbb0fb4a2d6151fd78602a1e10352475af078eb36216e",
+      "title": "Chimera7 Pro V2 RC1",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "Chimera",
+        "Chimera7",
+        "Chimera7 Pro",
+        "Chimera7 Pro V2",
+        "C7 Pro V2"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.4/other/Street_League_motor_outputs.txt",
       "hash": "818ab0552ce3e055e2b3157551b5bc1eb31bd6c1a39ec54fb748f2cb378023e8",
       "title": "Street League Motor Output Limit Settings",
