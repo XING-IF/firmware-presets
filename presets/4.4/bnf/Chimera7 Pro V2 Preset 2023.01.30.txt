@@ -58,6 +58,8 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Tuning aspects:
 #$ DESCRIPTION: ---------------
+#$ DESCRIPTION: * Contains 2 PID profiles called STANDARD and PERFORM.
+#$ DESCRIPTION: * STANDARD is default, PERFORM is more aggressive.
 #$ DESCRIPTION: * PID tuning with minimal overshoot, minimum Setpoint delay
 #$ DESCRIPTION: * Smooth forward flights with bigger batteries
 #$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
