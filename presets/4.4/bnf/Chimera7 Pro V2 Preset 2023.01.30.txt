@@ -96,7 +96,6 @@ dma pin A01 0
 # feature
 feature -RX_PARALLEL_PWM
 feature TELEMETRY
-feature GPS
 feature LED_STRIP
 
 # serial
@@ -129,61 +128,52 @@ set dyn_notch_min_hz = 80
 set dyn_notch_max_hz = 500
 set gyro_lpf1_dyn_min_hz = 0
 set gyro_lpf1_dyn_max_hz = 0
-set mag_hardware = NONE
 set blackbox_sample_rate = 1/16
 set dshot_idle_value = 800
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT600
-set failsafe_delay = 4
 set yaw_motors_reversed = ON
 set small_angle = 180
 set yaw_deadband = 5
 set simplified_gyro_filter = OFF
 set simplified_gyro_filter_multiplier = 105
-
-#OSD
-set osd_warn_rssi = ON
-set osd_warn_link_quality = ON
-set osd_warn_rssi_dbm = ON
-set osd_warn_over_cap = ON
-set osd_rssi_pos = 2459
-set osd_link_quality_pos = 2488
-set osd_rssi_dbm_pos = 299
-set osd_tim_2_pos = 2400
-set osd_flymode_pos = 2478
+set osd_warn_bitmask = 57215
+set osd_link_quality_alarm = 70
+set osd_rssi_dbm_alarm = -100
+set osd_rssi_pos = 152
+set osd_link_quality_pos = 2264
+set osd_link_tx_power_pos = 2232
+set osd_rssi_dbm_pos = 2200
+set osd_tim_2_pos = 2304
+set osd_flymode_pos = 2496
 set osd_throttle_pos = 245
 set osd_vtx_channel_pos = 373
-set osd_current_pos = 2496
-set osd_mah_drawn_pos = 2528
-set osd_craft_name_pos = 2537
-set osd_altitude_pos = 18745
+set osd_current_pos = 2336
+set osd_mah_drawn_pos = 2368
+set osd_craft_name_pos = 2528
+set osd_altitude_pos = 18808
 set osd_power_pos = 388
-set osd_warnings_pos = 14732
-set osd_avg_cell_voltage_pos = 2464
-set osd_disarmed_pos = 2432
-set osd_stat_endbatt = ON
-set osd_stat_battery = ON
-set osd_stat_max_alt = ON
-set osd_stat_min_link_quality = ON
-set osd_stat_total_flights = ON
-set osd_stat_total_time = ON
-set osd_stat_total_dist = ON
-set osd_stat_min_rssi_dbm = ON
+set osd_warnings_pos = 14762
+set osd_avg_cell_voltage_pos = 2400
+set osd_disarmed_pos = 2251
+set osd_stat_bitmask = 8798076
 set osd_displayport_device = MSP
-
+set osd_canvas_width = 30
+set osd_canvas_height = 16
 set debug_mode = GYRO_SCALED
-set displayport_msp_serial = 0
+set vcd_video_system = HD
+set displayport_msp_fonts = 0,1,2,3
 set rpm_filter_min_hz = 90
-set name = Chimera7 Pro V2
+set craft_name = Chimera7 Pro V2
 
 profile 0
 
 # profile 0
+set profile_name = DEFAULT
 set dterm_lpf1_dyn_min_hz = 0
-set dterm_lpf1_dyn_max_hz = 157
+set dterm_lpf1_dyn_max_hz = 127
 set dterm_lpf1_static_hz = 63
 set dterm_lpf2_static_hz = 127
-set anti_gravity_gain = 2000
 set iterm_relax_cutoff = 10
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
@@ -212,10 +202,47 @@ set simplified_feedforward_gain = 65
 set simplified_pitch_d_gain = 110
 set simplified_pitch_pi_gain = 110
 set simplified_dterm_filter_multiplier = 85
+set tpa_rate = 50
+set tpa_breakpoint = 1200
 
 profile 1
 
-profile 2
+# profile 1
+set profile_name = PERFORM
+set dterm_lpf1_dyn_min_hz = 0
+set dterm_lpf1_dyn_max_hz = 157
+set dterm_lpf1_static_hz = 63
+set dterm_lpf2_static_hz = 127
+set iterm_relax_cutoff = 10
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set yaw_lowpass_hz = 50
+set p_pitch = 99
+set i_pitch = 88
+set d_pitch = 110
+set f_pitch = 142
+set p_roll = 86
+set i_roll = 76
+set d_roll = 88
+set f_roll = 124
+set p_yaw = 100
+set i_yaw = 120
+set f_yaw = 76
+set d_min_roll = 81
+set d_min_pitch = 101
+set thrust_linear = 10
+set simplified_pids_mode = RP
+set simplified_master_multiplier = 160
+set simplified_i_gain = 50
+set simplified_d_gain = 170
+set simplified_pi_gain = 120
+set simplified_dmax_gain = 25
+set simplified_feedforward_gain = 65
+set simplified_pitch_d_gain = 110
+set simplified_pitch_pi_gain = 110
+set simplified_dterm_filter_multiplier = 85
+set tpa_rate = 50
+set tpa_breakpoint = 1200
 
 # restore original profile selection
 profile 0
@@ -223,6 +250,7 @@ profile 0
 rateprofile 0
 
 # rateprofile 0
+set rateprofile_name = DEFAULT
 set roll_rc_rate = 18
 set pitch_rc_rate = 18
 set yaw_rc_rate = 18
@@ -232,27 +260,51 @@ set yaw_expo = 70
 set roll_srate = 75
 set pitch_srate = 75
 set yaw_srate = 75
-set tpa_rate = 50
-set tpa_breakpoint = 1200
 
-rateprofile 1
-
-# rateprofile 1
-
-rateprofile 2
-
-rateprofile 3
-
-rateprofile 4
-
-rateprofile 5
-
-# restore original rateprofile selection
-rateprofile 0
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): CRSF/ELRS Receiver
+#$ OPTION BEGIN (UNCHECKED): CRSF 50Hz Cinematic
 set serialrx_provider = CRSF
+set rc_smoothing_auto_factor = 35
+set rc_smoothing_auto_factor_throttle = 28
+set rc_smoothing_setpoint_cutoff = 12
+set rc_smoothing_feedforward_cutoff = 12
+set rc_smoothing_throttle_cutoff = 20
+set feedforward_smooth_factor = 20
+set feedforward_jitter_factor = 15
+set feedforward_boost = 5
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): CRSF 50Hz HD Freestyle
+set serialrx_provider = CRSF
+set rc_smoothing_auto_factor = 20
+set rc_smoothing_setpoint_cutoff = 25
+set rc_smoothing_feedforward_cutoff = 25
+set feedforward_smooth_factor = 0
+set feedforward_jitter_factor = 15
+set feedforward_boost = 5
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): ELRS 250Hz Cinematic
+set serialrx_provider = CRSF
+set rc_smoothing_auto_factor = 250
+set rc_smoothing_auto_factor_throttle = 170
+set rc_smoothing_setpoint_cutoff = 12
+set rc_smoothing_feedforward_cutoff = 12
+set rc_smoothing_throttle_cutoff = 20
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 60
+set feedforward_jitter_factor = 12
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): ELRS 250Hz HD Freestyle
+set serialrx_provider = CRSF
+set rc_smoothing_auto_factor = 140
+set rc_smoothing_setpoint_cutoff = 25
+set rc_smoothing_feedforward_cutoff = 25
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 10
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): SBUS/DJI Receiver
@@ -273,15 +325,18 @@ set gps_provider = UBLOX
 set gps_sbas_mode = AUTO
 set gps_ublox_use_galileo = ON
 #OSD
-set osd_gps_speed_pos = 2426
-set osd_gps_sats_pos = 2394
-set osd_home_dir_pos = 2509
-set osd_home_dist_pos = 2510
-set osd_altitude_pos = 2327
+set osd_gps_speed_pos = 2392
+set osd_gps_sats_pos = 2328
+set osd_home_dir_pos = 2358
+set osd_home_dist_pos = 2360
+set osd_flight_dist_pos = 153
+set osd_altitude_pos = 18808
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): GPS Rescue (experimental)
+set failsafe_delay = 4
 set failsafe_procedure = GPS-RESCUE
 set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
 set gps_rescue_min_sats = 5
+set gps_rescue_allow_arming_without_fix = ON
 #$ OPTION END
