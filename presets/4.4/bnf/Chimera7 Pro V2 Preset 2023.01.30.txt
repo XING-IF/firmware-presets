@@ -9,7 +9,7 @@
 
 #$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
-#$ DESCRIPTION: This is the official iFlight factory tune (4.4 XINGtune) for the Nazgul F5 BLITZ FC Version!
+#$ DESCRIPTION: This is the official iFlight factory tune (4.4 XINGtune) for the Chimera7 Pro V2 BLITZ FC Version!
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
 #$ DESCRIPTION:
 #$ DESCRIPTION: Factory Dump Version:
@@ -315,7 +315,7 @@ set serialrx_provider = SBUS
 set thrust_linear = 20
 #$ OPTION END
 
-#$ OPTION BEGIN (UNCHECKED): GPS functionality （default）
+#$ OPTION BEGIN (CHECKED): GPS functionality （default）
 #feature
 feature GPS
 #serial
@@ -334,7 +334,6 @@ set osd_altitude_pos = 18808
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): GPS Rescue (experimental)
-set failsafe_delay = 4
 set failsafe_procedure = GPS-RESCUE
 set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
 set gps_rescue_min_sats = 5
