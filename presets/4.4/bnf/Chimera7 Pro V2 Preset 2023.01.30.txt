@@ -99,7 +99,7 @@ feature TELEMETRY
 feature LED_STRIP
 
 # serial
-serial 0 1 115200 57600 0 115200
+serial 0 131073 115200 57600 0 115200
 serial 5 1024 115200 57600 0 115200
 
 # beacon
