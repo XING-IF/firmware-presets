@@ -20,6 +20,11 @@
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION:* BLITZ Stack (BMI270) 2022.11-
 #$ DESCRIPTION:
+#$ DESCRIPTION: iFlight OSD Manual:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* Please study the available OSD elements on your FPV drone to stay safe and get the Most out of it!
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/216088039-6aa5b41c-3630-4514-91cc-a729abbeaa2d.png"><img src="https://user-images.githubusercontent.com/31681897/216088039-6aa5b41c-3630-4514-91cc-a729abbeaa2d.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/202650342-80b76db3-e39c-40ff-817d-e43051a923cf.png"><img src="https://user-images.githubusercontent.com/31681897/202650342-80b76db3-e39c-40ff-817d-e43051a923cf.png" width="200px" style="display: block; float: right;"/></a>
