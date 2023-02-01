@@ -348,3 +348,7 @@ set failsafe_procedure = GPS-RESCUE
 set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
 set gps_rescue_min_sats = 5
 #$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Li-Ion Battery 3.15V Warning
+set vbat_warning_cell_voltage = 315
+#$ OPTION END
