@@ -3750,6 +3750,25 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.4/bnf/Nazgul F5 V2 Preset 2023.02.01.txt",
+      "hash": "89299ae22e6f0664c2c7986b4b677c83020e5dd81d375b18d184e655c544f821",
+      "title": "Nazgul F5 V2 RC1",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "nazgul",
+        "evoque",
+        "f5 V2"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.4/other/Street_League_motor_outputs.txt",
       "hash": "818ab0552ce3e055e2b3157551b5bc1eb31bd6c1a39ec54fb748f2cb378023e8",
       "title": "Street League Motor Output Limit Settings",
