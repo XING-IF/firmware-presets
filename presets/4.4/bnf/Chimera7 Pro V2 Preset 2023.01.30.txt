@@ -151,8 +151,8 @@ set osd_tim_2_pos = 2528
 set osd_flymode_pos = 462
 set osd_throttle_pos = 245
 set osd_vtx_channel_pos = 373
-set osd_current_pos = 2432
-set osd_mah_drawn_pos = 2464
+set osd_current_pos = 2433
+set osd_mah_drawn_pos = 2465
 set osd_craft_name_pos = 480
 set osd_power_pos = 388
 set osd_warnings_pos = 14794
@@ -335,12 +335,12 @@ set gps_provider = UBLOX
 set gps_sbas_mode = AUTO
 set gps_ublox_use_galileo = ON
 #OSD
-set osd_gps_speed_pos = 2424
+set osd_gps_speed_pos = 2392
 set osd_gps_sats_pos = 2104
 set osd_home_dir_pos = 2541
 set osd_home_dist_pos = 2543
 set osd_flight_dist_pos = 153
-set osd_altitude_pos = 18840
+set osd_altitude_pos = 18808
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): GPS Rescue (experimental)
