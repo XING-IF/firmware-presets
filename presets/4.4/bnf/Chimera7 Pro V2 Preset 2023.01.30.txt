@@ -58,14 +58,15 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Tuning aspects:
 #$ DESCRIPTION: ---------------
-#$ DESCRIPTION: * Contains 2 PID profiles called STANDARD and PERFORM.
-#$ DESCRIPTION: * STANDARD is default, PERFORM is more aggressive.
+#$ DESCRIPTION: * Contains 2 PID profiles called DEFAULT and PERFORM.
+#$ DESCRIPTION: * PERFORM is a more aggressive tune for clean motors.
 #$ DESCRIPTION: * PID tuning with minimal overshoot, minimum Setpoint delay
 #$ DESCRIPTION: * Smooth forward flights with bigger batteries
 #$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
 #$ DESCRIPTION: * Priorized flight performance over flight time
 #$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
 #$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
+
 #$ OPTION BEGIN (CHECKED): Reset (default)
 defaults nosave
 #$ OPTION END
@@ -143,20 +144,19 @@ set osd_warn_bitmask = 57215
 set osd_link_quality_alarm = 70
 set osd_rssi_dbm_alarm = -100
 set osd_rssi_pos = 152
-set osd_link_quality_pos = 2264
-set osd_link_tx_power_pos = 2232
-set osd_rssi_dbm_pos = 2200
-set osd_tim_2_pos = 2304
-set osd_flymode_pos = 2496
+set osd_link_quality_pos = 56
+set osd_link_tx_power_pos = 24
+set osd_rssi_dbm_pos = 2136
+set osd_tim_2_pos = 2528
+set osd_flymode_pos = 462
 set osd_throttle_pos = 245
 set osd_vtx_channel_pos = 373
-set osd_current_pos = 2336
-set osd_mah_drawn_pos = 2368
-set osd_craft_name_pos = 2528
-set osd_altitude_pos = 18808
+set osd_current_pos = 2432
+set osd_mah_drawn_pos = 2464
+set osd_craft_name_pos = 480
 set osd_power_pos = 388
-set osd_warnings_pos = 14762
-set osd_avg_cell_voltage_pos = 2400
+set osd_warnings_pos = 14794
+set osd_avg_cell_voltage_pos = 2496
 set osd_disarmed_pos = 2251
 set osd_stat_bitmask = 8798076
 set osd_displayport_device = MSP
@@ -267,6 +267,9 @@ set yaw_srate = 75
 
 #$ OPTION BEGIN (UNCHECKED): CRSF 50Hz Cinematic
 set serialrx_provider = CRSF
+set osd_link_quality_pos = 2264
+set osd_link_quality_alarm = 70
+set osd_rssi_dbm_alarm = -100
 set rc_smoothing_auto_factor = 35
 set rc_smoothing_auto_factor_throttle = 28
 set rc_smoothing_setpoint_cutoff = 12
@@ -279,6 +282,9 @@ set feedforward_boost = 5
 
 #$ OPTION BEGIN (UNCHECKED): CRSF 50Hz HD Freestyle
 set serialrx_provider = CRSF
+set osd_link_quality_pos = 2264
+set osd_link_quality_alarm = 70
+set osd_rssi_dbm_alarm = -100
 set rc_smoothing_auto_factor = 20
 set rc_smoothing_setpoint_cutoff = 25
 set rc_smoothing_feedforward_cutoff = 25
@@ -289,6 +295,7 @@ set feedforward_boost = 5
 
 #$ OPTION BEGIN (UNCHECKED): ELRS 250Hz Cinematic
 set serialrx_provider = CRSF
+set osd_rssi_dbm_alarm = -100
 set rc_smoothing_auto_factor = 250
 set rc_smoothing_auto_factor_throttle = 170
 set rc_smoothing_setpoint_cutoff = 12
@@ -301,6 +308,7 @@ set feedforward_jitter_factor = 12
 
 #$ OPTION BEGIN (UNCHECKED): ELRS 250Hz HD Freestyle
 set serialrx_provider = CRSF
+set osd_rssi_dbm_alarm = -100
 set rc_smoothing_auto_factor = 140
 set rc_smoothing_setpoint_cutoff = 25
 set rc_smoothing_feedforward_cutoff = 25
@@ -327,17 +335,16 @@ set gps_provider = UBLOX
 set gps_sbas_mode = AUTO
 set gps_ublox_use_galileo = ON
 #OSD
-set osd_gps_speed_pos = 2392
-set osd_gps_sats_pos = 2328
-set osd_home_dir_pos = 2358
-set osd_home_dist_pos = 2360
+set osd_gps_speed_pos = 2424
+set osd_gps_sats_pos = 2104
+set osd_home_dir_pos = 2541
+set osd_home_dist_pos = 2543
 set osd_flight_dist_pos = 153
-set osd_altitude_pos = 18808
+set osd_altitude_pos = 18840
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): GPS Rescue (experimental)
 set failsafe_procedure = GPS-RESCUE
 set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
 set gps_rescue_min_sats = 5
-set gps_rescue_allow_arming_without_fix = ON
 #$ OPTION END
