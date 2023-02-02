@@ -68,8 +68,6 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Tuning aspects:
 #$ DESCRIPTION: ---------------
-#$ DESCRIPTION: * Contains 2 PID profiles called DEFAULT and PERFORM.
-#$ DESCRIPTION: * PERFORM is a more aggressive tune for clean motors.
 #$ DESCRIPTION: * PID tuning with minimal overshoot, minimum Setpoint delay
 #$ DESCRIPTION: * Smooth forward flights with bigger batteries
 #$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
