@@ -3750,6 +3750,25 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.4/bnf/Defender 25 RC1 2023.02.03.txt",
+      "hash": "3010d4d9dacbea7051e044cb317ed461691bddea5906ada50a40f081b4bf4222",
+      "title": "Defender 25 HD RC1",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "Defender 25",
+        "D25",
+        "Defender"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.4/bnf/Nazgul F5 V2 Preset 2023.02.01.txt",
       "hash": "00eddd0f80e2b746034fea07c9676a0d753d0eccfcd5803b7314ce79edd62de8",
       "title": "Nazgul F5 V2 RC1",
