@@ -1,4 +1,4 @@
-#$ TITLE: Defender 25 HD RC1
+#$ TITLE: Defender 25 O3 HD RC1
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
@@ -9,7 +9,7 @@
 
 #$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
-#$ DESCRIPTION: This is the official iFlight factory tune (4.3 XINGtune) for the Defender 25 BLITZ AIO Version!
+#$ DESCRIPTION: This is the official iFlight factory tune (4.4 XINGtune) for the Defender 25 BLITZ AIO Version!
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
 #$ DESCRIPTION:
 #$ DESCRIPTION: Factory Dump Version:
@@ -113,9 +113,6 @@ set gyro_lpf2_static_hz = 0
 set dyn_notch_count = 1
 set dyn_notch_q = 500
 set gyro_lpf1_dyn_min_hz = 0
-set acc_calibration = -43,-24,-43,1
-set rc_smoothing_auto_factor_throttle = 170
-set rc_smoothing_throttle_cutoff = 20
 set blackbox_sample_rate = 1/16
 set min_throttle = 1071
 set dshot_idle_value = 1200
