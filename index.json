@@ -3751,7 +3751,7 @@
     },
     {
       "fullPath": "presets/4.4/bnf/Defender 25 72khz RC1 2023.02.09.txt",
-      "hash": "1a34ccc6823b0b8f7fd483a8b6dc66c371df717095affbad67ffb03d153bd347",
+      "hash": "e1add20a89986ec59f45a386dc302c36fcc592a5845b9e9b99a5ec7e6ba82c98",
       "title": "Defender25 O3 HD 72kHz RC1",
       "firmware_version": [
         "4.4"
@@ -3770,7 +3770,7 @@
     },
     {
       "fullPath": "presets/4.4/bnf/Defender 25 RC1 2023.02.03.txt",
-      "hash": "cc2e3fe47ab1bf806fec20794685fabc56731dcbfcd9cb69a77eb3f22333e8f3",
+      "hash": "da10c94d770b94bb2e4d44f3088df5c5ac8039c5bee770d9e7d2473749e79b90",
       "title": "Defender25 O3 HD RC1",
       "firmware_version": [
         "4.4"
