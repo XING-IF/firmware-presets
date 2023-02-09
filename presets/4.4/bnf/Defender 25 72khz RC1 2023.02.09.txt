@@ -11,7 +11,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: This is a special 72kHz PWM speed XINGtune for the Defender 25 BLITZ AIO Version!
 #$ DESCRIPTION: More aggressive tune, less jello, longer flight times. More jittery in strong wind.
-#$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION: Please read instructions carefully! All default options have been selected automatically!
 #$ DESCRIPTION:
 #$ DESCRIPTION: Factory Dump Version:
 #$ DESCRIPTION:-------------
