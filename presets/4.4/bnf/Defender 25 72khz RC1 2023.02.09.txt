@@ -9,12 +9,13 @@
 
 #$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
-#$ DESCRIPTION: This is the official iFlight factory tune (4.4 XINGtune) for the Defender 25 BLITZ AIO Version!
+#$ DESCRIPTION: This is a special 72kHz PWM speed XINGtune for the Defender 25 BLITZ AIO Version!
+#$ DESCRIPTION: More aggressive tune, less jello, longer flight times. More jittery in strong wind.
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
 #$ DESCRIPTION:
 #$ DESCRIPTION: Factory Dump Version:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: XING 2023.02.03 (Only for BLITZ D25 HD F7 AIO)
+#$ DESCRIPTION: XING 2023.02.09 (Only for BLITZ D25 HD F7 AIO)
 #$ DESCRIPTION:
 #$ DESCRIPTION: BNF Build Version:
 #$ DESCRIPTION:-------------
@@ -36,11 +37,10 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/210650365-ade0eff1-05b8-4e82-9cfe-a9c55a33ce29.png"><img src="https://user-images.githubusercontent.com/31681897/210650365-ade0eff1-05b8-4e82-9cfe-a9c55a33ce29.png" width="200px" style="display: block; float: right;"/></a>
-#$ DESCRIPTION: * Use the recommended factory settings! 
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/217881045-33892ed3-38da-4e9f-83e5-0c6ab63ee3ff.PNG"><img src="https://user-images.githubusercontent.com/31681897/217881045-33892ed3-38da-4e9f-83e5-0c6ab63ee3ff.PNG" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: * PWM Speed changed to 72kHz to decrease jello.
 #$ DESCRIPTION: * Motor timing Auto or 20 (aggressive)
-#$ DESCRIPTION: * 24kHz PWM speed usually has more authority than 48kHz.
-#$ DESCRIPTION: * You can use 48kHz for longer flight times!
+#$ DESCRIPTION: * Default PWM Speed is 48kHz to byRPM
 #$ DESCRIPTION:
 #$ DESCRIPTION: ExpressLRS (ELRS) Setup: 
 #$ DESCRIPTION: ------------
