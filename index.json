@@ -3750,6 +3750,25 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.4/bnf/Defender 25 72khz RC1 2023.02.09.txt",
+      "hash": "ca58ffff94bfd496b0419504bceeade2739c424700e3cd4083324c012454c213",
+      "title": "Defender25 O3 HD 72kHz RC1",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "Defender 25",
+        "D25",
+        "Defender"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.4/bnf/Defender 25 RC1 2023.02.03.txt",
       "hash": "7a35415ab5896433fc0bc4911095a89b65764e484b3692a29562da6464cd2216",
       "title": "Defender 25 O3 HD RC1",
