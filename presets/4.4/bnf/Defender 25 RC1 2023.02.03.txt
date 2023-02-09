@@ -1,4 +1,4 @@
-#$ TITLE: Defender 25 O3 HD RC1
+#$ TITLE: Defender25 O3 HD RC1
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
@@ -75,10 +75,6 @@ defaults nosave
 #$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): Restore Settings (default)
-board_name IFLIGHT_BLITZ_F722_X1
-manufacturer_id IFRC
-mcu_id 005300393132511430393738
-signature 
 
 # name: Defender 25
 
