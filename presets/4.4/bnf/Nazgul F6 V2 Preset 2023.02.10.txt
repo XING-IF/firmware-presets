@@ -84,9 +84,10 @@ board_name IFLIGHT_BLITZ_F722
 # name: Nazgul F6 V2
 
 # feature
-feature -RX_PARALLEL_PWM
-feature TELEMETRY
 feature LED_STRIP
+
+# serial
+serial 20 131073 115200 57600 0 115200
 
 # beacon
 beacon RX_LOST
@@ -116,7 +117,6 @@ set gyro_lpf2_type = PT2
 set gyro_lpf2_static_hz = 0
 set dyn_notch_count = 2
 set dyn_notch_q = 500
-set dyn_notch_min_hz = 100
 set gyro_lpf1_dyn_min_hz = 0
 set gyro_lpf1_dyn_max_hz = 0
 set blackbox_sample_rate = 1/16
@@ -126,8 +126,11 @@ set motor_pwm_protocol = DSHOT600
 set vbat_max_cell_voltage = 422
 set yaw_motors_reversed = ON
 set small_angle = 180
-set debug_mode = GYRO_SCALED
 set osd_displayport_device = MSP
+set osd_canvas_width = 30
+set osd_canvas_height = 13
+set debug_mode = GYRO_SCALED
+set craft_name = F6 Evoque
 
 profile 0
 
@@ -154,6 +157,7 @@ set f_yaw = 140
 set d_min_roll = 68
 set d_min_pitch = 73
 set thrust_linear = 20
+set dyn_idle_min_rpm = 35
 set simplified_master_multiplier = 130
 set simplified_i_gain = 95
 set simplified_d_gain = 175
@@ -163,6 +167,8 @@ set simplified_feedforward_gain = 90
 set simplified_pitch_d_gain = 95
 set simplified_pitch_pi_gain = 110
 set simplified_dterm_filter_multiplier = 120
+set tpa_rate = 50
+set tpa_breakpoint = 1280
 
 # restore original profile selection
 profile 0
@@ -178,8 +184,6 @@ set yaw_rc_rate = 10
 set roll_expo = 20
 set pitch_expo = 20
 set yaw_expo = 20
-set tpa_rate = 50
-set tpa_breakpoint = 1280
 
 # restore original rateprofile selection
 rateprofile 0
