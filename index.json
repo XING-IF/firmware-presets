@@ -3789,8 +3789,27 @@
     },
     {
       "fullPath": "presets/4.4/bnf/Nazgul F5 V2 Preset 2023.02.01.txt",
-      "hash": "00eddd0f80e2b746034fea07c9676a0d753d0eccfcd5803b7314ce79edd62de8",
+      "hash": "dd2506862c01f737eecb7d3372ebf17a17b3df1d1a415426c9bdb457836e48ec",
       "title": "Nazgul F5 V2 RC1",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "nazgul",
+        "evoque",
+        "f5 V2"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/bnf/Nazgul F6 V2 Preset 2023.02.10.txt",
+      "hash": "4b5f8dd91fe08b077889f76ba7a1559c28da987cd09d859f0d7a7d7fb40b0512",
+      "title": "Nazgul F6 V2 RC1",
       "firmware_version": [
         "4.4"
       ],
