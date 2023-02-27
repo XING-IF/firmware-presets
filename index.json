@@ -252,6 +252,7 @@
       "BOB",
       "BOB57",
       "brushless",
+      "C7 Pro V1",
       "C7 Pro V2",
       "camera",
       "camera_control",
@@ -260,6 +261,7 @@
       "chimera",
       "Chimera7",
       "Chimera7 Pro",
+      "Chimera7 Pro V1",
       "Chimera7 Pro V2",
       "cinelifter",
       "cinematic",
@@ -3727,6 +3729,27 @@
       ],
       "author": "sugarK",
       "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.4/bnf/Chimera7 Pro V1 4.4.X-Preset 2023.2.25.txt",
+      "hash": "5264fde1adcc1732c2b15a375cf0a27a312a905580316857c9f92d13930aa933",
+      "title": "Chimera7 Pro V1 RC1",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "Chimera",
+        "Chimera7",
+        "Chimera7 Pro",
+        "Chimera7 Pro V1",
+        "C7 Pro V1"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
     },
     {
       "fullPath": "presets/4.4/bnf/Chimera7 Pro V2 Preset 2023.01.30.txt",
