@@ -1,20 +1,20 @@
-#$ TITLE: Chimera7 Pro V1 RC1
+#$ TITLE: Nazgul F5 V1 RC1
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: xing, iflight, Chimera, Chimera7, Chimera7 Pro, Chimera7 Pro V1, C7 Pro V1
+#$ KEYWORDS: xing, iflight, nazgul, evoque, f5 V1
 #$ AUTHOR: Patrick XING (iFlight)
 
 #$ PARSER: MARKED
 
 #$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
-#$ DESCRIPTION: This is the official iFlight factory tune (4.4 XINGtune) for the Chimera7 Pro V2 BLITZ FC Version!
+#$ DESCRIPTION: This is the official iFlight factory tune (4.4 XINGtune) for the Nazgul F5 BLITZ FC Version!
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
 #$ DESCRIPTION:
 #$ DESCRIPTION: Factory Dump Version:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: XING 2023.02.25 (For BLITZ BMI270 and icm42688P FCs)
+#$ DESCRIPTION: XING 2023.02.024 (For BLITZ BMI270 and icm42688P FCs)
 #$ DESCRIPTION:
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/216088039-6aa5b41c-3630-4514-91cc-a729abbeaa2d.png"><img src="https://user-images.githubusercontent.com/31681897/216088039-6aa5b41c-3630-4514-91cc-a729abbeaa2d.png" height="120px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: BNF Build Version:
@@ -25,16 +25,21 @@
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION:* Please study the available OSD elements on your FPV drone to stay safe and get the Most out of it!
 #$ DESCRIPTION:
+#$ DESCRIPTION: D-term Filter Tuning:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: * Two different D-term filter approaches; Stacked PT1 (default), Single BIQUAD (less filtering <200hz, more filtering >200hz)
+#$ DESCRIPTION: * Dynamic Idle is turned on, helps to control low end of motor rpm
+#$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/221655414-880d07c0-83cc-4544-b934-760fffc01318.png"><img src="https://user-images.githubusercontent.com/31681897/221655414-880d07c0-83cc-4544-b934-760fffc01318.png" height="130px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/221655925-af12311f-9acc-4fb0-9341-be1986474ff9.png"><img src="https://user-images.githubusercontent.com/31681897/221655925-af12311f-9acc-4fb0-9341-be1986474ff9.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/221655939-27152002-1ba9-4365-aa8b-4fc4490dc77f.png"><img src="https://user-images.githubusercontent.com/31681897/221655939-27152002-1ba9-4365-aa8b-4fc4490dc77f.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: * Use the recommended factory settings! 
-#$ DESCRIPTION: * Motor timing 18 (high) or 20 (aggressive)
-#$ DESCRIPTION: * 48kHz PWM option adds thrust_linear!
-#$ DESCRIPTION: * Select your PWM speed setting below if necessary:
-#$ DESCRIPTION: * 16kHz-byRPM for best motor response, lowest efficiency. For max. stability, strong wind or freestyle but can have less flight time.
-#$ DESCRIPTION: * 24kHz-byRPM (default) for perfect balance of stability and efficiency.
-#$ DESCRIPTION: * 48kHz-byRPM for lower stability, best efficiency. For max. flight time, but can have some wobbles.
+#$ DESCRIPTION: * HD use BLHeli32: Motor timing 20 (high) or 23 (aggressive)
+#$ DESCRIPTION: * Analog use Bluejay: Motor timing 15
+#$ DESCRIPTION: * 24kHz PWM speed usually has more authority than 48kHz.
+#$ DESCRIPTION: * You can use 48kHz for longer flight times!
+#$ DESCRIPTION: * 48kHz PWM option adds thrust_linear.
 #$ DESCRIPTION:
 #$ DESCRIPTION: ExpressLRS (ELRS) Setup: 
 #$ DESCRIPTION: ------------
@@ -77,39 +82,25 @@ defaults nosave
 #$ OPTION BEGIN (CHECKED): Restore Settings (default)
 board_name IFLIGHT_BLITZ_F722
 
-# name: Chimera7 Pro
-
-# timer
-timer A00 AF2
-# pin A00: TIM5 CH1 (AF2)
-timer C06 AF3
-# pin C06: TIM8 CH1 (AF3)
-timer C07 AF3
-# pin C07: TIM8 CH2 (AF3)
-timer A01 AF1
-# pin A01: TIM2 CH2 (AF1)
-
-# dma
-dma pin A00 0
-# pin A00: DMA1 Stream 2 Channel 6
-dma pin C06 0
-# pin C06: DMA2 Stream 2 Channel 0
-dma pin C07 1
-# pin C07: DMA2 Stream 3 Channel 7
-dma pin A01 0
-# pin A01: DMA1 Stream 6 Channel 3
+# name: Nazgul F5
 
 # feature
-feature -RX_PARALLEL_PWM
 feature TELEMETRY
 feature LED_STRIP
+feature ESC_SENSOR
 
 # beacon
 beacon RX_LOST
 beacon RX_SET
 
 # led
-led 0 0,0::L:0
+led 0 0,0::L:6
+led 1 1,0::L:6
+led 2 2,0::L:6
+led 3 3,0::L:6
+led 4 4,0::L:6
+led 5 5,0::L:6
+led 6 6,0::L:6
 
 # color
 color 5 91,0,255
@@ -120,64 +111,54 @@ aux 0 0 0 1700 2100 0 0
 aux 1 1 1 900 2100 0 0
 
 # master
-set gyro_lpf1_static_hz = 200
+set gyro_lpf1_static_hz = 0
 set gyro_lpf2_static_hz = 0
+set dyn_notch_count = 2
 set dyn_notch_q = 500
-set dyn_notch_min_hz = 80
-set dyn_notch_max_hz = 500
+set dyn_notch_min_hz = 120
 set gyro_lpf1_dyn_min_hz = 0
-set gyro_lpf1_dyn_max_hz = 0
 set blackbox_sample_rate = 1/16
-set dshot_idle_value = 800
+set dshot_idle_value = 650
 set dshot_bidir = ON
 set motor_pwm_protocol = DSHOT600
+set vbat_max_cell_voltage = 422
 set yaw_motors_reversed = ON
 set small_angle = 180
-set yaw_deadband = 5
-set simplified_gyro_filter = OFF
-set simplified_gyro_filter_multiplier = 105
+set craft_name = Nazgul F5
 set debug_mode = GYRO_SCALED
-set rpm_filter_min_hz = 90
-set craft_name = Chimera7 Pro
+set rpm_filter_fade_range_hz = 80
+set craft_name = Nazgul F5 V2
 
 profile 0
 
 # profile 0
 set profile_name = DEFAULT
-set dterm_lpf1_dyn_min_hz = 0
-set dterm_lpf1_dyn_max_hz = 127
-set dterm_lpf1_static_hz = 63
-set dterm_lpf2_static_hz = 127
-set iterm_relax_cutoff = 10
+set dterm_lpf1_dyn_expo = 7
+set dterm_lpf1_static_hz = 0
+set vbat_sag_compensation = 100
 set pidsum_limit = 1000
 set pidsum_limit_yaw = 1000
-set yaw_lowpass_hz = 50
-set p_pitch = 99
-set i_pitch = 88
-set d_pitch = 110
-set f_pitch = 142
-set p_roll = 86
-set i_roll = 76
-set d_roll = 88
-set f_roll = 124
-set p_yaw = 100
-set i_yaw = 120
-set f_yaw = 76
-set d_min_roll = 81
-set d_min_pitch = 101
-set thrust_linear = 10
-set simplified_pids_mode = RP
-set simplified_master_multiplier = 160
-set simplified_i_gain = 50
-set simplified_d_gain = 170
-set simplified_pi_gain = 120
-set simplified_dmax_gain = 25
-set simplified_feedforward_gain = 65
-set simplified_pitch_d_gain = 110
-set simplified_pitch_pi_gain = 110
-set simplified_dterm_filter_multiplier = 85
-set tpa_rate = 50
-set tpa_breakpoint = 1200
+set p_pitch = 62
+set i_pitch = 89
+set d_pitch = 62
+set f_pitch = 122
+set p_roll = 59
+set i_roll = 85
+set d_roll = 54
+set f_roll = 117
+set p_yaw = 59
+set i_yaw = 85
+set f_yaw = 117
+set d_min_roll = 48
+set d_min_pitch = 54
+set simplified_master_multiplier = 140
+set simplified_i_gain = 80
+set simplified_d_gain = 115
+set simplified_pi_gain = 95
+set simplified_dmax_gain = 40
+set simplified_feedforward_gain = 70
+set tpa_rate = 60
+set tpa_breakpoint = 1300
 
 # restore original profile selection
 profile 0
@@ -185,16 +166,20 @@ profile 0
 rateprofile 0
 
 # rateprofile 0
-set rateprofile_name = DEFAULT
-set roll_rc_rate = 18
-set pitch_rc_rate = 18
-set yaw_rc_rate = 18
-set roll_expo = 70
-set pitch_expo = 70
-set yaw_expo = 70
-set roll_srate = 75
-set pitch_srate = 75
-set yaw_srate = 75
+set roll_rc_rate = 10
+set pitch_rc_rate = 10
+set yaw_rc_rate = 10
+set roll_expo = 30
+set pitch_expo = 30
+set yaw_expo = 30
+
+# restore original rateprofile selection
+rateprofile 0
+
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Dynamic Idle (default)
+set dyn_idle_min_rpm = 40
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): HD DJI VTX
@@ -206,11 +191,10 @@ serial 5 1024 115200 57600 0 115200
 set osd_warn_bitmask = 57215
 set osd_link_quality_alarm = 70
 set osd_rssi_dbm_alarm = -100
-set osd_rssi_pos = 2137
+set osd_rssi_pos = 2136
 set osd_link_quality_pos = 216
-set osd_link_tx_power_pos = 24
 set osd_rssi_dbm_pos = 88
-set osd_tim_2_pos = 394
+set osd_tim_2_pos = 448
 set osd_flymode_pos = 462
 set osd_throttle_pos = 245
 set osd_vtx_channel_pos = 373
@@ -272,9 +256,10 @@ set osd_stat_bitmask = 8798076
 
 #$ OPTION BEGIN (UNCHECKED): CRSF 50Hz Cinematic
 set serialrx_provider = CRSF
-set osd_link_quality_pos = 2264
 set osd_link_quality_alarm = 70
 set osd_rssi_dbm_alarm = -100
+set osd_rssi_pos = 2136
+set osd_rssi_dbm_pos = 88
 set rc_smoothing_auto_factor = 35
 set rc_smoothing_auto_factor_throttle = 28
 set rc_smoothing_setpoint_cutoff = 12
@@ -287,9 +272,10 @@ set feedforward_boost = 5
 
 #$ OPTION BEGIN (UNCHECKED): CRSF 50Hz HD Freestyle
 set serialrx_provider = CRSF
-set osd_link_quality_pos = 2264
 set osd_link_quality_alarm = 70
 set osd_rssi_dbm_alarm = -100
+set osd_rssi_pos = 2136
+set osd_rssi_dbm_pos = 88
 set rc_smoothing_auto_factor = 20
 set rc_smoothing_setpoint_cutoff = 25
 set rc_smoothing_feedforward_cutoff = 25
@@ -300,7 +286,10 @@ set feedforward_boost = 5
 
 #$ OPTION BEGIN (UNCHECKED): ELRS 250Hz Cinematic
 set serialrx_provider = CRSF
+set osd_link_quality_alarm = 70
 set osd_rssi_dbm_alarm = -100
+set osd_rssi_pos = 2136
+set osd_rssi_dbm_pos = 88
 set rc_smoothing_auto_factor = 250
 set rc_smoothing_auto_factor_throttle = 170
 set rc_smoothing_setpoint_cutoff = 12
@@ -313,7 +302,10 @@ set feedforward_jitter_factor = 12
 
 #$ OPTION BEGIN (UNCHECKED): ELRS 250Hz HD Freestyle
 set serialrx_provider = CRSF
+set osd_link_quality_alarm = 70
 set osd_rssi_dbm_alarm = -100
+set osd_rssi_pos = 2136
+set osd_rssi_dbm_pos = 88
 set rc_smoothing_auto_factor = 140
 set rc_smoothing_setpoint_cutoff = 25
 set rc_smoothing_feedforward_cutoff = 25
@@ -326,11 +318,21 @@ set feedforward_jitter_factor = 10
 set serialrx_provider = SBUS
 #$ OPTION END
 
+#$ OPTION BEGIN (UNCHECKED): BIQUAD D-term filter (optional)
+set dterm_lpf1_dyn_min_hz = 80
+set dterm_lpf1_dyn_max_hz = 110
+set dterm_lpf1_dyn_expo = 8
+set dterm_lpf1_type = BIQUAD
+set dterm_lpf2_static_hz = 0
+set dterm_notch_hz = 0
+set dterm_notch_cutoff = 0
+#$ OPTION END
+
 #$ OPTION BEGIN (UNCHECKED): 48kHz PWM Speed (optional)
 set thrust_linear = 20
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): GPS functionality （default）
+#$ OPTION BEGIN (UNCHECKED): GPS functionality （default）
 #feature
 feature GPS
 #serial
@@ -340,12 +342,12 @@ set gps_provider = UBLOX
 set gps_sbas_mode = AUTO
 set gps_ublox_use_galileo = ON
 #OSD
-set osd_gps_speed_pos = 2393
+set osd_gps_speed_pos = 2361
 set osd_gps_sats_pos = 2104
 set osd_home_dir_pos = 2541
 set osd_home_dist_pos = 2543
 set osd_flight_dist_pos = 153
-set osd_altitude_pos = 18808
+set osd_altitude_pos = 18775
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): GPS Rescue (experimental)
