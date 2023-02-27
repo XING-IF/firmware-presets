@@ -3754,6 +3754,27 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.4/bnf/Chimera7 Pro V2 4.4.X-Preset 2023.2.25.txt",
+      "hash": "cbfe201eba39c6eb567781be9d5e2d04dbd8866c13c12f962396845383d4d74a",
+      "title": "Chimera7 Pro V2 RC2",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "Chimera",
+        "Chimera7",
+        "Chimera7 Pro",
+        "Chimera7 Pro V2",
+        "C7 Pro V2"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.4/bnf/Chimera7 Pro V2 Preset 2023.01.30.txt",
       "hash": "6349904a8c491f0bfa3992982eecb4fecf1f740aa817625654e26444c28643ac",
       "title": "Chimera7 Pro V2 RC1",
