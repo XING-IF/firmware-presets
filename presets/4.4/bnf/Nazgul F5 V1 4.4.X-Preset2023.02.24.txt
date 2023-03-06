@@ -127,7 +127,7 @@ set small_angle = 180
 set craft_name = Nazgul F5
 set debug_mode = GYRO_SCALED
 set rpm_filter_fade_range_hz = 80
-set craft_name = Nazgul F5 V2
+set craft_name = Nazgul F5
 
 profile 0
 
@@ -191,10 +191,9 @@ serial 5 1024 115200 57600 0 115200
 set osd_warn_bitmask = 57215
 set osd_link_quality_alarm = 70
 set osd_rssi_dbm_alarm = -100
-set osd_rssi_pos = 2136
-set osd_link_quality_pos = 216
-set osd_rssi_dbm_pos = 88
-set osd_tim_2_pos = 448
+set osd_rssi_pos = 152
+set osd_rssi_dbm_pos = 2136
+set osd_tim_2_pos = 2528
 set osd_flymode_pos = 462
 set osd_throttle_pos = 245
 set osd_vtx_channel_pos = 373
@@ -238,8 +237,8 @@ vtxtable powerlabels 25 400 800 1W6
 set osd_warn_bitmask = 57215
 set osd_link_quality_alarm = 70
 set osd_rssi_dbm_alarm = -100
-set osd_rssi_pos = 2136
-set osd_rssi_dbm_pos = 88
+set osd_rssi_pos = 152
+set osd_rssi_dbm_pos = 2136
 set osd_tim_2_pos = 2528
 set osd_flymode_pos = 462
 set osd_throttle_pos = 245
@@ -342,12 +341,12 @@ set gps_provider = UBLOX
 set gps_sbas_mode = AUTO
 set gps_ublox_use_galileo = ON
 #OSD
-set osd_gps_speed_pos = 2361
+set osd_gps_speed_pos = 2392
 set osd_gps_sats_pos = 2104
 set osd_home_dir_pos = 2541
 set osd_home_dist_pos = 2543
 set osd_flight_dist_pos = 153
-set osd_altitude_pos = 18775
+set osd_altitude_pos = 18808
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): GPS Rescue (experimental)

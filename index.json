@@ -3835,7 +3835,7 @@
     },
     {
       "fullPath": "presets/4.4/bnf/Nazgul F5 V1 4.4.X-Preset2023.02.24.txt",
-      "hash": "9120e9cf14411a31a8fe9862aa5ef12caabaafc5d3eb88bfa880580302602a11",
+      "hash": "0578b4ea6ed312aa9806d8777f9c825632263f32db420a1d50757b984f06cd82",
       "title": "Nazgul F5 V1 RC1",
       "firmware_version": [
         "4.4"
@@ -3873,7 +3873,7 @@
     },
     {
       "fullPath": "presets/4.4/bnf/Nazgul F6 V1 4.4.X-Preset 2023.2.24.txt",
-      "hash": "1252c918ba6bea6f6d90ee7a2ad0e7a908aaceeeebe1b570584b2367df7ee10d",
+      "hash": "ab648bd5cc08658d9589bc4cb2fecd4f89cf9097b7df95360f9d5b0a7ed2dcea",
       "title": "Nazgul F6 V1 RC1",
       "firmware_version": [
         "4.4"
@@ -3911,7 +3911,7 @@
     },
     {
       "fullPath": "presets/4.4/bnf/ProTek35 BLITZ Preset2023.03.4.txt",
-      "hash": "86b820c74709cf6c322dcc17142428871eb39db5bc1b83acd41a73dc33654ed5",
+      "hash": "4bad2775727e866597dbd6315901e42ea919baeac8fb46b25c51d83c3bc1cca7",
       "title": "ProTek35 RC3",
       "firmware_version": [
         "4.4"
