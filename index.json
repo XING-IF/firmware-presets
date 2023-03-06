@@ -3910,6 +3910,26 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.4/bnf/ProTek35 BLITZ Preset2023.03.4.txt",
+      "hash": "86b820c74709cf6c322dcc17142428871eb39db5bc1b83acd41a73dc33654ed5",
+      "title": "ProTek35 RC3",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "nazgul",
+        "protek35",
+        "protek",
+        "p35"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.4/other/Street_League_motor_outputs.txt",
       "hash": "818ab0552ce3e055e2b3157551b5bc1eb31bd6c1a39ec54fb748f2cb378023e8",
       "title": "Street League Motor Output Limit Settings",
