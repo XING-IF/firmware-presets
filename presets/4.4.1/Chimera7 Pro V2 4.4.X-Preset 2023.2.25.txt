@@ -1,5 +1,5 @@
 #$ TITLE: Chimera7 Pro V2 RC2
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.4.1
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: xing, iflight, Chimera, Chimera7, Chimera7 Pro, Chimera7 Pro V2, C7 Pro V2
@@ -14,7 +14,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Factory Dump Version:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: XING 2023.02.25 (For BLITZ BMI270 and icm42688P FCs)
+#$ DESCRIPTION: XING 2023.04.19 (For BLITZ BMI270 and icm42688P FCs)
 #$ DESCRIPTION:
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/216088039-6aa5b41c-3630-4514-91cc-a729abbeaa2d.png"><img src="https://user-images.githubusercontent.com/31681897/216088039-6aa5b41c-3630-4514-91cc-a729abbeaa2d.png" height="120px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: BNF Build Version:
@@ -223,8 +223,6 @@ set osd_avg_cell_voltage_pos = 2496
 set osd_disarmed_pos = 2251
 set osd_stat_bitmask = 8798076
 set osd_displayport_device = MSP
-set osd_canvas_width = 30
-set osd_canvas_height = 16
 set vcd_video_system = HD
 set displayport_msp_fonts = 0,1,2,3
 #$ OPTION END
