@@ -1,5 +1,5 @@
 #$ TITLE:  FPVCycle Toothpick 3 3s | mouseFPV
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: FPVCycle TP3, Toothpick, 3s, 3 inch
@@ -9,17 +9,17 @@
 #$ DESCRIPTION: <img src="https://user-images.githubusercontent.com/19867640/174462482-28bdcfec-1c3a-43db-99d7-50688b92f050.svg" width="100px" style="margin-left: auto; margin-right: auto; display: block;"/>
 #$ DESCRIPTION:
 #$ DESCRIPTION: # Tune for Toothpick 3
-#$ DESCRIPTION:
+#$ DESCRIPTION: 
 #$ DESCRIPTION: ## About:
 #$ DESCRIPTION: * These gains will be high if your filtering is inadequate. Frame is noisey below 150hz
 #$ DESCRIPTION: * FOR SIDE MOUNT LIPOS ONLY, Experimental option for front-back lipos
 #$ DESCRIPTION: * Lipo Orientation very important
 #$ DESCRIPTION: * Recommended 48k PWM
-#$ DESCRIPTION:
+#$ DESCRIPTION: 
 #$ DESCRIPTION: ## Options:
 #$ DESCRIPTION: ### **Filters:**
 #$ DESCRIPTION: * **RPM Filters DShot600**: Enables RPM filtering. ESCs must support bi-directional. Sets Dshot600.
-#$ DESCRIPTION: * **RPM Filters DShot300**: Enables RPM filtering. ESCs must support bi-directional. Sets Dshot300.
+#$ DESCRIPTION: * **RPM Filters DShot300**: Enables RPM filtering. ESCs must support bi-directional. Sets Dshot300. 
 #$ DESCRIPTION:
 #$ DESCRIPTION: ### **Additional Options:**
 #$ DESCRIPTION: * **Dynamic Idle:** Enables Dynamic Idle for Freestyle 3"
@@ -31,18 +31,18 @@
 #$ DESCRIPTION: * **Motors:** FPVCycle 13mm 5000kv 3s
 #$ DESCRIPTION: * **FC/ESC:** Flywoo GOKU GNF411 40a
 #$ DESCRIPTION: * **AUW:** 103g
-#$ DESCRIPTION:
+#$ DESCRIPTION: 
 #$ DESCRIPTION: ## Fly Like mouseFPV | Recommendations Outside of Tune:
 #$ DESCRIPTION: * Apply mouseFPV Freestyle Rates
 #$ DESCRIPTION: * Use 250hz radio link if possible
 #$ DESCRIPTION: * **Set Jitter Reduction (feedforward_jitter_factor) to 14**
-#$ DESCRIPTION:
+#$ DESCRIPTION: 
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/269
 #$ WARNING: If You Choose To Include Filters, Please, See The Following:
 #$ FORCE_OPTIONS_REVIEW: TRUE
 #$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
 
-#$ INCLUDE: presets/4.4/tune/defaults.txt
+#$ INCLUDE: presets/4.3/tune/defaults.txt
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 
 # -- End Defaults --
@@ -68,6 +68,9 @@ set iterm_relax_cutoff = 10
 
 # -- TPA  --
 set tpa_rate = 70
+
+# -- Antigravity --
+set anti_gravity_gain = 3500
 
 # -- Thrust linear (off, default) --
 set thrust_linear = 20
@@ -106,108 +109,115 @@ set yaw_lowpass_hz = 100
 
 
 # This is where the author includes options that require input from the User
-    #$ OPTION_GROUP BEGIN: Filters (Choose One or None)
-    #$ OPTION BEGIN (CHECKED): RPM Filters DShot600
-        # -- Filter Settings --
+#$ OPTION_GROUP BEGIN: Filters (Choose One or None)
 
-        #$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ OPTION BEGIN (CHECKED): RPM Filters DShot600
+# -- Filter Settings --
 
-        # -- End Defaults --
-        # -- Begin Mouse Filters --
+#$ INCLUDE: presets/4.3/filters/defaults.txt
 
-        # enable dshot rpm telemetry
-        set motor_pwm_protocol = DSHOT600
-        set dshot_bidir = ON
-        set motor_poles = 12
+# -- End Defaults --
+# -- Begin Mouse Filters --
 
-        # -- Gyro lowpass filters --
-        set simplified_gyro_filter = on
-        set simplified_gyro_filter_multiplier = 150
-        simplified_tuning apply
+# enable dshot rpm telemetry
+set motor_pwm_protocol = DSHOT600
+set dshot_bidir = ON
+set motor_poles = 12
 
-        # -- Gyro Dynamic Notches --
-        set dyn_notch_count = 1
-        set dyn_notch_q = 450
-        set dyn_notch_min_hz = 100
-        set dyn_notch_max_hz = 550
+# -- Gyro lowpass filters --
+set simplified_gyro_filter = on
+set simplified_gyro_filter_multiplier = 150
+simplified_tuning apply
 
-        # -- RPM filtering --
-        set rpm_filter_q = 500
-        set rpm_filter_min_hz = 100
-        set rpm_filter_fade_range_hz = 50
-        set rpm_filter_harmonics = 3
+# -- Gyro Dynamic Notches --
+set dyn_notch_count = 1
+set dyn_notch_q = 450
+set dyn_notch_min_hz = 100
+set dyn_notch_max_hz = 550
 
-        # -- Dterm filtering --
-        set simplified_dterm_filter = on
-        set simplified_dterm_filter_multiplier = 115
-        simplified_tuning apply
+# -- RPM filtering --
+set rpm_filter_q = 500
+set rpm_filter_min_hz = 100
+set rpm_filter_fade_range_hz = 50
+set rpm_filter_harmonics = 3
 
-        # -- Yaw lowpass --
-        set yaw_lowpass_hz = 100
-    #$ OPTION END
+# -- Dterm filtering --
+set simplified_dterm_filter = on
+set simplified_dterm_filter_multiplier = 115
+simplified_tuning apply
 
-    #$ OPTION BEGIN (UNCHECKED): RPM Filters DShot300)
-        # -- Filter Settings --
+# -- Yaw lowpass --
+set yaw_lowpass_hz = 100
 
-        #$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ OPTION END
 
-        # -- End Defaults --
-        # -- Begin Mouse Filters --
 
-        # enable dshot rpm telemetry
-        set motor_pwm_protocol = DSHOT300
-        set dshot_bidir = ON
-        set motor_poles = 12
+#$ OPTION BEGIN (UNCHECKED): RPM Filters DShot300
+# -- Filter Settings --
 
-        # -- Gyro lowpass filters --
+#$ INCLUDE: presets/4.3/filters/defaults.txt
 
-        set simplified_gyro_filter = on
-        set simplified_gyro_filter_multiplier = 150
-        simplified_tuning apply
+# -- End Defaults --
+# -- Begin Mouse Filters --
 
-        # -- Gyro Dynamic Notches --
-        set dyn_notch_count = 1
-        set dyn_notch_q = 450
-        set dyn_notch_min_hz = 100
-        set dyn_notch_max_hz = 550
+# enable dshot rpm telemetry
+set motor_pwm_protocol = DSHOT300
+set dshot_bidir = ON
+set motor_poles = 12
 
-        # -- RPM filtering --
-        set rpm_filter_q = 500
-        set rpm_filter_min_hz = 100
-        set rpm_filter_fade_range_hz = 50
-        set rpm_filter_harmonics = 3
+# -- Gyro lowpass filters --
+set simplified_gyro_filter = on
+set simplified_gyro_filter_multiplier = 150
+simplified_tuning apply
 
-        # -- Dterm filtering --
-        set simplified_dterm_filter = on
-        set simplified_dterm_filter_multiplier = 115
-        simplified_tuning apply
+# -- Gyro Dynamic Notches --
+set dyn_notch_count = 1
+set dyn_notch_q = 450
+set dyn_notch_min_hz = 100
+set dyn_notch_max_hz = 550
 
-        # -- Yaw lowpass --
-        set yaw_lowpass_hz = 100
-    #$ OPTION END
+# -- RPM filtering --
+set rpm_filter_q = 500
+set rpm_filter_min_hz = 100
+set rpm_filter_fade_range_hz = 50
+set rpm_filter_harmonics = 3
+
+# -- Dterm filtering --
+set simplified_dterm_filter = on
+set simplified_dterm_filter_multiplier = 115
+simplified_tuning apply
+
+# -- Yaw lowpass --
+set yaw_lowpass_hz = 100
+
+#$ OPTION END
+
 #$ OPTION_GROUP END
 
 
 #$ OPTION_GROUP BEGIN: Additional Options (Choose Many or None)
-    #$ OPTION BEGIN (CHECKED): Dynamic Idle
-        set dyn_idle_min_rpm = 30
-    #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): Enable Battery Sag Compensation?
-        set vbat_sag_compensation = 100
-    #$ OPTION END
+#$ OPTION BEGIN (CHECKED): Dynamic Idle
+set dyn_idle_min_rpm = 30
+#$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): Front-Back Lipo (experimental, flips pitch/roll gains)
-        # -- PID Sliders  --
-        set simplified_pids_mode = RPY
-        set simplified_d_gain = 130
-        set simplified_pi_gain = 100
-        set simplified_feedforward_gain = 70
-        set simplified_dmax_gain = 000
-        set simplified_i_gain = 95
-        set simplified_pitch_d_gain = 105
-        set simplified_pitch_pi_gain = 115
-        set simplified_master_multiplier = 105
-        simplified_tuning apply
-    #$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Enable Battery Sag Compensation?
+set vbat_sag_compensation = 100
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Front-Back Lipo (experimental, flips pitch/roll gains)
+# -- PID Sliders  --
+set simplified_pids_mode = RPY
+set simplified_d_gain = 130
+set simplified_pi_gain = 100
+set simplified_feedforward_gain = 70
+set simplified_dmax_gain = 000
+set simplified_i_gain = 95
+set simplified_pitch_d_gain = 105
+set simplified_pitch_pi_gain = 115
+set simplified_master_multiplier = 105
+simplified_tuning apply
+
+#$ OPTION END
+
 #$ OPTION_GROUP END

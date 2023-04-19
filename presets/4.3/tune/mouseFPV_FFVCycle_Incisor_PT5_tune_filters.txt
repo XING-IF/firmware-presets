@@ -1,5 +1,5 @@
-#$ TITLE:  FPVCycle Incisor/Prototype 5 6s Tune | mouseFPV
-#$ FIRMWARE_VERSION: 4.4
+#$ TITLE:  FPVCycle Incisor/Prototype 5 6s Tune | mouseFPV 
+#$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: FPVCycle, 5 inch, 5in, 6S, freestyle, GoPro, mouse fpv
@@ -8,14 +8,14 @@
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION: <img src="https://user-images.githubusercontent.com/19867640/174462482-28bdcfec-1c3a-43db-99d7-50688b92f050.svg" width="100px" style="margin-left: auto; margin-right: auto; display: block;"/>
 #$ DESCRIPTION:
-#$ DESCRIPTION: # Tune for FPVCycle Incisor/Prototype 5
+#$ DESCRIPTION: # Tune for FPVCycle Incisor/Prototype 5 
 #$ DESCRIPTION:
 #$ DESCRIPTION: ## About:
 #$ DESCRIPTION: * If tune is too spicy, lower the master by a click or bring in a motor limit
 #$ DESCRIPTION: * Recommended 48k PWM
 #$ DESCRIPTION: * Uses Multi-Dynamic notich by default. Options for RPM filtering which use Dshot. Using DShot on Unsupported ESC's is Dangerous. See Warning.
 #$ DESCRIPTION: * RPM Filtering is recommended
-#$ DESCRIPTION:
+#$ DESCRIPTION: 
 #$ DESCRIPTION: ## Options:
 #$ DESCRIPTION: ### **Filters:**
 #$ DESCRIPTION: * **RPM Filters DShot600**: Enables RPM filtering. ESCs must support bi-directional. Sets Dshot600.
@@ -46,7 +46,7 @@
 #$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
-#$ INCLUDE: presets/4.4/tune/defaults.txt
+#$ INCLUDE: presets/4.3/tune/defaults.txt
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 
 # -- End Defaults --
@@ -55,7 +55,7 @@
 # -- PID Sliders  --
 set simplified_pids_mode = RPY
 set simplified_d_gain = 135
-set simplified_pi_gain = 100
+set simplified_pi_gain = 100    
 set simplified_feedforward_gain = 70
 set simplified_dmax_gain = 000
 set simplified_i_gain = 090
@@ -117,115 +117,121 @@ set yaw_lowpass_hz = 100
 
 
 #$ OPTION_GROUP BEGIN: Filters (Choose One or None)
-    #$ OPTION BEGIN (CHECKED): RPM Filters DShot600
-        # -- Filter Settings --
 
-        #$ INCLUDE: presets/4.3/filters/defaults.txt
+#$ OPTION BEGIN (CHECKED): RPM Filters DShot600
+# -- Filter Settings --
 
-        # -- End Defaults --
-        # -- Begin Mouse Filters --
+#$ INCLUDE: presets/4.3/filters/defaults.txt
 
-        # enable dshot rpm telemetry
-        set motor_pwm_protocol = DSHOT600
-        set dshot_bidir = ON
-        set motor_poles = 14
+# -- End Defaults --
+# -- Begin Mouse Filters --
 
-        # -- Gyro lowpass filters --
-        # -- No Gyro Lowpass
-        set gyro_lpf1_static_hz = 0
-        set gyro_lpf1_dyn_min_hz = 0
-        set gyro_lpf1_dyn_max_hz = 0
-        set simplified_gyro_filter = ON
-        set simplified_gyro_filter_multiplier = 140
-        simplified_tuning apply
+# enable dshot rpm telemetry
+set motor_pwm_protocol = DSHOT600
+set dshot_bidir = ON
+set motor_poles = 14
 
-        # -- Gyro Dynamic Notches --
-        set dyn_notch_count = 1
-        set dyn_notch_q = 500
-        set dyn_notch_min_hz = 150
-        set dyn_notch_max_hz = 600
+# -- Gyro lowpass filters --
+# -- No Gyro Lowpass
+set gyro_lpf1_static_hz = 0
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set simplified_gyro_filter = ON
+set simplified_gyro_filter_multiplier = 140
+simplified_tuning apply
 
-        # -- RPM filtering --
-        set rpm_filter_q = 500
-        set rpm_filter_min_hz = 125
-        set rpm_filter_fade_range_hz = 60
+# -- Gyro Dynamic Notches --
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 150
+set dyn_notch_max_hz = 600
 
-        # -- Dterm filtering --
-        set dterm_lpf1_dyn_min_hz = 93
-        set dterm_lpf1_dyn_max_hz = 187
-        set dterm_lpf1_dyn_expo = 5
-        set dterm_lpf1_static_hz = 93
-        set dterm_lpf2_static_hz = 187
+# -- RPM filtering --
+set rpm_filter_q = 500
+set rpm_filter_min_hz = 125
+set rpm_filter_fade_range_hz = 60
 
-        # -- Dterm sliders --
-        set simplified_dterm_filter_multiplier = 125
+# -- Dterm filtering --
+set dterm_lpf1_dyn_min_hz = 93
+set dterm_lpf1_dyn_max_hz = 187
+set dterm_lpf1_dyn_expo = 5
+set dterm_lpf1_static_hz = 93
+set dterm_lpf2_static_hz = 187
 
-        # -- Yaw lowpass --
-        set yaw_lowpass_hz = 100
-    #$ OPTION END
+# -- Dterm sliders --
+set simplified_dterm_filter_multiplier = 125
 
+# -- Yaw lowpass --
+set yaw_lowpass_hz = 100
 
-    #$ OPTION BEGIN (UNCHECKED): RPM Filters DShot300
-        # -- Filter Settings --
-
-        #$ INCLUDE: presets/4.3/filters/defaults.txt
-
-        # -- End Defaults --
-        # -- Begin Mouse Filters --
-
-        # enable dshot rpm telemetry
-        set motor_pwm_protocol = DSHOT300
-        set dshot_bidir = ON
-        set motor_poles = 14
-
-        # -- Gyro lowpass filters --
-        # -- No Gyro Lowpass
-        set gyro_lpf1_static_hz = 0
-        set gyro_lpf1_dyn_min_hz = 0
-        set gyro_lpf1_dyn_max_hz = 0
-        set simplified_gyro_filter = ON
-        set simplified_gyro_filter_multiplier = 140
-        simplified_tuning apply
-
-        # -- Gyro Dynamic Notches --
-        set dyn_notch_count = 1
-        set dyn_notch_q = 500
-        set dyn_notch_min_hz = 150
-        set dyn_notch_max_hz = 600
-
-        # -- RPM filtering --
-        set rpm_filter_q = 500
-        set rpm_filter_min_hz = 125
-        set rpm_filter_fade_range_hz = 60
+#$ OPTION END
 
 
-        # -- Dterm sliders --
-        set simplified_dterm_filter = ON
-        set simplified_dterm_filter_multiplier = 125
-        simplified_tuning apply
+#$ OPTION BEGIN (UNCHECKED): RPM Filters DShot300
+# -- Filter Settings --
 
-        # -- Yaw lowpass --
-        set yaw_lowpass_hz = 100
-    #$ OPTION END
+#$ INCLUDE: presets/4.3/filters/defaults.txt
+
+# -- End Defaults --
+# -- Begin Mouse Filters --
+
+# enable dshot rpm telemetry
+set motor_pwm_protocol = DSHOT300
+set dshot_bidir = ON
+set motor_poles = 14
+
+# -- Gyro lowpass filters --
+# -- No Gyro Lowpass
+set gyro_lpf1_static_hz = 0
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set simplified_gyro_filter = ON
+set simplified_gyro_filter_multiplier = 140
+simplified_tuning apply
+
+# -- Gyro Dynamic Notches --
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 150
+set dyn_notch_max_hz = 600
+
+# -- RPM filtering --
+set rpm_filter_q = 500
+set rpm_filter_min_hz = 125
+set rpm_filter_fade_range_hz = 60
+
+
+# -- Dterm sliders --
+set simplified_dterm_filter = ON
+set simplified_dterm_filter_multiplier = 125
+simplified_tuning apply
+
+# -- Yaw lowpass --
+set yaw_lowpass_hz = 100
+
+#$ OPTION END
+
 #$ OPTION_GROUP END
 
 
 #$ OPTION_GROUP BEGIN: Additional Options (Choose Many or None)
-    #$ OPTION BEGIN (CHECKED): Dynamic Idle
-        set dyn_idle_min_rpm = 20
-        set dyn_idle_p_gain = 45
-    #$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): Set 93% Motor Limit
-        set motor_output_limit = 93
-    #$ OPTION END
+#$ OPTION BEGIN (CHECKED): Dynamic Idle
+set dyn_idle_min_rpm = 20
+set dyn_idle_p_gain = 45
+#$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): Enable Battery Sag Compensation
-        set vbat_sag_compensation = 100
-    #$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Set 93% Motor Limit
+set motor_output_limit = 93
+#$ OPTION END
 
-    #$ OPTION BEGIN (UNCHECKED): Heavy Action Cam (Hero8/9/10)
-        set simplified_master_multiplier = 120
-        simplified_tuning apply
-    #$ OPTION END
+#$ OPTION BEGIN (UNCHECKED): Enable Battery Sag Compensation
+set vbat_sag_compensation = 100
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Heavy Action Cam (Hero8/9/10)
+set simplified_master_multiplier = 120
+simplified_tuning apply
+#$ OPTION END
+
 #$ OPTION_GROUP END

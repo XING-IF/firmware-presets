@@ -1,5 +1,5 @@
 #$ TITLE: SupaflyFPV Freestyle 5 Inch
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
 #$ STATUS: OFFICIAL
 #$ KEYWORDS: Supafly, SupaflyFPV, 4S, 6S, Freestyle, 5 inch, 5"
@@ -7,7 +7,6 @@
 
 #$ PARSER: MARKED
 #$ INCLUDE_WARNING: misc/warnings/en/rpm_filters.txt
-
 
 #$ DESCRIPTION: <a href="https://supaflyfpv.com"><img src="https://supaflyfpv.com/wp-content/uploads/2022/06/Logo-Cropped192.svg" width="220px" style="margin-left: auto; margin-right: auto; display: block;"/></a>
 #$ DESCRIPTION:
@@ -46,11 +45,11 @@
 #$ DESCRIPTION: <br>
 #$ DESCRIPTION: 
 
-#$ INCLUDE: presets/4.4/tune/defaults.txt
+#$ INCLUDE: presets/4.3/tune/defaults.txt
 
 # -- Antigravity --
 
-set anti_gravity_gain = 100
+set anti_gravity_gain = 5000
 
 #$ OPTION_GROUP BEGIN:PIDs
 
@@ -85,7 +84,7 @@ set anti_gravity_gain = 100
         set simplified_d_gain = 90
         set simplified_pi_gain = 110
         set simplified_dmax_gain = 0
-        set simplified_feedforward_gain = 90
+        set simplified_feedforward_gain = 95
         set simplified_pitch_pi_gain = 115
 
     #$ OPTION END
@@ -97,7 +96,7 @@ set anti_gravity_gain = 100
         set simplified_d_gain = 90
         set simplified_pi_gain = 110
         set simplified_dmax_gain = 0
-        set simplified_feedforward_gain = 90
+        set simplified_feedforward_gain = 95
         set simplified_pitch_pi_gain = 105
 
     #$ OPTION END
@@ -142,7 +141,7 @@ set dterm_lpf1_dyn_expo = 0
 
     #$ OPTION BEGIN (UNCHECKED): Crossfire Dynamic
         #$ INCLUDE: presets/4.3/rc_link/defaults.txt
-
+        
         feature RX_SERIAL
         set serialrx_provider = CRSF
 

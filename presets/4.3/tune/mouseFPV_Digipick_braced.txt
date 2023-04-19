@@ -1,5 +1,5 @@
 #$ TITLE: Braced Toothpick/Digipick 3s/4s | mouseFPV
-#$ FIRMWARE_VERSION: 4.4
+#$ FIRMWARE_VERSION: 4.3
 #$ CATEGORY: TUNE
 #$ STATUS: COMMUNITY
 #$ KEYWORDS: FPVCycle TP3, Digipick, Toothpick, 3s, 3 Inch, 4s, AOS T3, T3
@@ -9,7 +9,7 @@
 #$ DESCRIPTION: <img src="https://user-images.githubusercontent.com/19867640/174462482-28bdcfec-1c3a-43db-99d7-50688b92f050.svg" width="100px" style="margin-left: auto; margin-right: auto; display: block;"/>
 #$ DESCRIPTION:
 #$ DESCRIPTION: # Tune for Digital FPVCycle Toothpick 3 **with braces**
-#$ DESCRIPTION:
+#$ DESCRIPTION: 
 #$ DESCRIPTION: ## About:
 #$ DESCRIPTION: * **NOT** APPROPRIATE FOR A TP3 Frame *Without* Carbon Braces/Trusses
 #$ DESCRIPTION: * Defaults to PIDS made for 3s
@@ -18,7 +18,7 @@
 #$ DESCRIPTION: * Lipo Orientation very important
 #$ DESCRIPTION: * My filters are strongly encouraged. These gains will be high if your filtering is inadequate. Frame is noisy below 150hz.
 #$ DESCRIPTION: * Recommended 48k PWM
-#$ DESCRIPTION:
+#$ DESCRIPTION: 
 #$ DESCRIPTION: ## Goals:
 #$ DESCRIPTION: * The toothpick class of frames has a small weight window before things get out of control. The target weight is usually about 100g.
 #$ DESCRIPTION: * When you go digital and add weight to the quad, things get a bit unstable. You would usually increase the PID's to make up for this, however a normal toothpick frame cannot handle this.
@@ -57,18 +57,18 @@
 #$ DESCRIPTION: * **FC/ESC:** Flywoo GOKU GNF745 40a
 #$ DESCRIPTION: * **Lipo:** Tattu 450mah 4s
 #$ DESCRIPTION: * **AUW:** 131g
-#$ DESCRIPTION:
+#$ DESCRIPTION: 
 #$ DESCRIPTION: ## Fly Like mouseFPV | Recommendations Outside of Tune:
 #$ DESCRIPTION: * Apply mouseFPV Freestyle Rates
 #$ DESCRIPTION: * Use 250hz radio link if possible
 #$ DESCRIPTION: * **Set Jitter Reduction (feedforward_jitter_factor) to 14**
-#$ DESCRIPTION:
+#$ DESCRIPTION: 
 #$ DISCUSSION: https://github.com/betaflight/firmware-presets/pull/274
 #$ WARNING: If You Choose To Include Filters, Please, See The Following:
 #$ INCLUDE_WARNING: misc/warnings/en/dshot.txt
 #$ FORCE_OPTIONS_REVIEW: TRUE
 
-#$ INCLUDE: presets/4.4/tune/defaults.txt
+#$ INCLUDE: presets/4.3/tune/defaults.txt
 #$ INCLUDE: presets/4.3/filters/defaults.txt
 
 # -- End Defaults --
@@ -93,6 +93,9 @@ set iterm_relax_cutoff = 10
 
 # -- TPA  --
 set tpa_rate = 70
+
+# -- Antigravity --
+set anti_gravity_gain = 3500
 
 # -- Thrust linear  --
 set thrust_linear = 20
