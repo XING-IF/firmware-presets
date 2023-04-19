@@ -25,8 +25,6 @@
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION:* Please study the available OSD elements on your FPV drone to stay safe and get the Most out of it!
 #$ DESCRIPTION:* DJI O3 HD OSD enabled! Please update your O3 Unit and Goggles to a firmware version V01.02.0000 or higher.
-
-
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
