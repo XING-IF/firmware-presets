@@ -1,0 +1,318 @@
+#$ TITLE: Chimera7 Pro V2 RC1
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: xing, iflight, Chimera, Chimera7, Chimera7 Pro, Chimera7 Pro V2, C7 Pro V2
+#$ AUTHOR: Patrick XING (iFlight)
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: This is the official iFlight factory tune (4.4 XINGtune) for the Chimera7 Pro V2 BLITZ FC Version!
+#$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION:
+#$ DESCRIPTION: Factory Dump Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: XING 2023.01.30 (Only for BLITZ BMI270 FCs)
+#$ DESCRIPTION:
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/216088039-6aa5b41c-3630-4514-91cc-a729abbeaa2d.png"><img src="https://user-images.githubusercontent.com/31681897/216088039-6aa5b41c-3630-4514-91cc-a729abbeaa2d.png" height="120px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: BNF Build Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* BLITZ Stack (BMI270) 2022.11-
+#$ DESCRIPTION:
+#$ DESCRIPTION: iFlight OSD Manual:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* Please study the available OSD elements on your FPV drone to stay safe and get the Most out of it!
+#$ DESCRIPTION:
+#$ DESCRIPTION: Recommended ESC Settings:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/202650342-80b76db3-e39c-40ff-817d-e43051a923cf.png"><img src="https://user-images.githubusercontent.com/31681897/202650342-80b76db3-e39c-40ff-817d-e43051a923cf.png" height="130px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: * Use the recommended factory settings! 
+#$ DESCRIPTION: * Motor timing 18 (high) or 20 (aggressive)
+#$ DESCRIPTION: * 48kHz PWM option adds thrust_linear!
+#$ DESCRIPTION: * Select your PWM speed setting below if necessary:
+#$ DESCRIPTION: * 16kHz-byRPM for best motor response, lowest efficiency. For max. stability, strong wind or freestyle but can have less flight time.
+#$ DESCRIPTION: * 24kHz-byRPM (default) for perfect balance of stability and efficiency.
+#$ DESCRIPTION: * 48kHz-byRPM for lower stability, best efficiency. For max. flight time, but can have some wobbles.
+#$ DESCRIPTION:
+#$ DESCRIPTION: ExpressLRS (ELRS) Setup: 
+#$ DESCRIPTION: ------------
+#$ DESCRIPTION: * Recommended to use 250hz packet rate!
+#$ DESCRIPTION: * This preset already includes a tested option
+#$ DESCRIPTION: * Please setup your Radio or TX module accordingly (ELRS Lua Script)
+#$ DESCRIPTION: * Wrong configuration for your packet rate can cause noisy inputs or issues with your gyro setpoint!
+#$ DESCRIPTION:
+#$ DESCRIPTION: TBS Crossfire Setup: 
+#$ DESCRIPTION: ------------
+#$ DESCRIPTION: * Recommended to use 50hz locked packet rate!
+#$ DESCRIPTION: * **Do NOT** use CRSF dynamic RF-mode!
+#$ DESCRIPTION: * This preset already includes a tested option
+#$ DESCRIPTION: * Please setup your Tango2 or TX module accordingly (TBS Lua Script)
+#$ DESCRIPTION: * Tested with TBS Tango2 Crossfire (firmware 6.17)
+#$ DESCRIPTION: * Wrong configuration for your packet rate can cause noisy inputs or issues with your gyro setpoint!
+#$ DESCRIPTION:
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png"><img src="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png" height="100px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png"><img src="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png" height="100px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: GPS Options:
+#$ DESCRIPTION: ---------------
+#$ DESCRIPTION: * GPS functionality enabled by default!
+#$ DESCRIPTION: * GPS Rescue; Enables the Failsafe GPS Rescue feature (Min. 5 sats to arm)
+#$ DESCRIPTION: * Do your research about GPS Rescue! **Use at your own risk!**
+#$ DESCRIPTION:
+#$ DESCRIPTION: Tuning aspects:
+#$ DESCRIPTION: ---------------
+#$ DESCRIPTION: * PID tuning with minimal overshoot, minimum Setpoint delay
+#$ DESCRIPTION: * Smooth forward flights with bigger batteries
+#$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
+#$ DESCRIPTION: * Priorized flight performance over flight time
+#$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
+#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
+
+#$ OPTION BEGIN (CHECKED): Reset (default)
+defaults nosave
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Restore Settings (default)
+board_name IFLIGHT_BLITZ_F722
+
+# name: Chimera7 Pro V2
+
+# timer
+timer A00 AF2
+# pin A00: TIM5 CH1 (AF2)
+timer C06 AF3
+# pin C06: TIM8 CH1 (AF3)
+timer C07 AF3
+# pin C07: TIM8 CH2 (AF3)
+timer A01 AF1
+# pin A01: TIM2 CH2 (AF1)
+
+# dma
+dma pin A00 0
+# pin A00: DMA1 Stream 2 Channel 6
+dma pin C06 0
+# pin C06: DMA2 Stream 2 Channel 0
+dma pin C07 1
+# pin C07: DMA2 Stream 3 Channel 7
+dma pin A01 0
+# pin A01: DMA1 Stream 6 Channel 3
+
+# feature
+feature -RX_PARALLEL_PWM
+feature TELEMETRY
+feature LED_STRIP
+
+# serial
+serial 0 131073 115200 57600 0 115200
+serial 5 1024 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# led
+led 0 0,0::L:0
+led 1 1,0::L:0
+led 2 2,0::L:0
+led 3 3,0::L:1
+
+# color
+color 5 91,0,255
+color 6 108,0,255
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 900 2100 0 0
+
+# master
+set gyro_lpf1_static_hz = 200
+set gyro_lpf2_static_hz = 0
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 80
+set dyn_notch_max_hz = 500
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set blackbox_sample_rate = 1/16
+set dshot_idle_value = 800
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT600
+set yaw_motors_reversed = ON
+set small_angle = 180
+set yaw_deadband = 5
+set simplified_gyro_filter = OFF
+set simplified_gyro_filter_multiplier = 105
+set osd_warn_bitmask = 57215
+set osd_link_quality_alarm = 70
+set osd_rssi_dbm_alarm = -100
+set osd_rssi_pos = 152
+set osd_link_quality_pos = 56
+set osd_link_tx_power_pos = 24
+set osd_rssi_dbm_pos = 2136
+set osd_tim_2_pos = 2528
+set osd_flymode_pos = 462
+set osd_throttle_pos = 245
+set osd_vtx_channel_pos = 373
+set osd_current_pos = 2433
+set osd_mah_drawn_pos = 2465
+set osd_craft_name_pos = 480
+set osd_power_pos = 388
+set osd_warnings_pos = 14794
+set osd_avg_cell_voltage_pos = 2496
+set osd_disarmed_pos = 2251
+set osd_stat_bitmask = 8798076
+set osd_displayport_device = MSP
+set osd_canvas_width = 30
+set osd_canvas_height = 16
+set debug_mode = GYRO_SCALED
+set vcd_video_system = HD
+set displayport_msp_fonts = 0,1,2,3
+set rpm_filter_min_hz = 90
+set craft_name = Chimera7 Pro V2
+
+profile 0
+
+# profile 0
+set profile_name = DEFAULT
+set dterm_lpf1_dyn_min_hz = 0
+set dterm_lpf1_dyn_max_hz = 127
+set dterm_lpf1_static_hz = 63
+set dterm_lpf2_static_hz = 127
+set iterm_relax_cutoff = 10
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set yaw_lowpass_hz = 50
+set p_pitch = 99
+set i_pitch = 88
+set d_pitch = 110
+set f_pitch = 142
+set p_roll = 86
+set i_roll = 76
+set d_roll = 88
+set f_roll = 124
+set p_yaw = 100
+set i_yaw = 120
+set f_yaw = 76
+set d_min_roll = 81
+set d_min_pitch = 101
+set thrust_linear = 10
+set simplified_pids_mode = RP
+set simplified_master_multiplier = 160
+set simplified_i_gain = 50
+set simplified_d_gain = 170
+set simplified_pi_gain = 120
+set simplified_dmax_gain = 25
+set simplified_feedforward_gain = 65
+set simplified_pitch_d_gain = 110
+set simplified_pitch_pi_gain = 110
+set simplified_dterm_filter_multiplier = 85
+set tpa_rate = 50
+set tpa_breakpoint = 1200
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set rateprofile_name = DEFAULT
+set roll_rc_rate = 18
+set pitch_rc_rate = 18
+set yaw_rc_rate = 18
+set roll_expo = 70
+set pitch_expo = 70
+set yaw_expo = 70
+set roll_srate = 75
+set pitch_srate = 75
+set yaw_srate = 75
+
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): CRSF 50Hz Cinematic
+set serialrx_provider = CRSF
+set osd_link_quality_pos = 2264
+set osd_link_quality_alarm = 70
+set osd_rssi_dbm_alarm = -100
+set rc_smoothing_auto_factor = 35
+set rc_smoothing_auto_factor_throttle = 28
+set rc_smoothing_setpoint_cutoff = 12
+set rc_smoothing_feedforward_cutoff = 12
+set rc_smoothing_throttle_cutoff = 20
+set feedforward_smooth_factor = 20
+set feedforward_jitter_factor = 15
+set feedforward_boost = 5
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): CRSF 50Hz HD Freestyle
+set serialrx_provider = CRSF
+set osd_link_quality_pos = 2264
+set osd_link_quality_alarm = 70
+set osd_rssi_dbm_alarm = -100
+set rc_smoothing_auto_factor = 20
+set rc_smoothing_setpoint_cutoff = 25
+set rc_smoothing_feedforward_cutoff = 25
+set feedforward_smooth_factor = 0
+set feedforward_jitter_factor = 15
+set feedforward_boost = 5
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): ELRS 250Hz Cinematic
+set serialrx_provider = CRSF
+set osd_rssi_dbm_alarm = -100
+set rc_smoothing_auto_factor = 250
+set rc_smoothing_auto_factor_throttle = 170
+set rc_smoothing_setpoint_cutoff = 12
+set rc_smoothing_feedforward_cutoff = 12
+set rc_smoothing_throttle_cutoff = 20
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 60
+set feedforward_jitter_factor = 12
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): ELRS 250Hz HD Freestyle
+set serialrx_provider = CRSF
+set osd_rssi_dbm_alarm = -100
+set rc_smoothing_auto_factor = 140
+set rc_smoothing_setpoint_cutoff = 25
+set rc_smoothing_feedforward_cutoff = 25
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 10
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): SBUS/DJI Receiver
+set serialrx_provider = SBUS
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): 48kHz PWM Speed (optional)
+set thrust_linear = 20
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): GPS functionality （default）
+#feature
+feature GPS
+#serial
+serial 3 2 115200 115200 0 115200
+#master
+set gps_provider = UBLOX
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
+#OSD
+set osd_gps_speed_pos = 2392
+set osd_gps_sats_pos = 2104
+set osd_home_dir_pos = 2541
+set osd_home_dist_pos = 2543
+set osd_flight_dist_pos = 153
+set osd_altitude_pos = 18808
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): GPS Rescue (experimental)
+set failsafe_procedure = GPS-RESCUE
+set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
+set gps_rescue_min_sats = 5
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Li-Ion Battery 3.15V Warning
+set vbat_warning_cell_voltage = 315
+#$ OPTION END
