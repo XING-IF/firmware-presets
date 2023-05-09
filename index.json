@@ -179,6 +179,7 @@
       "MrAlucardDante",
       "NemesisXB",
       "Patrick XING (iFlight)",
+      "QuadMcFly (Ryan Harrell)",
       "Sjoer van der Ploeg",
       "Stingers Swarm",
       "Sugar K",
@@ -345,6 +346,7 @@
       "gyroflow",
       "HD",
       "HD video",
+      "HDOSD",
       "HDzero",
       "Headsup",
       "HighKV",
@@ -357,6 +359,7 @@
       "ImpulseRC",
       "IRC",
       "IRC Tramp",
+      "juicy",
       "karate",
       "karatebrot",
       "kim",
@@ -442,6 +445,7 @@
       "sa2.0",
       "sa20",
       "Safe",
+      "sbang",
       "sbus",
       "SBUS fast",
       "shames",
@@ -450,6 +454,7 @@
       "smart audio",
       "smartaudio",
       "smoothing",
+      "snappy",
       "Solid250",
       "some",
       "Spec",
@@ -4174,6 +4179,40 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.4/osd/defaults.txt",
+      "hash": "d594f4691e29d05efc4b37995b2f218fbe31f930157c3499755753214fa87254",
+      "title": "Default 4.4 OSD settings",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "OSD",
+      "status": "OFFICIAL",
+      "keywords": [
+        "defaults",
+        "reset",
+        "OSD"
+      ],
+      "author": "Betaflight",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/osd/QuadMcFly_DJI_HD_OSD.txt",
+      "hash": "1bdc587fd4223c8526a7954c0b44e7bfc98a8b9d556de729d24376d06e29f3be",
+      "title": "QuadMcFly - DJI HD OSD",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "OSD",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "DJI",
+        "HD",
+        "HDOSD"
+      ],
+      "author": "QuadMcFly (Ryan Harrell)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.4/other/Street_League_motor_outputs.txt",
       "hash": "818ab0552ce3e055e2b3157551b5bc1eb31bd6c1a39ec54fb748f2cb378023e8",
       "title": "Street League Motor Output Limit Settings",
@@ -4278,6 +4317,26 @@
       "priority": 10000
     },
     {
+      "fullPath": "presets/4.4/rates/QuadMcFly_Freestyle.txt",
+      "hash": "ba10d6dc3b62a3543b5b48029a2bbf8f8f4818cc6b2569d44511d2f570fd4851",
+      "title": "QuadMcFly Rates - Snappy Freestyle",
+      "firmware_version": [
+        "4.3",
+        "4.4"
+      ],
+      "category": "RATES",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "rates",
+        "freestyle",
+        "snappy",
+        "juicy",
+        "sbang"
+      ],
+      "author": "QuadMcFly (Ryan Harrell)",
+      "priority": 10000
+    },
+    {
       "fullPath": "presets/4.4/rc_link/reset_to_defaults.txt",
       "hash": "fe6be880bb051e1294253d2f583def5c9ad8c540d3463540ec9b80fa2a5d775a",
       "title": "Reset ALL RC link related settings",
@@ -4337,13 +4396,13 @@
     },
     {
       "fullPath": "presets/4.4/tune/fpvian_basher_freestyle.txt",
-      "hash": "70422179fb3b9816b435f8a55805559644e10f6ef9e4d451764490227f0ec337",
+      "hash": "ff58ad9335b5439db1582888ae879c27310c4cdccf3c01ee53dfd1f1552d559d",
       "title": "Basher Freestyle 6S 5\" by FPVian",
       "firmware_version": [
         "4.4"
       ],
       "category": "TUNE",
-      "status": "EXPERIMENTAL",
+      "status": "COMMUNITY",
       "keywords": [
         "basher",
         "freestyle",
@@ -4595,6 +4654,25 @@
       ],
       "author": "mouseFPV",
       "force_options_review": true,
+      "priority": 1000000000000
+    },
+    {
+      "fullPath": "presets/4.4/tune/quadmcfly/QuadMcFly_5_Inch_Freestyle.txt",
+      "hash": "f71d0cae4a6388e53a1711e4c4e355cee147851562d395cbeadfca5aeadafe99",
+      "title": "QuadMcFly - 5\" Freestyle with GoPro (Mid-Weight)",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "TUNE",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "4S",
+        "6S",
+        "5in",
+        "5\"",
+        "freestyle"
+      ],
+      "author": "QuadMcFly (Ryan Harrell)",
       "priority": 1000000000000
     },
     {
