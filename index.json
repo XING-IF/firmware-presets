@@ -303,8 +303,8 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Alpha A85 SucceX F411 AIO Preset 2022.9.19.txt",
-      "hash": "30e5beae73a9383d5ce481aa123e5ec834a296d99391f5f064ee965006e225e2",
-      "title": "Alpha A85 tune RC1",
+      "hash": "cb7cfc9da8c13d9c0f038a099476e64cfa0e9aefe2f677f03301c9d8e8b42584",
+      "title": "Alpha A85",
       "firmware_version": [
         "4.3.2"
       ],
@@ -321,10 +321,10 @@
     },
     {
       "fullPath": "presets/4.3/bnf/AOS 5 Preset 2022.12.15.txt",
-      "hash": "cb2eeb2568684adc2a8b6661032ed5456fe87ff5473257433aeba2967d4c8218",
-      "title": "AOS 5 BLITZ RC1",
+      "hash": "5dabc4ad14c7877798d78d4fd69e7cf30b9dff01f303edc8cfd3777afab2562b",
+      "title": "AOS 5 BLITZ",
       "firmware_version": [
-        "4.3"
+        "4.3.2"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
@@ -338,10 +338,10 @@
     },
     {
       "fullPath": "presets/4.3/bnf/BOB57 Preset 2022.12.14.txt",
-      "hash": "f546b747bb66240d4039e3e1e3f19c5e3312d5bb0cd4071115e5e3e00657a692",
-      "title": "BOB57 RC1",
+      "hash": "9f88b9d6f63e643d27a29951f3fb195b1dfd93c04c47153ac2bac9088e389a01",
+      "title": "BOB57",
       "firmware_version": [
-        "4.3"
+        "4.3.2"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
@@ -356,10 +356,10 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Chimera7 Pro V2 Preset 2022.11.18.txt",
-      "hash": "3e083586213f08eb835f04928e98629a1f271e9f9541035b70760c1b47c5fe22",
-      "title": "Chimera7 Pro V2 RC1",
+      "hash": "5a6e2826aec900c946a8f9ba436965dc708c86351993e2153094af3774aa71a2",
+      "title": "Chimera7 Pro V2",
       "firmware_version": [
-        "4.3"
+        "4.3.2"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
@@ -377,10 +377,10 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Chimera7 Pro.txt",
-      "hash": "4247c0124747bff1a9e5fe69ab67d1622ff6ac75d159d6efb4ff76e0ce45dabc",
+      "hash": "05f699eb3ee27334cf2b3c75de4a0b557dd35569bb28f1694f2ea54568997813",
       "title": "Chimera7 Pro",
       "firmware_version": [
-        "4.3"
+        "4.3.2"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
@@ -394,10 +394,10 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Defender 25 Analog Preset 2023.1.4.txt",
-      "hash": "1e0c11817cebbd2a9ccf29984f9fe0ab892215910d208ad3fb865e44feb888e3",
-      "title": "Defender 25 Analog RC2",
+      "hash": "e83c6c62c1e817dfbc444b290dce6c979a816d57c4b09fffea13315da27a08f9",
+      "title": "Defender 25 Analog",
       "firmware_version": [
-        "4.3"
+        "4.3.2"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
@@ -413,10 +413,10 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Defender 25 HD Preset 2023.1.5 .txt",
-      "hash": "80ccec4f7ca5fee259976968fd5dd0605d9015e3577bc39ec2173eef222c0aa3",
-      "title": "Defender 25 HD RC2",
+      "hash": "e2d39e6cb63364b4643341f9ae462a4f504af5787bc4d745e79aaad3d1978618",
+      "title": "Defender 25 O3",
       "firmware_version": [
-        "4.3"
+        "4.3.2"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
@@ -432,10 +432,10 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F5 Blitz v1.1.txt",
-      "hash": "12f3dafc107a6c45052e1f19347dea5bb38f6e0c7777bd4e354804d1126f69ce",
-      "title": "Nazgul F5 BLITZ XINGtune RC1",
+      "hash": "cfcb0e06521d26f4099ab575aee9f702b0b4e32cfda3b2faad10cfbff5283c8e",
+      "title": "Nazgul F5 BLITZ",
       "firmware_version": [
-        "4.3"
+        "4.3.2"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
@@ -450,10 +450,10 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F5 SucceX v1.1.txt",
-      "hash": "5263c1a0f2cc9bcb35ce2e5517383ca8ace4cd6c469214ab650c9102e0b7e7ca",
-      "title": "Nazgul F5 SucceX XINGtune RC1",
+      "hash": "9f80f6d967fafcfbacb7a687bf0ee75adfae82752ed5abece07f628389398a38",
+      "title": "Nazgul F5 SucceX",
       "firmware_version": [
-        "4.3"
+        "4.3.2"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
@@ -468,10 +468,10 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F5 V2 Preset 2022.10.28.txt",
-      "hash": "2771e8d862a50c9ee9f9f495adaf1583df03f0b728807b64722bd904023fa83c",
-      "title": "Nazgul F5 V2 RC1",
+      "hash": "775f6a12035d12521d85424c400693fd65abe971b07a7db6754f181bc6b04dc1",
+      "title": "Nazgul F5 V2",
       "firmware_version": [
-        "4.3"
+        "4.3.2"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
@@ -487,10 +487,10 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F6 BLITZ V1.1 RC2.txt",
-      "hash": "5d1e8c9ef68c16632a3fc935429c470c5bc63c3b32ce788eca629f96a6bfc822",
-      "title": "Nazgul F6 BLITZ tune RC2",
+      "hash": "9eab3291abe3dedfbd630063a1ffef142c0a02910560cdb56f0e0145dd8f89ba",
+      "title": "Nazgul F6 BLITZ",
       "firmware_version": [
-        "4.3"
+        "4.3.2"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
@@ -505,10 +505,10 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Nazgul F6 V2 Preset 2022.11.18.txt",
-      "hash": "7c0d508c42ce38142bb4de3ebd405dc976471091e9c86dfa9dcc25bb36892f00",
-      "title": "Nazgul F6 V2 RC1",
+      "hash": "e7b66b8d84892d5bace68b58cf6aa37377cd0cb55b843168096ae18346c8514e",
+      "title": "Nazgul F6 V2",
       "firmware_version": [
-        "4.3"
+        "4.3.2"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
@@ -524,10 +524,10 @@
     },
     {
       "fullPath": "presets/4.3/bnf/ProTek R20 F411 AIO Preset 2022.10.28.txt",
-      "hash": "af7abc617ecc31857bee52e1fc0dc8808e2c89cad7bceb07ed9e129de7017694",
-      "title": "ProTek R20 XINGtune RC1",
+      "hash": "28d1ade5a1a59ddc11ca4959a75fef9783b90eda645e1c82663a0549a1f7ea9c",
+      "title": "ProTek R20",
       "firmware_version": [
-        "4.3"
+        "4.3.2"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
@@ -542,10 +542,10 @@
     },
     {
       "fullPath": "presets/4.3/bnf/ProTek R25 F411 AIO Preset 2022.10.28.txt",
-      "hash": "239f1597ee7cab6f6c51f59f2c1b336bb0b97b62756889410b4f2e16925a32ba",
-      "title": "ProTek R25 XINGtune RC1",
+      "hash": "e76e6946840612b6ffa924d8d4e432b462d1f3c04acbe324b9366234710de327",
+      "title": "ProTek R25",
       "firmware_version": [
-        "4.3"
+        "4.3.2"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
@@ -560,10 +560,10 @@
     },
     {
       "fullPath": "presets/4.3/bnf/ProTek35 Beast F7 V1 Preset 2022.9.1.txt",
-      "hash": "8beb93d478c5181318dbcb8f359cb3ccd684e26a0cc9e9e53d7bbea6b51ce970",
-      "title": "ProTek35 AIO-V1.x tune RC1",
+      "hash": "6bff44100c5bdda4c9a0068d4b56c95310e69917f5fdcf4813224a4649a58a1e",
+      "title": "ProTek35 AIO-V1.x",
       "firmware_version": [
-        "4.3"
+        "4.3.2"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
@@ -578,10 +578,10 @@
     },
     {
       "fullPath": "presets/4.3/bnf/ProTek35 Beast F7 V2 Preset 2022.9.1.txt",
-      "hash": "e85c3ae1a748e978d53da184fa181306a2ccd780af25076df96fc19e15934be7",
-      "title": "ProTek35 AIO-V2 tune RC1",
+      "hash": "53967d54aa73493190da3854d41b8982ee8b2edae82460e3f5d2e131bda76f6d",
+      "title": "ProTek35 AIO-V2",
       "firmware_version": [
-        "4.3"
+        "4.3.2"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
@@ -596,10 +596,10 @@
     },
     {
       "fullPath": "presets/4.3/bnf/ProTek60 4.3 Preset 2022.9.7.txt",
-      "hash": "07b739da032b8007433f86be5be7b456bb8e27b0a8eb8b613ef965ecaaa0b619",
-      "title": "ProTek60 Pro tune RC1",
+      "hash": "22cbfe835c78231dbe7f87ff9292740648940689bdf6ae8204eb38d9d90b8f66",
+      "title": "ProTek60 Pro",
       "firmware_version": [
-        "4.3"
+        "4.3.2"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
@@ -614,8 +614,8 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Taurus X8 V3 4.3 Preset 2022.9.6.txt",
-      "hash": "c687804f020164c644146a13ada0034c5d32913b9b2830dc57623b95055ee9fc",
-      "title": "Taurus X8 V3 tune RC1",
+      "hash": "7d87ea5128eac5781c1b1b1fdf2f070b71e5a432c50b769cd97a7f34f4dcf3d6",
+      "title": "Taurus X8 V3",
       "firmware_version": [
         "4.3"
       ],

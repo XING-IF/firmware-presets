@@ -1,5 +1,5 @@
-#$ TITLE: BOB57 RC1
-#$ FIRMWARE_VERSION: 4.3
+#$ TITLE: BOB57
+#$ FIRMWARE_VERSION: 4.3.2
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: XING, iFlight, BOB57, BOB
@@ -11,6 +11,9 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: This is the official iFlight factory tune (4.3 XINGtune) for the BOB57 BLITZ FC Version!
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION:
+#$ DESCRIPTION: NOT FOR BEGINNERS! DO NOT MINDLESSLY FLASH FIRMWARE! THIS MIGHT BRICK YOUR ELECTRONICS!
+#$ DESCRIPTION:-------------
 #$ DESCRIPTION:
 #$ DESCRIPTION: Factory Dump Version:
 #$ DESCRIPTION:-------------

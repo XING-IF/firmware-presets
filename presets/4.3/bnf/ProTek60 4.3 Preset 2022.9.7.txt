@@ -1,5 +1,5 @@
-#$ TITLE: ProTek60 Pro tune RC1
-#$ FIRMWARE_VERSION: 4.3
+#$ TITLE: ProTek60 Pro
+#$ FIRMWARE_VERSION: 4.3.2
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: xing, iflight, ProTek60 Pro, P60
@@ -11,6 +11,9 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: This is the official iFlight factory tune (4.3 tune) for the ProTek60 Pro BLITZ F7 FC Version!
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION:
+#$ DESCRIPTION: NOT FOR BEGINNERS! DO NOT MINDLESSLY FLASH FIRMWARE! THIS MIGHT BRICK YOUR ELECTRONICS!
+#$ DESCRIPTION:-------------
 #$ DESCRIPTION:
 #$ DESCRIPTION: Factory Dump Version:
 #$ DESCRIPTION:-------------

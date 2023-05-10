@@ -1,5 +1,5 @@
 #$ TITLE: Chimera7 Pro
-#$ FIRMWARE_VERSION: 4.3
+#$ FIRMWARE_VERSION: 4.3.2
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: xing, iflight, chimera
@@ -12,6 +12,9 @@
 #$ DESCRIPTION: This is the official iFlight factory tune for the Chimera7 Pro!
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
 #$ DESCRIPTION: Version: 2022.07.22-V2.0 (BMI270)
+#$ DESCRIPTION:
+#$ DESCRIPTION: NOT FOR BEGINNERS! DO NOT MINDLESSLY FLASH FIRMWARE! THIS MIGHT BRICK YOUR ELECTRONICS!
+#$ DESCRIPTION:-------------
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------

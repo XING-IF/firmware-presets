@@ -1,5 +1,5 @@
-#$ TITLE: ProTek35 AIO-V2 tune RC1
-#$ FIRMWARE_VERSION: 4.3
+#$ TITLE: ProTek35 AIO-V2
+#$ FIRMWARE_VERSION: 4.3.2
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: xing, iflight, ProTek35, P35
@@ -11,6 +11,9 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: This is the official iFlight factory tune (4.3 tune) for the ProTek35 Beast F7 AIO V2 Version!
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION:
+#$ DESCRIPTION: NOT FOR BEGINNERS! DO NOT MINDLESSLY FLASH FIRMWARE! THIS MIGHT BRICK YOUR ELECTRONICS!
+#$ DESCRIPTION:-------------
 #$ DESCRIPTION:
 #$ DESCRIPTION: Factory Dump Version:
 #$ DESCRIPTION:-------------
