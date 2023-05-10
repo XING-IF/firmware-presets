@@ -161,6 +161,7 @@
       "f6",
       "f6 v2",
       "iflight",
+      "IH3",
       "nazgul",
       "P35",
       "P60",
@@ -189,6 +190,23 @@
         "iflight",
         "Alpha A85",
         "A85"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/AOS 3.5.txt",
+      "hash": "7b3aa16fdbc56b634ce68e51c1c77bf794533704c1d668ced75fe41937bd28db",
+      "title": "AOS 3.5",
+      "firmware_version": [
+        "4.3.2"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "XING",
+        "iFlight",
+        "IH3"
       ],
       "author": "Patrick XING (iFlight)",
       "priority": 0
@@ -300,6 +318,23 @@
         "Defender 25",
         "D25",
         "Defender"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/IH3 Preset.txt",
+      "hash": "85329e44f0681eba554ec521c6f8916755519ebc2c176924251a1bd102ae2986",
+      "title": "IH3 O3",
+      "firmware_version": [
+        "4.3.2"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "XING",
+        "iFlight",
+        "IH3"
       ],
       "author": "Patrick XING (iFlight)",
       "priority": 0

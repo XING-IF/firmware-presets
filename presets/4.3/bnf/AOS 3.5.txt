@@ -1,0 +1,190 @@
+#$ TITLE: AOS 3.5
+#$ FIRMWARE_VERSION: 4.3.2
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: XING, iFlight, IH3
+#$ AUTHOR: Patrick XING (iFlight)
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: This is the official iFlight factory tune (4.3 XINGtune) for the AOS 3.5 BNF!
+#$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION:
+#$ DESCRIPTION: NOT FOR BEGINNERS! DO NOT MINDLESSLY FLASH FIRMWARE! THIS MIGHT BRICK YOUR ELECTRONICS!
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:
+#$ DESCRIPTION: Factory Dump Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: XING 2023.05.10
+#$ DESCRIPTION:
+#$ DESCRIPTION: BNF Build Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* BLITZ Stack (BMI270) 2022.12-
+#$ DESCRIPTION:
+#$ DESCRIPTION: Radio Setup: 
+#$ DESCRIPTION: ------------
+#$ DESCRIPTION: * Tuned with TBS Tango2 Crossfire (firmware 6.17), Nano RX 50hz locked, CRSF 50hz preset
+#$ DESCRIPTION: * **Do NOT** use CRSF dynamic RF-mode!
+#$ DESCRIPTION: * **Manually** apply your receiver protocol!
+#$ DESCRIPTION: * **Do NOT forget to apply** the BF 4.3 RC_LINK preset for your protocol and packet rate!
+#$ DESCRIPTION: * Wrong configuration for your packet rate can cause noisy inputs or issues with your gyro setpoint!
+#$ DESCRIPTION:
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png"><img src="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png" height="100px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png"><img src="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png" height="100px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: Tuning aspects:
+#$ DESCRIPTION: ---------------
+#$ DESCRIPTION: * PID tuning with minimal overshoot, minimum Setpoint delay
+#$ DESCRIPTION: * Smooth forward flights with bigger batteries
+#$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
+#$ DESCRIPTION: * Priorized flight performance over flight time
+#$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
+#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
+
+#$ OPTION BEGIN (CHECKED): Reset (default)
+defaults nosave
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Restore Settings (default)
+# version
+# Betaflight / STM32F745 (S745) 4.3.1 Jul 13 2022 / 03:27:22 (8d4f00532) MSP API: 1.44
+
+# config: YES
+
+# start the command batch
+batch start
+
+board_name IFLIGHT_BLITZ_F7_AIO
+manufacturer_id IFRC
+mcu_id 003300295448500420393734
+signature 
+
+# name: AOS 3.5
+
+# feature
+feature -RX_PARALLEL_PWM
+feature RX_SERIAL
+
+# serial
+serial 0 1 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 900 2100 0 0
+
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 0
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set gyro_lpf1_dyn_min_hz = 0
+set acc_calibration = -60,29,9,1
+set mag_hardware = NONE
+set baro_hardware = NONE
+set rc_smoothing_auto_factor = 250
+set rc_smoothing_setpoint_cutoff = 25
+set rc_smoothing_feedforward_cutoff = 25
+set serialrx_provider = CRSF
+set sbus_baud_fast = ON
+set blackbox_sample_rate = 1/16
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT600
+set align_board_yaw = 180
+set vbat_max_cell_voltage = 422
+set beeper_dshot_beacon_tone = 3
+set yaw_motors_reversed = ON
+set small_angle = 180
+set osd_warn_rssi = ON
+set osd_warn_link_quality = ON
+set osd_warn_over_cap = ON
+set osd_rssi_pos = 2427
+set osd_link_quality_pos = 2456
+set osd_rssi_dbm_pos = 299
+set osd_tim_2_pos = 405
+set osd_flymode_pos = 2510
+set osd_throttle_pos = 245
+set osd_vtx_channel_pos = 373
+set osd_current_pos = 2496
+set osd_mah_drawn_pos = 2528
+set osd_craft_name_pos = 2541
+set osd_gps_speed_pos = 313
+set osd_gps_sats_pos = 378
+set osd_home_dir_pos = 463
+set osd_home_dist_pos = 464
+set osd_altitude_pos = 16759
+set osd_power_pos = 388
+set osd_warnings_pos = 14763
+set osd_avg_cell_voltage_pos = 2464
+set osd_disarmed_pos = 2432
+set osd_displayport_device = MSP
+set debug_mode = GYRO_SCALED
+set displayport_msp_serial = 0
+set name = AOS 3.5
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_min_hz = 80
+set dterm_lpf1_dyn_max_hz = 110
+set dterm_lpf1_type = BIQUAD
+set dterm_lpf2_static_hz = 0
+set p_pitch = 52
+set i_pitch = 94
+set d_pitch = 79
+set f_pitch = 196
+set p_roll = 50
+set i_roll = 90
+set d_roll = 69
+set f_roll = 188
+set p_yaw = 50
+set i_yaw = 90
+set f_yaw = 188
+set d_min_roll = 45
+set d_min_pitch = 51
+set d_max_advance = 0
+set feedforward_jitter_factor = 12
+set dyn_idle_min_rpm = 30
+set simplified_master_multiplier = 150
+set simplified_pi_gain = 75
+set simplified_dmax_gain = 160
+set simplified_feedforward_gain = 105
+set simplified_dterm_filter = OFF
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): CRSF/ELRS Receiver
+set serialrx_provider = CRSF
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): SBUS/DJI Receiver
+set serialrx_provider = SBUS
+#$ OPTION END
