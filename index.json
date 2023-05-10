@@ -133,7 +133,6 @@
   },
   "uniqueValues": {
     "firmware_version": [
-      "4.3",
       "4.3.2"
     ],
     "category": [
@@ -489,10 +488,10 @@
     },
     {
       "fullPath": "presets/4.3/bnf/Taurus X8 V3 4.3 Preset 2022.9.6.txt",
-      "hash": "7d87ea5128eac5781c1b1b1fdf2f070b71e5a432c50b769cd97a7f34f4dcf3d6",
+      "hash": "5c6cf24d4c75dbd6f52a88485a9c52d8bfe8952a0451c43022e3a115685b8402",
       "title": "Taurus X8 V3",
       "firmware_version": [
-        "4.3"
+        "4.3.2"
       ],
       "category": "BNF",
       "status": "EXPERIMENTAL",
