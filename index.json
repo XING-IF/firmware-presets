@@ -163,6 +163,7 @@
       "iflight",
       "IH3",
       "nazgul",
+      "nazgul5",
       "P35",
       "P60",
       "protek",
@@ -171,6 +172,7 @@
       "r20",
       "r25",
       "Taurus X8 V3",
+      "v3",
       "X8",
       "xing"
     ]
@@ -427,6 +429,24 @@
         "nazgul",
         "evoque",
         "f6 v2"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/Nazgul5 V2 O3.txt",
+      "hash": "80a0741d07a71f6ead88dfd348250af5cb00f8ee74aea3b40553db1eff9d3cac",
+      "title": "Nazgul5 V3 O3",
+      "firmware_version": [
+        "4.3.2"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "nazgul5",
+        "v3"
       ],
       "author": "Patrick XING (iFlight)",
       "priority": 0
