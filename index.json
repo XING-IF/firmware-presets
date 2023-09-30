@@ -138,7 +138,8 @@
       "4.2.9",
       "4.3",
       "4.4",
-      "4.4.1"
+      "4.4.1",
+      "4.4.2"
     ],
     "category": [
       "BNF",
@@ -315,6 +316,7 @@
       "expert",
       "express",
       "Extreme",
+      "f4",
       "f5",
       "f5 V1",
       "f5 V2",
@@ -4045,6 +4047,40 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.4/bnf/Defender 16 O3 Preset 2023.09.30.txt",
+      "hash": "b00308699b55a6c2df75d2fb6b88be63f5e0d6d76a0cea50577cedd41432971e",
+      "title": "Defender 16 O3",
+      "firmware_version": [
+        "4.4.2"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "defender"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/bnf/Defender 20 O3 Preset 2023.09.30.txt",
+      "hash": "7e7b1b271521ace6cb42d54fa96fc174f4e029af134e0082400a10eadb188451",
+      "title": "Defender 20 O3",
+      "firmware_version": [
+        "4.4.2"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "defender"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.4/bnf/Defender 25 72khz RC1 2023.02.09.txt",
       "hash": "a97a7e6d08637b23e2e26506987be2011fe12fd879d82cfa0c9b36289b3dd84d",
       "title": "Defender25 O3 HD 72kHz RC1",
@@ -4078,6 +4114,25 @@
         "Defender 25",
         "D25",
         "Defender"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/bnf/F4 O3 Preset 2023.09.30.txt",
+      "hash": "676da9e54822fea0a90d9d3c5eee94b028766af774becdcda2f3d1d8b22ea538",
+      "title": "Nazgul F4 O3",
+      "firmware_version": [
+        "4.4.2"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "nazgul",
+        "evoque",
+        "f4"
       ],
       "author": "Patrick XING (iFlight)",
       "priority": 0
