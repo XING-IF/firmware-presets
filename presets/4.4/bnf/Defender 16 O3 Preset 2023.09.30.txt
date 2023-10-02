@@ -1,0 +1,191 @@
+#$ TITLE: Defender 16 O3
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: xing, iflight, defender
+#$ AUTHOR: Patrick XING (iFlight)
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: This is the official iFlight factory tune (4.4.x XINGtune) for the Defender 16 O3!
+#$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION:
+#$ DESCRIPTION: NOT FOR BEGINNERS! DO NOT MINDLESSLY FLASH FIRMWARE! THIS MIGHT BRICK YOUR ELECTRONICS!
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:
+#$ DESCRIPTION: Factory Dump Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: XING 2023.09.30
+#$ DESCRIPTION:
+#$ DESCRIPTION: BNF Build Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* AIO IFLIGHT_DEFENDER_F411
+#$ DESCRIPTION:
+#$ DESCRIPTION: Recommended ESC Settings:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/202656400-6483a983-007e-4701-8005-01d5a8c74311.png"><img src="https://user-images.githubusercontent.com/31681897/202656400-6483a983-007e-4701-8005-01d5a8c74311.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: * Use the recommended factory settings! 
+#$ DESCRIPTION: * 24kHz PWM speed usually has more motor authority than 48kHz.
+#$ DESCRIPTION: * You can use 48kHz for longer flight times!
+#$ DESCRIPTION:
+#$ DESCRIPTION: Tuning aspects:
+#$ DESCRIPTION: ---------------
+#$ DESCRIPTION: * PID tuning with minimal overshoot, minimum Setpoint delay
+#$ DESCRIPTION: * Smooth forward flights with bigger batteries
+#$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
+#$ DESCRIPTION: * Priorized flight performance over flight time
+#$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
+#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
+
+#$ OPTION BEGIN (CHECKED): Reset (default)
+defaults nosave
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Restore Settings (default)
+board_name IFLIGHT_DEFENDER_F411
+manufacturer_id IFRC
+
+# name: Defender 16
+
+# resources
+resource USB_DETECT 1 C15
+
+# dma
+dma ADC 1 1
+# ADC 1: DMA2 Stream 4 Channel 0
+
+# feature
+feature LED_STRIP
+
+# serial
+serial 0 131073 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# led
+led 0 4,0::L:0
+
+# aux
+aux 0 0 0 1750 2100 0 0
+aux 1 1 1 900 2100 0 0
+aux 2 40 7 900 2100 0 0
+
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 0
+set dyn_notch_count = 2
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 160
+set dyn_notch_max_hz = 900
+set gyro_lpf1_dyn_min_hz = 0
+set acc_calibration = -24,-35,-12,1
+set rc_smoothing_auto_factor = 250
+set rc_smoothing_auto_factor_throttle = 170
+set rc_smoothing_setpoint_cutoff = 25
+set rc_smoothing_feedforward_cutoff = 25
+set rc_smoothing_throttle_cutoff = 20
+set blackbox_sample_rate = 1/16
+set blackbox_device = SPIFLASH
+set dshot_burst = OFF
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set bat_capacity = 900
+set vbat_max_cell_voltage = 422
+set vbat_warning_cell_voltage = 345
+set ibata_scale = 135
+set small_angle = 180
+set osd_warn_bitmask = 40959
+set osd_rssi_dbm_alarm = -100
+set osd_cap_alarm = 810
+set osd_rssi_pos = 152
+set osd_link_quality_pos = 56
+set osd_link_tx_power_pos = 24
+set osd_rssi_dbm_pos = 2582
+set osd_tim_2_pos = 2604
+set osd_flymode_pos = 398
+set osd_throttle_pos = 1316
+set osd_vtx_channel_pos = 373
+set osd_current_pos = 460
+set osd_mah_drawn_pos = 2588
+set osd_craft_name_pos = 384
+set osd_gps_speed_pos = 1424
+set osd_gps_sats_pos = 1073
+set osd_home_dir_pos = 632
+set osd_home_dist_pos = 634
+set osd_altitude_pos = 18924
+set osd_power_pos = 388
+set osd_warnings_pos = 14838
+set osd_avg_cell_voltage_pos = 2572
+set osd_battery_usage_pos = 2613
+set osd_disarmed_pos = 2455
+set osd_stat_bitmask = 8402476
+set osd_displayport_device = MSP
+set debug_mode = GYRO_SCALED
+set vcd_video_system = HD
+set led_inversion = 0
+set rpm_filter_harmonics = 2
+set rpm_filter_min_hz = 200
+set craft_name = Defender 16
+set box_user_1_name = VTX_ON_OFF
+set box_user_2_name = RX2_Inverted
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_min_hz = 0
+set dterm_lpf1_dyn_max_hz = 217
+set dterm_lpf1_type = BIQUAD
+set dterm_lpf1_static_hz = 86
+set dterm_lpf2_static_hz = 0
+set vbat_sag_compensation = 100
+set anti_gravity_gain = 180
+set iterm_relax_cutoff = 5
+set pidsum_limit = 1000
+set yaw_lowpass_hz = 450
+set p_pitch = 88
+set i_pitch = 190
+set d_pitch = 185
+set f_pitch = 163
+set p_roll = 84
+set i_roll = 180
+set d_roll = 100
+set f_roll = 156
+set p_yaw = 84
+set i_yaw = 180
+set f_yaw = 156
+set d_min_roll = 71
+set d_min_pitch = 130
+set thrust_linear = 35
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 10
+set dyn_idle_min_rpm = 40
+set simplified_master_multiplier = 145
+set simplified_i_gain = 120
+set simplified_d_gain = 165
+set simplified_pi_gain = 130
+set simplified_dmax_gain = 120
+set simplified_feedforward_gain = 90
+set simplified_pitch_d_gain = 160
+set simplified_dterm_filter_multiplier = 115
+
+rateprofile 0
+
+# rateprofile 0
+set thr_mid = 100
+set thr_expo = 35
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): CRSF/ELRS Receiver
+set serialrx_provider = CRSF
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): DJI O3 Receiver
+set serialrx_provider = SBUS
+#$ OPTION END
