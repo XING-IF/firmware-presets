@@ -133,7 +133,8 @@
   },
   "uniqueValues": {
     "firmware_version": [
-      "4.3.2"
+      "4.3.2",
+      "4.4"
     ],
     "category": [
       "BNF"
@@ -156,6 +157,7 @@
       "Defender",
       "Defender 25",
       "evoque",
+      "f4",
       "f5",
       "f5 V2",
       "f6",
@@ -573,6 +575,42 @@
         "iflight",
         "Taurus X8 V3",
         "X8"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/bnf/Defender 20 O3 Preset 2023.09.30.txt",
+      "hash": "4685df7df254276a48a598d4ccc190a76782eace6f13ed3a01264bad167fdd50",
+      "title": "Defender 20 O3",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "defender"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/bnf/F4 O3 Preset 2023.09.30.txt",
+      "hash": "d88219deee7e69114e9fbada5c1b3939fe5148d8935d7126c992ec4213f0aea4",
+      "title": "Nazgul F4 O3",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "nazgul",
+        "evoque",
+        "f4"
       ],
       "author": "Patrick XING (iFlight)",
       "priority": 0
