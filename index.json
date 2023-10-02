@@ -580,6 +580,23 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.4/bnf/Defender 16 O3 Preset 2023.09.30.txt",
+      "hash": "90f234ec8accb73b886a92edda74f2d4eb240c84bf87c51536b8cb3429bab4b7",
+      "title": "Defender 16 O3",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "defender"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.4/bnf/Defender 20 O3 Preset 2023.09.30.txt",
       "hash": "4685df7df254276a48a598d4ccc190a76782eace6f13ed3a01264bad167fdd50",
       "title": "Defender 20 O3",
