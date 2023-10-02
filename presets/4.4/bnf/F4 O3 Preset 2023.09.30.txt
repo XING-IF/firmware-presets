@@ -1,5 +1,5 @@
 #$ TITLE: Nazgul F4 O3
-#$ FIRMWARE_VERSION: 4.4.2
+#$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
 #$ KEYWORDS: xing, iflight, nazgul, evoque, f4
