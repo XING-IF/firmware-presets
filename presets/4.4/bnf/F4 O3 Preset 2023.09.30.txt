@@ -201,11 +201,11 @@ serial 3 2 115200 115200 0 115200
 set gps_provider = UBLOX
 set gps_ublox_use_galileo = ON
 #OSD
-set osd_gps_speed_pos = 2328
-set osd_gps_sats_pos = 2426
-set osd_home_dir_pos = 2511
-set osd_home_dist_pos = 2512
-set osd_altitude_pos = 2391
+set osd_gps_speed_pos = 2476
+set osd_gps_sats_pos = 2444
+set osd_home_dir_pos = 2540
+set osd_home_dist_pos = 2541
+set osd_altitude_pos = 2508
 #$ OPTION END
 
 #$ OPTION BEGIN (UNCHECKED): GPS Rescue (experimental)
