@@ -1,0 +1,214 @@
+#$ TITLE: Nazgul F4 O3
+#$ FIRMWARE_VERSION: 4.4.2
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: xing, iflight, nazgul, evoque, f4
+#$ AUTHOR: Patrick XING (iFlight)
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: This is the official iFlight factory tune (4.4 XINGtune) for the Nazgul F4 O3 (F4X/F4D)!
+#$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION:
+#$ DESCRIPTION: NOT FOR BEGINNERS! DO NOT MINDLESSLY FLASH FIRMWARE! THIS MIGHT BRICK YOUR ELECTRONICS!
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:
+#$ DESCRIPTION: Factory Dump Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: XING 2023.09.30
+#$ DESCRIPTION:
+#$ DESCRIPTION: BNF Build Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* BLITZ F7 Mini Stack (BMI270)
+#$ DESCRIPTION:
+#$ DESCRIPTION: Recommended ESC Settings:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/272007262-73a4d55e-fd57-4997-a304-a3b5f007cb58.png"><img src="https://user-images.githubusercontent.com/31681897/272007262-73a4d55e-fd57-4997-a304-a3b5f007cb58.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: * Use the recommended factory settings! 
+#$ DESCRIPTION: * 24kHz PWM speed usually has more motor authority than 48kHz.
+#$ DESCRIPTION: * You can use 48kHz for longer flight times!
+#$ DESCRIPTION:
+#$ DESCRIPTION: GPS Options:
+#$ DESCRIPTION: ---------------
+#$ DESCRIPTION: * GPS functionality; enables the GPS module and OSD values
+#$ DESCRIPTION: * GPS Rescue is not enabled by default (experimental feature)
+#$ DESCRIPTION: * Do your research about GPS Rescue! **Use at your own risk!**
+#$ DESCRIPTION:
+#$ DESCRIPTION: Tuning aspects:
+#$ DESCRIPTION: ---------------
+#$ DESCRIPTION: * PID tuning with minimal overshoot, minimum Setpoint delay
+#$ DESCRIPTION: * Smooth forward flights with bigger batteries
+#$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
+#$ DESCRIPTION: * Priorized flight performance over flight time
+#$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
+#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
+
+#$ OPTION BEGIN (CHECKED): Reset (default)
+defaults nosave
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Restore Settings (default)
+# Betaflight / STM32F7X2 (S7X2) 4.4.2 Jun  1 2023 / 09:43:07 (23d066d08) MSP API: 1.45
+board_name IFLIGHT_BLITZ_F722
+manufacturer_id IFRC
+
+# name: Nagul F4 O3
+
+# feature
+feature LED_STRIP
+
+# serial
+serial 0 131073 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# led
+led 0 0,0::L:0
+led 1 1,0::L:0
+led 2 2,0::L:0
+led 3 3,0::L:0
+led 4 4,0::L:0
+led 5 5,0::L:0
+led 6 6,0::L:0
+led 7 7,0::L:0
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 900 2100 0 0
+
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 0
+set dyn_notch_count = 2
+set dyn_notch_q = 500
+set gyro_lpf1_dyn_min_hz = 0
+set acc_calibration = -2,-55,22,1
+set baro_bustype = NONE
+set baro_i2c_device = 0
+set rc_smoothing_auto_factor = 140
+set rc_smoothing_setpoint_cutoff = 25
+set rc_smoothing_feedforward_cutoff = 25
+set blackbox_sample_rate = 1/16
+set dshot_bidir = ON
+set dshot_bitbang = AUTO
+set motor_pwm_protocol = DSHOT600
+set ibata_scale = 210
+set beeper_inversion = OFF
+set beeper_od = ON
+set yaw_motors_reversed = ON
+set small_angle = 180
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
+set gps_rescue_min_start_dist = 30
+set gps_rescue_descent_dist = 200
+set gps_rescue_min_sats = 5
+set simplified_gyro_filter = OFF
+set osd_warn_bitmask = 40959
+set osd_rssi_dbm_alarm = -100
+set osd_cap_alarm = 810
+set osd_rssi_pos = 152
+set osd_link_quality_pos = 56
+set osd_link_tx_power_pos = 24
+set osd_rssi_dbm_pos = 2614
+set osd_tim_2_pos = 2604
+set osd_flymode_pos = 398
+set osd_throttle_pos = 245
+set osd_vtx_channel_pos = 373
+set osd_current_pos = 460
+set osd_mah_drawn_pos = 2620
+set osd_craft_name_pos = 384
+set osd_gps_speed_pos = 1424
+set osd_gps_sats_pos = 1073
+set osd_home_dir_pos = 632
+set osd_home_dist_pos = 634
+set osd_altitude_pos = 18924
+set osd_power_pos = 388
+set osd_warnings_pos = 14870
+set osd_avg_cell_voltage_pos = 2572
+set osd_battery_usage_pos = 565
+set osd_disarmed_pos = 2455
+set osd_stat_bitmask = 8402476
+set osd_displayport_device = MSP
+set debug_mode = GYRO_SCALED
+set vcd_video_system = HD
+set gyro_1_sensor_align = DEFAULT
+set gyro_1_align_yaw = 900
+set gyro_2_bustype = NONE
+set gyro_2_sensor_align = DEFAULT
+set craft_name = Nagul F4 O3
+
+profile 0
+
+# profile 0
+set profile_name = Factory
+set vbat_sag_compensation = 100
+set anti_gravity_gain = 125
+set throttle_boost = 2
+set p_pitch = 65
+set i_pitch = 76
+set d_pitch = 64
+set f_pitch = 175
+set p_roll = 48
+set i_roll = 56
+set d_roll = 47
+set f_roll = 129
+set p_yaw = 48
+set i_yaw = 56
+set f_yaw = 129
+set d_min_roll = 42
+set d_min_pitch = 57
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 10
+set dyn_idle_min_rpm = 45
+set simplified_master_multiplier = 135
+set simplified_i_gain = 65
+set simplified_d_gain = 105
+set simplified_pi_gain = 80
+set simplified_dmax_gain = 35
+set simplified_feedforward_gain = 80
+set simplified_pitch_d_gain = 120
+set simplified_pitch_pi_gain = 130
+set tpa_rate = 70
+set tpa_breakpoint = 1300
+
+rateprofile 0
+
+# rateprofile 0
+set rateprofile_name = Default
+
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): CRSF/ELRS Receiver
+set serialrx_provider = CRSF
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): DJI O3 Receiver
+set serialrx_provider = SBUS
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): GPS functionality (optional)
+#feature
+feature GPS
+#serial
+serial 3 2 115200 115200 0 115200
+#master
+set gps_provider = UBLOX
+set gps_ublox_use_galileo = ON
+#OSD
+set osd_gps_speed_pos = 2476
+set osd_gps_sats_pos = 2444
+set osd_home_dir_pos = 2540
+set osd_home_dist_pos = 2541
+set osd_altitude_pos = 2508
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): GPS Rescue (experimental)
+set failsafe_procedure = GPS-RESCUE
+set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
+set gps_rescue_min_sats = 5
+#$ OPTION END
