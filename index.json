@@ -138,7 +138,8 @@
       "4.2.9",
       "4.3",
       "4.3.2",
-      "4.4"
+      "4.4",
+      "4.4.2"
     ],
     "category": [
       "BNF",
@@ -317,6 +318,7 @@
       "expert",
       "express",
       "Extreme",
+      "f4",
       "f5",
       "f5 V2",
       "f6",
@@ -4107,6 +4109,59 @@
       ],
       "author": "sugarK",
       "priority": 1000000
+    },
+    {
+      "fullPath": "presets/4.4/bnf/Defender 16 O3 Preset 2023.09.30.txt",
+      "hash": "cb644c292d5843cb70f9ba0a289efa73919337e158a947db5bdd3310306023f7",
+      "title": "Defender 16 O3",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "defender"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/bnf/Defender 20 O3 Preset 2023.09.30.txt",
+      "hash": "edc7d36e32ce21a42a85a08056e30de67f08924cedcf472da097da1899cb2fdb",
+      "title": "Defender 20 O3",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "defender"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/bnf/F4 O3 Preset 2023.09.30.txt",
+      "hash": "5d130cedb6fdf560af73f509304ffb8b9bf4be68c298b1ac7c9e54be331818b0",
+      "title": "Nazgul F4 O3",
+      "firmware_version": [
+        "4.4.2"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "nazgul",
+        "evoque",
+        "f4"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
     },
     {
       "fullPath": "presets/4.4/osd/defaults.txt",
