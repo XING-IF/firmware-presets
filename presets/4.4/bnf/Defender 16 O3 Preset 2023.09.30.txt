@@ -25,7 +25,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: Recommended ESC Settings:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/277572293-eec3d159-2853-4d03-bc01-ffb3e044e65d.jpg"><img src="https://user-images.githubusercontent.com/31681897/277572293-eec3d159-2853-4d03-bc01-ffb3e044e65d.jpg" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/277576235-2ad4d605-0d0c-4726-9a4a-023101487b9b.png"><img src="https://user-images.githubusercontent.com/31681897/277576235-2ad4d605-0d0c-4726-9a4a-023101487b9b.png" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: * Use the recommended factory settings! 
 #$ DESCRIPTION: * 24kHz PWM speed usually has more motor authority than 48kHz.
 #$ DESCRIPTION: * You can use 48kHz for longer flight times!
