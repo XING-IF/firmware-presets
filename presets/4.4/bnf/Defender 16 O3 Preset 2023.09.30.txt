@@ -188,4 +188,5 @@ set serialrx_provider = CRSF
 
 #$ OPTION BEGIN (UNCHECKED): DJI O3 Receiver
 set serialrx_provider = SBUS
+aux 3 41 7 900 2100 0 0
 #$ OPTION END
