@@ -1,4 +1,4 @@
-#$ TITLE: Helion 10
+#$ TITLE: HELION 10
 #$ FIRMWARE_VERSION: 4.4
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
@@ -9,7 +9,7 @@
 
 #$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION:
-#$ DESCRIPTION: This is the official iFlight factory tune (4.4.x XINGtune) for the Helion 10!
+#$ DESCRIPTION: This is the official iFlight factory tune (4.4.x XINGtune) for the HELION 10!
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
 #$ DESCRIPTION:
 #$ DESCRIPTION: NOT FOR BEGINNERS! DO NOT MINDLESSLY FLASH FIRMWARE! THIS MIGHT BRICK YOUR ELECTRONICS!
@@ -23,12 +23,12 @@
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION:* BLITZ F7 Stack (BMI270)
 #$ DESCRIPTION:
-#$ DESCRIPTION: Recommended ESC Settings:
+#$ DESCRIPTION: ESC Settings:
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/277576217-d3b89dbc-ca1f-49c2-8fc9-469cf829eef6.jpg"><img src="https://user-images.githubusercontent.com/31681897/277576217-d3b89dbc-ca1f-49c2-8fc9-469cf829eef6.jpg" width="200px" style="display: block; float: right;"/></a>
 #$ DESCRIPTION: * Use the recommended factory settings! 
-#$ DESCRIPTION: * 24kHz PWM speed usually has more motor authority than 48kHz.
-#$ DESCRIPTION: * You can use 48kHz for longer flight times!
+#$ DESCRIPTION: * BLHeli32 ESC! Fixed 24kHz works best.
+#$ DESCRIPTION: * You can also use higher PWM Speed for longer flight times!
 #$ DESCRIPTION:
 #$ DESCRIPTION: GPS Options:
 #$ DESCRIPTION: ---------------
