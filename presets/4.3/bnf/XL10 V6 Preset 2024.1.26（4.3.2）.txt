@@ -1,0 +1,231 @@
+#$ TITLE: Nazgul XL10 V6
+#$ FIRMWARE_VERSION: 4.3
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: Xing, iFlight, XL10, XL10 V6
+#$ AUTHOR: Patrick XING (iFlight)
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: This is the official iFlight factory tune (4.3.x XINGtune) for the XL10 V6!
+#$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION:
+#$ DESCRIPTION: NOT FOR BEGINNERS! DO NOT MINDLESSLY FLASH FIRMWARE! THIS MIGHT BRICK YOUR ELECTRONICS!
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:
+#$ DESCRIPTION: Factory Dump Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: XING 2023.1.26
+#$ DESCRIPTION:
+#$ DESCRIPTION: BNF Build Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* BLITZ F7 Stack (BMI270)
+#$ DESCRIPTION:
+#$ DESCRIPTION: Recommended ESC Settings:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/277576217-d3b89dbc-ca1f-49c2-8fc9-469cf829eef6.jpg"><img src="https://user-images.githubusercontent.com/31681897/277576217-d3b89dbc-ca1f-49c2-8fc9-469cf829eef6.jpg" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: * Use the recommended factory settings! 
+#$ DESCRIPTION: * 24kHz PWM speed usually has more motor authority than 48kHz.
+#$ DESCRIPTION: * You can use 48kHz for longer flight times!
+#$ DESCRIPTION:
+#$ DESCRIPTION: GPS Options:
+#$ DESCRIPTION: ---------------
+#$ DESCRIPTION: * GPS functionality; enables the GPS module and OSD values
+#$ DESCRIPTION: * GPS Rescue is not enabled by default (experimental feature)
+#$ DESCRIPTION: * Do your research about GPS Rescue! **Use at your own risk!**
+#$ DESCRIPTION:
+#$ DESCRIPTION: Tuning aspects:
+#$ DESCRIPTION: ---------------
+#$ DESCRIPTION: * PID tuning with minimal overshoot, minimum Setpoint delay
+#$ DESCRIPTION: * Smooth forward flights with bigger batteries
+#$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
+#$ DESCRIPTION: * Priorized flight performance over flight time
+#$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
+#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
+
+#$ OPTION BEGIN (CHECKED): Reset (default)
+defaults nosave
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Restore Settings (default)
+# Betaflight / STM32F7X2 (S7X2) 4.3.2 Jun  1 2023 / 09:43:07 (23d066d08) MSP API: 1.45
+board_name IFLIGHT_BLITZ_F722
+manufacturer_id IFRC
+
+# name: XL10
+
+# feature
+feature -RX_PARALLEL_PWM
+
+# serial
+serial 0 8192 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 900 2100 0 0
+
+# master
+set gyro_lpf1_static_hz = 150
+set gyro_lpf2_static_hz = 0
+set gyro_notch1_hz = 90
+set gyro_notch1_cutoff = 75
+set dyn_notch_count = 2
+set dyn_notch_min_hz = 60
+set dyn_notch_max_hz = 240
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 400
+set mag_hardware = NONE
+set rc_smoothing_auto_factor = 52
+set rc_smoothing_setpoint_cutoff = 25
+set rc_smoothing_feedforward_cutoff = 25
+set blackbox_sample_rate = 1/16
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT600
+set yaw_motors_reversed = ON
+set small_angle = 180
+set gps_provider = UBLOX
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
+set simplified_gyro_filter_multiplier = 60
+set osd_warn_rssi_dbm = ON
+set osd_rssi_pos = 88
+set osd_link_quality_pos = 86
+set osd_link_tx_power_pos = 24
+set osd_rssi_dbm_pos = 2134
+set osd_tim_2_pos = 2433
+set osd_flymode_pos = 398
+set osd_throttle_pos = 245
+set osd_vtx_channel_pos = 373
+set osd_current_pos = 2336
+set osd_mah_drawn_pos = 2370
+set osd_craft_name_pos = 384
+set osd_altitude_pos = 18712
+set osd_power_pos = 388
+set osd_warnings_pos = 14698
+set osd_avg_cell_voltage_pos = 2401
+set osd_disarmed_pos = 2251
+set osd_stat_min_rssi = OFF
+set osd_stat_min_rssi_dbm = ON
+set osd_displayport_device = MAX7456
+set debug_mode = GYRO_SCALED
+set vtx_band = 5
+set vtx_channel = 3
+set vtx_power = 1
+set vtx_freq = 5732
+set rpm_filter_min_hz = 70
+set name = XL10 V6
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_min_hz = 67
+set dterm_lpf1_dyn_max_hz = 135
+set dterm_lpf1_type = BIQUAD
+set dterm_lpf1_static_hz = 67
+set dterm_lpf2_static_hz = 0
+set dterm_notch_hz = 67
+set dterm_notch_cutoff = 55
+set anti_gravity_gain = 120
+set iterm_relax_type = GYRO
+set iterm_relax_cutoff = 5
+set p_pitch = 72
+set i_pitch = 109
+set d_pitch = 100
+set f_pitch = 57
+set p_roll = 63
+set i_roll = 95
+set d_roll = 72
+set f_roll = 50
+set p_yaw = 73
+set i_yaw = 95
+set f_yaw = 0
+set level_limit = 45
+set d_min_roll = 54
+set d_min_pitch = 74
+set thrust_linear = 20
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 10
+set dyn_idle_min_rpm = 25
+set simplified_pids_mode = RP
+set simplified_master_multiplier = 140
+set simplified_i_gain = 85
+set simplified_d_gain = 130
+set simplified_feedforward_gain = 30
+set simplified_pitch_d_gain = 120
+set simplified_pitch_pi_gain = 110
+set simplified_dterm_filter_multiplier = 90
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set roll_srate = 45
+set pitch_srate = 45
+set yaw_srate = 40
+set tpa_mode = PD
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# vtxtable
+vtxtable bands 5
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665    0 5885 5905    0    0
+vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable powerlevels 5
+vtxtable powervalues 25 100 200 400 600
+vtxtable powerlabels 25 400 800 1.5 2.5
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): CRSF/ELRS Receiver
+set serialrx_provider = CRSF
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): DJI O3 Receiver/SBUS Receiver
+set serialrx_provider = SBUS
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): GPS functionality (optional)
+#feature
+feature GPS
+#serial
+serial 3 2 115200 115200 0 115200
+#master
+set gps_provider = UBLOX
+set gps_ublox_use_galileo = ON
+#OSD
+set osd_gps_speed_pos = 2360
+set osd_gps_sats_pos = 2167
+set osd_home_dir_pos = 2444
+set osd_home_dist_pos = 2446
+set osd_flight_dist_pos = 153
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): GPS Rescue (experimental)
+# master
+set failsafe_procedure = GPS-RESCUE
+set gps_rescue_sanity_checks = RESCUE_SANITY_FS_ONLY
+set gps_rescue_min_sats = 5
+#$ OPTION END

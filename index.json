@@ -133,6 +133,7 @@
   },
   "uniqueValues": {
     "firmware_version": [
+      "4.3",
       "4.3.2",
       "4.4"
     ],
@@ -176,7 +177,9 @@
       "Taurus X8 V3",
       "v3",
       "X8",
-      "xing"
+      "xing",
+      "XL10",
+      "XL10 V6"
     ]
   },
   "presets": [
@@ -575,6 +578,24 @@
         "iflight",
         "Taurus X8 V3",
         "X8"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.3/bnf/XL10 V6 Preset 2024.1.26（4.3.2）.txt",
+      "hash": "b79eb84e6cacc72e8f83a87e040b805f0b21338b84490786a6223fb51cb43f52",
+      "title": "Nazgul XL10 V6",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "Xing",
+        "iFlight",
+        "XL10",
+        "XL10 V6"
       ],
       "author": "Patrick XING (iFlight)",
       "priority": 0
