@@ -133,6 +133,7 @@
   },
   "uniqueValues": {
     "firmware_version": [
+      "4.3",
       "4.3.2",
       "4.4"
     ],
@@ -176,7 +177,9 @@
       "Taurus X8 V3",
       "v3",
       "X8",
-      "xing"
+      "xing",
+      "XL10",
+      "XL10 V6"
     ]
   },
   "presets": [
@@ -580,8 +583,26 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.3/bnf/XL10 V6 Preset 2024.1.26（4.3.2）.txt",
+      "hash": "10bee4d27ab9744f8b885fe5c778bf3055eb3d00283c3a5d38a22c8fd2d81867",
+      "title": "Nazgul XL10 V6",
+      "firmware_version": [
+        "4.3"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "Xing",
+        "iFlight",
+        "XL10",
+        "XL10 V6"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.4/bnf/Defender 16 O3 Preset 2023.09.30.txt",
-      "hash": "90f234ec8accb73b886a92edda74f2d4eb240c84bf87c51536b8cb3429bab4b7",
+      "hash": "56965c0a11755b666ff848f7b560cfcbcadee06f6734714e56ef21e4ddcd2042",
       "title": "Defender 16 O3",
       "firmware_version": [
         "4.4"
@@ -598,7 +619,7 @@
     },
     {
       "fullPath": "presets/4.4/bnf/Defender 20 O3 Preset 2023.09.30.txt",
-      "hash": "4685df7df254276a48a598d4ccc190a76782eace6f13ed3a01264bad167fdd50",
+      "hash": "942ef79780a3798321048b31450eff0e6984e550cc71507591f0fbedd01ce5d8",
       "title": "Defender 20 O3",
       "firmware_version": [
         "4.4"
@@ -615,7 +636,7 @@
     },
     {
       "fullPath": "presets/4.4/bnf/F4 O3 Preset 2023.09.30.txt",
-      "hash": "d88219deee7e69114e9fbada5c1b3939fe5148d8935d7126c992ec4213f0aea4",
+      "hash": "ff2049d69992847f2074d9f1e89f27ff4cb21805058f85dcbb8fb2aba70ee480",
       "title": "Nazgul F4 O3",
       "firmware_version": [
         "4.4"
