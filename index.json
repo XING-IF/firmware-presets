@@ -162,8 +162,6 @@
       "f5 V2",
       "f6",
       "f6 v2",
-      "Helion",
-      "Helion 10",
       "iflight",
       "IH3",
       "nazgul",
@@ -630,24 +628,6 @@
         "nazgul",
         "evoque",
         "f4"
-      ],
-      "author": "Patrick XING (iFlight)",
-      "priority": 0
-    },
-    {
-      "fullPath": "presets/4.4/bnf/Helion10 Preset 2023.12.13.txt",
-      "hash": "3b71d82313daf9d2a2db2c8f37364e17f2f623ec005dd08f263df2dcd06316f6",
-      "title": "HELION 10",
-      "firmware_version": [
-        "4.4"
-      ],
-      "category": "BNF",
-      "status": "EXPERIMENTAL",
-      "keywords": [
-        "Xing",
-        "iFlight",
-        "Helion",
-        "Helion 10"
       ],
       "author": "Patrick XING (iFlight)",
       "priority": 0
