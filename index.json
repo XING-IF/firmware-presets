@@ -153,58 +153,29 @@
       "Patrick XING (iFlight)",
       "Sugar K",
       "sugarK",
-      "SupaflyFPV",
       "UAV Tech (Mark Spatz)"
     ],
     "keywords": [
-      "10\"",
       "1000Hz",
-      "10in",
       "111hz",
       "150Hz",
       "15Hz",
       "166Hz",
       "1ms",
-      "2.5in",
       "20ms",
       "250Hz",
-      "2in",
       "2ms",
-      "2S",
       "3",
-      "3 inch",
       "3.5",
-      "3.5in",
-      "3\"",
-      "3in",
-      "3S",
       "4",
-      "4 inch",
-      "4\"",
-      "4in",
-      "4S",
       "5",
-      "5 inch",
       "5.5",
       "5\"",
       "500Hz",
       "50Hz",
       "55Hz",
-      "5in",
-      "6 inch",
-      "6\"",
       "666Hz",
-      "6in",
-      "6S",
       "7",
-      "7 inch",
-      "7\"",
-      "7in",
-      "8\"",
-      "8in",
-      "8S",
-      "9\"",
-      "9in",
       "9ms",
       "A85",
       "actual",
@@ -224,9 +195,6 @@
       "cine25",
       "cine35",
       "cine80",
-      "cinelifter",
-      "CineLog",
-      "cinewhoop",
       "clean",
       "Crossfire",
       "CRSF",
@@ -252,7 +220,6 @@
       "filtering",
       "filters",
       "fport",
-      "Freestyle",
       "freesytle",
       "frsky",
       "ghost",
@@ -285,7 +252,6 @@
       "Race",
       "Race250",
       "Race500",
-      "racing",
       "rates",
       "RC",
       "rc link",
@@ -301,13 +267,10 @@
       "smoothing",
       "Solid250",
       "suagrK",
-      "Supafly",
-      "SupaflyFPV",
       "T3",
       "Taurus X8 V3",
       "TBS",
       "Team Black Sheep",
-      "toothpic",
       "Tracer",
       "transmitter",
       "tune",
@@ -317,7 +280,6 @@
       "very",
       "very clean",
       "very noisy",
-      "whoop",
       "X8",
       "xing",
       "XL10",
@@ -2901,310 +2863,6 @@
         "filters"
       ],
       "author": "Betaflight",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.5/tune/supafly_fpv/SupaflyFPV_Freestyle_3_4_Inch_EasyTune.txt",
-      "hash": "a74e9b3e4d95ea46153973ab9ebff69804b9ec57a763ba7159be20b501cef229",
-      "title": "SupaflyFPV Freestyle 3/4 Inch",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "Supafly",
-        "SupaflyFPV",
-        "4S",
-        "6S",
-        "Freestyle",
-        "3 inch",
-        "4 inch",
-        "3\"",
-        "4\""
-      ],
-      "author": "SupaflyFPV",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.5/tune/supafly_fpv/SupaflyFPV_Freestyle_5_Inch_EasyTune.txt",
-      "hash": "f68f5131112777f3d52687b8aaaa0eb024166b9b4d9558ba922b2a5ffdb03944",
-      "title": "SupaflyFPV Freestyle 5 Inch",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "Supafly",
-        "SupaflyFPV",
-        "4S",
-        "6S",
-        "Freestyle",
-        "5 inch",
-        "5\""
-      ],
-      "author": "SupaflyFPV",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.5/tune/supafly_fpv/SupaflyFPV_Freestyle_6_and_EasyTune.txt",
-      "hash": "bf76b0083c271129934277bb1a787651cf0b828b576abb5a06c3c7b763e0cc3e",
-      "title": "SupaflyFPV Freestyle 6 Inch",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "Supafly",
-        "SupaflyFPV",
-        "Freestyle",
-        "6 inch",
-        "6\""
-      ],
-      "author": "SupaflyFPV",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.5/tune/supafly_fpv/SupaflyFPV_Freestyle_7_Inch_EasyTune.txt",
-      "hash": "30c158d3d2f6dfb239a06b41d6c47af63043c6b4687b77e68c41324524f6986b",
-      "title": "SupaflyFPV Freestyle 7 Inch",
-      "firmware_version": [
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "Supafly",
-        "SupaflyFPV",
-        "Freestyle",
-        "7 inch",
-        "7\""
-      ],
-      "author": "SupaflyFPV",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_10in.txt",
-      "hash": "51bad75922d125a8cd2595b0af271f2b490603e0d408f482a1befb39dc70dac0",
-      "title": "UAV Tech - 10\" (1400-1700g | 31xx motors)",
-      "firmware_version": [
-        "4.5",
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "4S",
-        "6S",
-        "10in",
-        "10\"",
-        "freestyle"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_5in_Freestyle_575-650.txt",
-      "hash": "70ee6c4d0e405f59fbcc89ef350620132916f1c950a81b49ca6ec3e60395e93f",
-      "title": "UAV Tech - 5\" Freestyle withOUT GoPro (575-650g AUW)",
-      "firmware_version": [
-        "4.5",
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "4S",
-        "6S",
-        "5in",
-        "5\"",
-        "freestyle"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_5in_Freestyle_650-750.txt",
-      "hash": "9aa601d0a073ac34cea913d8ab6ba35af055082a36e81a38ca892cba83e58caf",
-      "title": "UAV Tech - 5\" Freestyle with GoPro (650-750g AUW)",
-      "firmware_version": [
-        "4.5",
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "4S",
-        "6S",
-        "5in",
-        "5\"",
-        "freestyle"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_5in_Race_500-575.txt",
-      "hash": "966d06941c08826c50fe57fd6e6ad5aac8e928b3acfe87971b2828dfc58dba0f",
-      "title": "UAV Tech - 5\" Race (500-550g AUW)",
-      "firmware_version": [
-        "4.5",
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "4S",
-        "6S",
-        "5in",
-        "5\"",
-        "race",
-        "racing"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_6-7in.txt",
-      "hash": "dbc4f6923cff2ba3f9c789c33617399c63eebecc020250b9d97c25116fc25fed",
-      "title": "UAV Tech - 6\"/7\" (750-1000g AUW)",
-      "firmware_version": [
-        "4.5",
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "4S",
-        "6S",
-        "6in",
-        "7in",
-        "6\"",
-        "7\"",
-        "freestyle",
-        "long range"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_8-9in.txt",
-      "hash": "ce70b7c1e5d1e0c7611a559f053df45323d698cdcf12e8e39a6f072b02afefab",
-      "title": "UAV Tech - 8\"/9\" (1000-1400 AUW)",
-      "firmware_version": [
-        "4.5",
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "4S",
-        "6S",
-        "8in",
-        "9in",
-        "8\"",
-        "9\"",
-        "freestyle",
-        "long range"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_Cinelifter_8-9in.txt",
-      "hash": "10ed57bb583ffe2dcbf02689bb4f1b4dc765e762540e25820c3442eb42b04e48",
-      "title": "UAV Tech - Cinelifter (8\"/9\" >2,000g AUW)",
-      "firmware_version": [
-        "4.5",
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "6S",
-        "8S",
-        "8in",
-        "9in",
-        "8\"",
-        "9\"",
-        "cinelifter"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_Cinelog.txt",
-      "hash": "24dff31867d47e5fdbf85318213927e3a682200e84f0e5da856fb85e5f24f635",
-      "title": "UAV Tech - Cinelog (250-300g AUW)",
-      "firmware_version": [
-        "4.5",
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "CineLog"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_Cinewhoop.txt",
-      "hash": "bb323c0fb2e43b52017630c6858d87c05b6f13f3c206df20156d2a1228ffe2c0",
-      "title": "UAV Tech - Cinewhoop",
-      "firmware_version": [
-        "4.5",
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "cinewhoop"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_Micro.txt",
-      "hash": "a388080609e33e07f2733cd0d6ed7e7cd1c24ff4f09bd4dc338668027c203e16",
-      "title": "UAV Tech - Micro (2\" to 4\")",
-      "firmware_version": [
-        "4.5",
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "2S",
-        "3S",
-        "4S",
-        "6S",
-        "toothpic",
-        "2in",
-        "2.5in",
-        "3in",
-        "3.5in",
-        "4in"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
-      "priority": 1000000000000
-    },
-    {
-      "fullPath": "presets/4.5/tune/uav_tech/UAV_tech_Whoop.txt",
-      "hash": "e2382de6f47004bd66a1c3a3d267e2c155a4ba71313e15bf097137d2251905a2",
-      "title": "UAV Tech - Whoop (1S & 2S)",
-      "firmware_version": [
-        "4.5",
-        "4.5"
-      ],
-      "category": "TUNE",
-      "status": "OFFICIAL",
-      "keywords": [
-        "whoop"
-      ],
-      "author": "UAV Tech (Mark Spatz)",
       "priority": 1000000000000
     }
   ]
