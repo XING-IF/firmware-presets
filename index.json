@@ -233,6 +233,7 @@
       "ctzsnooze",
       "CTZsoonze",
       "D25",
+      "dc5",
       "default",
       "defaults",
       "Defender",
@@ -2055,6 +2056,40 @@
       ],
       "author": "Chris Rosser",
       "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/bnf/DC5 CRSF Preset 2024.06.09.txt",
+      "hash": "670e246feea8c1c27682d51b0e48391da148e7ba5445ae8825807d3f49bfa861",
+      "title": "Nazgul DC5 O3 CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "dc5"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/bnf/DC5 SBUS Preset 2024.06.09.txt",
+      "hash": "94222eb86da6f93d6d74b4b13013ccde107155f2a05c3cd748d3f97929a7332d",
+      "title": "Nazgul DC5 O3 DJI RC2",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "dc5"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
     },
     {
       "fullPath": "presets/4.5/filters/aos_rc/aos_3.5_filters.txt",
