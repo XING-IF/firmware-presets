@@ -11,10 +11,11 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: This is the official iFlight Tune!
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
-#$ DESCRIPTION:
 #$ DESCRIPTION: NOT FOR BEGINNERS! DO NOT MINDLESSLY FLASH FIRMWARE! THIS MIGHT BRICK YOUR ELECTRONICS!
-#$ DESCRIPTION: CRSF protocol MUST BE SELECTED when flashing Betaflight 4.5.x.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Firmware selection:
 #$ DESCRIPTION:-------------
+#$ DESCRIPTION:* CRSF protocol MUST BE SELECTED when flashing Betaflight 4.5.x.
 #$ DESCRIPTION:
 #$ DESCRIPTION: Factory Dump Version:
 #$ DESCRIPTION:-------------

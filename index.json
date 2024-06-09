@@ -2021,7 +2021,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/DC5 CRSF Preset 2024.06.09.txt",
-      "hash": "670e246feea8c1c27682d51b0e48391da148e7ba5445ae8825807d3f49bfa861",
+      "hash": "e71a71e173e2e114f266ef7844bdc0396ccc11dba8d7a39604724cc8cad9edc3",
       "title": "Nazgul DC5 O3 CRSF/ELRS",
       "firmware_version": [
         "4.5"
@@ -2038,7 +2038,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/DC5 SBUS Preset 2024.06.09.txt",
-      "hash": "94222eb86da6f93d6d74b4b13013ccde107155f2a05c3cd748d3f97929a7332d",
+      "hash": "87600b11c3108c1e22a78c2988e19363e4d945917a5cf3a91c2e7b5beb5a32d9",
       "title": "Nazgul DC5 O3 DJI RC2",
       "firmware_version": [
         "4.5"
