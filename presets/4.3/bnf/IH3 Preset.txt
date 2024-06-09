@@ -1,0 +1,186 @@
+#$ TITLE: IH3 O3
+#$ FIRMWARE_VERSION: 4.3.2
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: XING, iFlight, IH3
+#$ AUTHOR: Patrick XING (iFlight)
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: This is the official iFlight factory tune (4.3 XINGtune) for the IH3 BNF!
+#$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION:
+#$ DESCRIPTION: NOT FOR BEGINNERS! DO NOT MINDLESSLY FLASH FIRMWARE! THIS MIGHT BRICK YOUR ELECTRONICS!
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:
+#$ DESCRIPTION: Factory Dump Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: XING 2023.05.10
+#$ DESCRIPTION:
+#$ DESCRIPTION: BNF Build Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* BLITZ Stack (BMI270) 2022.12-
+#$ DESCRIPTION:
+#$ DESCRIPTION: Radio Setup: 
+#$ DESCRIPTION: ------------
+#$ DESCRIPTION: * Tuned with TBS Tango2 Crossfire (firmware 6.17), Nano RX 50hz locked, CRSF 50hz preset
+#$ DESCRIPTION: * **Do NOT** use CRSF dynamic RF-mode!
+#$ DESCRIPTION: * **Manually** apply your receiver protocol!
+#$ DESCRIPTION: * **Do NOT forget to apply** the BF 4.3 RC_LINK preset for your protocol and packet rate!
+#$ DESCRIPTION: * Wrong configuration for your packet rate can cause noisy inputs or issues with your gyro setpoint!
+#$ DESCRIPTION:
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png"><img src="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png" height="100px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png"><img src="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png" height="100px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: Tuning aspects:
+#$ DESCRIPTION: ---------------
+#$ DESCRIPTION: * PID tuning with minimal overshoot, minimum Setpoint delay
+#$ DESCRIPTION: * Smooth forward flights with bigger batteries
+#$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
+#$ DESCRIPTION: * Priorized flight performance over flight time
+#$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
+#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
+
+#$ OPTION BEGIN (CHECKED): Reset (default)
+defaults nosave
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Restore Settings (default)
+# Betaflight / STM32F7X2 (S7X2) 4.3.1 Jul 13 2022 / 03:36:10 (8d4f005) MSP API: 1.44
+# config: manufacturer_id: IFRC, board_name: IFLIGHT_BLITZ_F722, version: edcd244b, date: 2022-06-29T02:24:46Z
+
+# start the command batch
+batch start
+
+board_name IFLIGHT_BLITZ_F722
+manufacturer_id IFRC
+mcu_id 003100273132511530393738
+signature 
+
+# name: iH3 O3
+
+# feature
+feature -RX_PARALLEL_PWM
+feature GPS
+
+# serial
+serial 0 1 115200 57600 0 115200
+serial 3 2 115200 115200 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 0 900 2100 0 0
+
+# master
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set acc_calibration = 17,4,-3,1
+set mag_hardware = NONE
+set rc_smoothing_setpoint_cutoff = 12
+set rc_smoothing_feedforward_cutoff = 12
+set blackbox_sample_rate = 1/16
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT600
+set motor_output_reordering = 3,2,1,0,4,5,6,7
+set yaw_motors_reversed = ON
+set small_angle = 180
+set gps_provider = UBLOX
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
+set osd_link_quality_alarm = 70
+set osd_rssi_dbm_alarm = -100
+set osd_rssi_pos = 152
+set osd_link_quality_pos = 184
+set osd_link_tx_power_pos = 24
+set osd_rssi_dbm_pos = 2136
+set osd_tim_2_pos = 2497
+set osd_flymode_pos = 398
+set osd_throttle_pos = 245
+set osd_vtx_channel_pos = 373
+set osd_current_pos = 2401
+set osd_mah_drawn_pos = 2434
+set osd_craft_name_pos = 384
+set osd_gps_speed_pos = 2393
+set osd_gps_sats_pos = 2104
+set osd_home_dir_pos = 2509
+set osd_home_dist_pos = 2511
+set osd_altitude_pos = 18809
+set osd_power_pos = 388
+set osd_warnings_pos = 14762
+set osd_avg_cell_voltage_pos = 2466
+set osd_disarmed_pos = 2251
+set osd_displayport_device = MSP
+set debug_mode = GYRO_SCALED
+set displayport_msp_serial = 0
+set gyro_1_sensor_align = CW180
+set gyro_1_align_yaw = 1800
+set name = iH3 O3
+
+profile 0
+
+# profile 0
+set vbat_sag_compensation = 100
+set anti_gravity_gain = 8000
+set iterm_relax_cutoff = 10
+set p_pitch = 59
+set i_pitch = 106
+set d_pitch = 92
+set f_pitch = 232
+set p_roll = 43
+set i_roll = 78
+set d_roll = 72
+set f_roll = 171
+set p_yaw = 43
+set i_yaw = 78
+set f_yaw = 171
+set d_min_roll = 54
+set d_min_pitch = 68
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 10
+set feedforward_boost = 5
+set simplified_master_multiplier = 130
+set simplified_d_gain = 140
+set simplified_pi_gain = 75
+set simplified_feedforward_gain = 110
+set simplified_pitch_d_gain = 110
+set simplified_pitch_pi_gain = 130
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): CRSF/ELRS Receiver
+set serialrx_provider = CRSF
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): SBUS/DJI Receiver
+set serialrx_provider = SBUS
+#$ OPTION END

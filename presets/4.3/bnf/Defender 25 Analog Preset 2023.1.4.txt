@@ -1,0 +1,419 @@
+#$ TITLE: Defender 25 Analog
+#$ FIRMWARE_VERSION: 4.3.2
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: xing, iflight, Defender 25, D25, Defender
+#$ AUTHOR: Patrick XING (iFlight)
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: This is the official iFlight factory tune (4.3 XINGtune) for the Defender 25 BLITZ AIO Version!
+#$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION:
+#$ DESCRIPTION: NOT FOR BEGINNERS! DO NOT MINDLESSLY FLASH FIRMWARE! THIS MIGHT BRICK YOUR ELECTRONICS!
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:
+#$ DESCRIPTION: Factory Dump Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: XING 2023.01.03 (Only for BLITZ Defender 25 Analog F411 AIO)
+#$ DESCRIPTION:
+#$ DESCRIPTION: BNF Build Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* BLITZ AIO (BMI270) 2023.1-
+#$ DESCRIPTION:
+#$ DESCRIPTION: Modes User2 Controls:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: * Simply setup an AUX switch on your radio to control.
+#$ DESCRIPTION: * Can be accessed in your Betaflight Configurator, Modes Tab.
+#$ DESCRIPTION: * User2 can control a naked GoPro or GoPro Bones.
+#$ DESCRIPTION: * Start or Stop recording with a momentary AUX switch.
+#$ DESCRIPTION:
+#$ DESCRIPTION: Recommended ESC Settings:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/210650349-1c7bc6b4-00be-461d-a837-3166fdf2e016.png"><img src="https://user-images.githubusercontent.com/31681897/210650349-1c7bc6b4-00be-461d-a837-3166fdf2e016.png" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: * Use the recommended factory settings! 
+#$ DESCRIPTION: * Motor timing Auto or 15
+#$ DESCRIPTION: * 24kHz PWM speed usually has more authority than 48kHz.
+#$ DESCRIPTION: * You can use 48kHz for longer flight times!
+#$ DESCRIPTION:
+#$ DESCRIPTION: ExpressLRS (ELRS) Setup: 
+#$ DESCRIPTION: ------------
+#$ DESCRIPTION: * Recommended to use 250hz packet rate!
+#$ DESCRIPTION: * This preset already includes a tested option
+#$ DESCRIPTION: * Please setup your Radio or TX module accordingly (ELRS Lua Script)
+#$ DESCRIPTION: * Wrong configuration for your packet rate can cause noisy inputs or issues with your gyro setpoint!
+#$ DESCRIPTION:
+#$ DESCRIPTION: TBS Crossfire Setup: 
+#$ DESCRIPTION: ------------
+#$ DESCRIPTION: * Recommended to use 50hz locked packet rate!
+#$ DESCRIPTION: * **Do NOT** use CRSF dynamic RF-mode!
+#$ DESCRIPTION: * This preset already includes a tested option
+#$ DESCRIPTION: * Please setup your Tango2 or TX module accordingly (TBS Lua Script)
+#$ DESCRIPTION: * Tested with TBS Tango2 Crossfire (firmware 6.17)
+#$ DESCRIPTION: * Wrong configuration for your packet rate can cause noisy inputs or issues with your gyro setpoint!
+#$ DESCRIPTION:
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png"><img src="https://user-images.githubusercontent.com/31681897/180727859-67edc609-7ae1-4b9c-9585-1d9db8eaa75e.png" height="100px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png"><img src="https://user-images.githubusercontent.com/31681897/180718929-6504b9d8-df78-4780-a4bc-c428b450d147.png" height="100px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: Tuning aspects:
+#$ DESCRIPTION: ---------------
+#$ DESCRIPTION: * PID tuning with minimal overshoot, minimum Setpoint delay
+#$ DESCRIPTION: * Smooth forward flights with bigger batteries
+#$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
+#$ DESCRIPTION: * Priorized flight performance over flight time
+#$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
+#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
+
+#$ OPTION BEGIN (CHECKED): Reset (default)
+defaults nosave
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Restore Settings (default)
+board_name IFLIGHT_F411_PRO
+
+# name: Defender 25
+
+# feature
+feature -RX_PARALLEL_PWM
+feature RX_SERIAL
+feature LED_STRIP
+
+# serial
+serial 0 8192 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# led
+led 0 0,0::L:0
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 900 2100 0 0
+
+# vtxtable
+vtxtable bands 5
+vtxtable channels 8
+vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
+vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
+vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665    0 5885 5905    0    0
+vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
+vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
+vtxtable powerlevels 4
+vtxtable powervalues 25 400 800 1600
+vtxtable powerlabels 25 400 800 1K6
+
+# master
+set gyro_lpf1_static_hz = 375
+set gyro_lpf2_static_hz = 0
+set dyn_notch_min_hz = 100
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 650
+set mag_hardware = NONE
+set baro_hardware = NONE
+set rc_smoothing_auto_factor_throttle = 28
+set rc_smoothing_throttle_cutoff = 20
+set blackbox_sample_rate = 1/16
+set dshot_idle_value = 1000
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set motor_poles = 12
+set align_board_yaw = 90
+set vbat_max_cell_voltage = 422
+set vbat_warning_cell_voltage = 347
+set ibata_scale = 350
+set small_angle = 180
+set pid_process_denom = 1
+set simplified_gyro_filter_multiplier = 150
+
+#OSD
+set osd_warn_core_temp = OFF
+set osd_warn_no_gps_rescue = OFF
+set osd_warn_rssi = ON
+set osd_cap_alarm = 900
+set osd_rssi_pos = 2486
+set osd_tim_2_pos = 2550
+set osd_flymode_pos = 2509
+set osd_vtx_channel_pos = 2516
+set osd_current_pos = 2496
+set osd_mah_drawn_pos = 2528
+set osd_craft_name_pos = 2538
+set osd_debug_pos = 225
+set osd_rssi_dbm_pos = 299
+set osd_warnings_pos = 14762
+set osd_avg_cell_voltage_pos = 2465
+set osd_disarmed_pos = 2432
+set osd_stat_max_spd = OFF
+set debug_mode = GYRO_SCALED
+set vtx_band = 5
+set vtx_channel = 3
+set vtx_power = 1
+set vtx_freq = 5732
+set pinio_box = 41,255,255,255
+set name = Defender 25
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_min_hz = 0
+set dterm_lpf1_dyn_max_hz = 180
+set dterm_lpf1_static_hz = 101
+set dterm_lpf2_static_hz = 202
+set vbat_sag_compensation = 100
+set anti_gravity_gain = 3000
+set iterm_relax_cutoff = 20
+set pidsum_limit = 1000
+set yaw_lowpass_hz = 0
+set p_pitch = 78
+set i_pitch = 98
+set d_pitch = 64
+set f_pitch = 122
+set p_roll = 75
+set i_roll = 93
+set d_roll = 56
+set f_roll = 117
+set p_yaw = 75
+set i_yaw = 93
+set f_yaw = 117
+set d_min_roll = 50
+set d_min_pitch = 56
+set thrust_linear = 25
+set feedforward_boost = 5
+set simplified_master_multiplier = 115
+set simplified_i_gain = 70
+set simplified_d_gain = 145
+set simplified_pi_gain = 145
+set simplified_dmax_gain = 40
+set simplified_feedforward_gain = 85
+set simplified_dterm_filter_multiplier = 135
+
+profile 1
+
+profile 2
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+# rateprofile 0
+set tpa_breakpoint = 1200
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+rateprofile 4
+
+rateprofile 5
+
+# restore original rateprofile selection
+rateprofile 0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): Modes User2 GoPro Control
+# Default AUX 10; Please change if necessary!
+aux 2 41 9 1700 2100 0 0
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): CRSF 50Hz Cinematic
+set serialrx_provider = CRSF
+
+#OSD
+set osd_link_quality_pos = 408
+
+#RC_LINK preset Betaflight official
+# NOTE TO AUTHORS: Always include this Preset in any RC Preset
+
+set feedforward_averaging = OFF
+set feedforward_smooth_factor = 25
+set feedforward_jitter_factor = 7
+set feedforward_transition = 0
+set feedforward_boost = 15
+
+set rc_smoothing = ON
+set rc_smoothing_auto_factor = 30
+set rc_smoothing_auto_factor_throttle = 30
+set rc_smoothing_setpoint_cutoff = 0
+set rc_smoothing_feedforward_cutoff = 0
+set rc_smoothing_throttle_cutoff = 0
+set rc_smoothing_debug_axis = ROLL
+
+# 50hz default settings in case option is not selected by the user
+set feedforward_averaging = OFF
+set feedforward_smooth_factor = 0
+set feedforward_jitter_factor = 12
+set feedforward_boost = 5
+
+# NOTE TO AUTHORS: Always include this Preset in any RC Preset
+
+set feedforward_averaging = OFF
+set feedforward_smooth_factor = 25
+set feedforward_jitter_factor = 7
+set feedforward_transition = 0
+set feedforward_boost = 15
+
+set rc_smoothing = ON
+set rc_smoothing_auto_factor = 30
+set rc_smoothing_auto_factor_throttle = 30
+set rc_smoothing_setpoint_cutoff = 0
+set rc_smoothing_feedforward_cutoff = 0
+set rc_smoothing_throttle_cutoff = 0
+set rc_smoothing_debug_axis = ROLL
+
+set feedforward_averaging = OFF
+set feedforward_smooth_factor = 20
+set feedforward_jitter_factor = 15
+set feedforward_boost = 5
+
+set rc_smoothing_auto_factor = 35
+set rc_smoothing_auto_factor_throttle = 28
+set rc_smoothing_setpoint_cutoff = 12
+set rc_smoothing_feedforward_cutoff = 12
+set rc_smoothing_throttle_cutoff = 20
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): CRSF 50Hz Ultra Cinematic
+set serialrx_provider = CRSF
+
+#OSD
+set osd_link_quality_pos = 408
+
+#RC_LINK preset Betaflight official
+# NOTE TO AUTHORS: Always include this Preset in any RC Preset
+
+set feedforward_averaging = OFF
+set feedforward_smooth_factor = 25
+set feedforward_jitter_factor = 7
+set feedforward_transition = 0
+set feedforward_boost = 15
+
+set rc_smoothing = ON
+set rc_smoothing_auto_factor = 30
+set rc_smoothing_auto_factor_throttle = 30
+set rc_smoothing_setpoint_cutoff = 0
+set rc_smoothing_feedforward_cutoff = 0
+set rc_smoothing_throttle_cutoff = 0
+set rc_smoothing_debug_axis = ROLL
+
+# 50hz default settings in case option is not selected by the user
+set feedforward_averaging = OFF
+set feedforward_smooth_factor = 0
+set feedforward_jitter_factor = 12
+set feedforward_boost = 5
+
+# NOTE TO AUTHORS: Always include this Preset in any RC Preset
+
+set feedforward_averaging = OFF
+set feedforward_smooth_factor = 25
+set feedforward_jitter_factor = 7
+set feedforward_transition = 0
+set feedforward_boost = 15
+
+set rc_smoothing = ON
+set rc_smoothing_auto_factor = 30
+set rc_smoothing_auto_factor_throttle = 30
+set rc_smoothing_setpoint_cutoff = 0
+set rc_smoothing_feedforward_cutoff = 0
+set rc_smoothing_throttle_cutoff = 0
+set rc_smoothing_debug_axis = ROLL
+
+set feedforward_averaging = OFF
+set feedforward_smooth_factor = 40
+set feedforward_jitter_factor = 20
+set feedforward_boost = 5
+
+set rc_smoothing_auto_factor = 90
+set rc_smoothing_auto_factor_throttle = 28
+set rc_smoothing_setpoint_cutoff = 6
+set rc_smoothing_feedforward_cutoff = 6
+set rc_smoothing_throttle_cutoff = 20
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): ELRS 250Hz Cinematic
+set serialrx_provider = CRSF
+
+#OSD
+set osd_link_quality_pos = 408
+
+#RC_LINK preset Betaflight official
+
+# NOTE TO AUTHORS: Always include this Preset in any RC Preset
+
+set feedforward_averaging = OFF
+set feedforward_smooth_factor = 25
+set feedforward_jitter_factor = 7
+set feedforward_transition = 0
+set feedforward_boost = 15
+
+set rc_smoothing = ON
+set rc_smoothing_auto_factor = 30
+set rc_smoothing_auto_factor_throttle = 30
+set rc_smoothing_setpoint_cutoff = 0
+set rc_smoothing_feedforward_cutoff = 0
+set rc_smoothing_throttle_cutoff = 0
+set rc_smoothing_debug_axis = ROLL
+
+# 250hz default settings in case no-one selects a tuning option
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 6
+
+# very smooth Cinematic (not for racing):
+set feedforward_smooth_factor = 60
+set feedforward_jitter_factor = 12
+set rc_smoothing_auto_factor = 250
+set rc_smoothing_auto_factor_throttle = 170
+set rc_smoothing_setpoint_cutoff = 12
+set rc_smoothing_feedforward_cutoff = 12
+set rc_smoothing_throttle_cutoff = 20
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): ELRS 250Hz Ultra Cinematic
+set serialrx_provider = CRSF
+
+#OSD
+set osd_link_quality_pos = 408
+
+#RC_LINK preset Betaflight official
+
+# NOTE TO AUTHORS: Always include this Preset in any RC Preset
+
+set feedforward_averaging = OFF
+set feedforward_smooth_factor = 25
+set feedforward_jitter_factor = 7
+set feedforward_transition = 0
+set feedforward_boost = 15
+
+set rc_smoothing = ON
+set rc_smoothing_auto_factor = 30
+set rc_smoothing_auto_factor_throttle = 30
+set rc_smoothing_setpoint_cutoff = 0
+set rc_smoothing_feedforward_cutoff = 0
+set rc_smoothing_throttle_cutoff = 0
+set rc_smoothing_debug_axis = ROLL
+
+# 250hz default settings in case no-one selects a tuning option
+set feedforward_averaging = 2_POINT
+set feedforward_smooth_factor = 45
+set feedforward_jitter_factor = 6
+
+# ultra smooth Cinematic (not for racing):
+set feedforward_smooth_factor = 65
+set feedforward_jitter_factor = 15
+set rc_smoothing_auto_factor = 250
+set rc_smoothing_auto_factor_throttle = 170
+set rc_smoothing_setpoint_cutoff = 6
+set rc_smoothing_feedforward_cutoff = 6
+set rc_smoothing_throttle_cutoff = 20
+#$ OPTION END
+
+#$ OPTION BEGIN (UNCHECKED): SBUS/DJI Receiver
+set serialrx_provider = SBUS
+#$ OPTION END
