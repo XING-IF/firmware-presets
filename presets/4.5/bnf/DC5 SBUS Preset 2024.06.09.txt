@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: xing, iflight, dc5
+#$ KEYWORDS: xing, iflight, f5
 #$ AUTHOR: Patrick XING (iFlight)
 
 #$ PARSER: MARKED

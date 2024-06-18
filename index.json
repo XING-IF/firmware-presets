@@ -2038,7 +2038,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/DC5 SBUS Preset 2024.06.09.txt",
-      "hash": "e375f6d3531fc85df2f9eaa9af1a98568c8370805dd3127d7121629ddd1cc316",
+      "hash": "a23db53011995d7c1bab5cbd7f0ea4ddfab6468421915b63ea75ad06cd6f4b46",
       "title": "Nazgul DC5 O3 DJI RC2",
       "firmware_version": [
         "4.5"
@@ -2048,7 +2048,24 @@
       "keywords": [
         "xing",
         "iflight",
-        "dc5"
+        "f5"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/bnf/F5 V2 O3 CRSF Preset 2024.06.18.txt",
+      "hash": "7677085fc29d45b56e82fee3cc82fb192f36d31af0ec5fc39f9a087c103644c4",
+      "title": "Nazgul F5 V2 O3 CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "f5"
       ],
       "author": "Patrick XING (iFlight)",
       "priority": 0
