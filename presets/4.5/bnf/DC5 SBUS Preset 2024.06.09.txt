@@ -41,11 +41,11 @@
 #$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
 #$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
 
-#$ OPTION BEGIN (CHECKED): Reset (default)
+#$ OPTION BEGIN (CHECKED): Wipe All
 defaults nosave
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Restore Settings (default)
+#$ OPTION BEGIN (CHECKED): Apply Tune
 # version
 # Betaflight / STM32F7X2 (S7X2) 4.3.2 Nov 28 2022 / 07:30:19 (60c9521) MSP API: 1.44
 

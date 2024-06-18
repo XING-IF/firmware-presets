@@ -1,0 +1,183 @@
+#$ TITLE: Nazgul DC5 O3 DJI RC2
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: xing, iflight, dc5
+#$ AUTHOR: Patrick XING (iFlight)
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: This is the official iFlight Tune!
+#$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION: NOT FOR BEGINNERS! DO NOT MINDLESSLY FLASH FIRMWARE! THIS MIGHT BRICK YOUR ELECTRONICS!
+#$ DESCRIPTION:
+#$ DESCRIPTION: Firmware selection:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* SBUS protocol MUST BE SELECTED when flashing Betaflight 4.5.x.
+#$ DESCRIPTION:
+#$ DESCRIPTION: How to:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: Flash Betaflight 4.5.x with Radio Protocol "SBUS" selected
+#$ DESCRIPTION: Apply this Preset
+#$ DESCRIPTION: Calibrate the Accelerometer on Page1
+#$ DESCRIPTION: Remove permanent Angle Mode if necessary (Modes)
+#$ DESCRIPTION: Have Fun!
+#$ DESCRIPTION:
+#$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
+#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
+
+#$ OPTION BEGIN (CHECKED): Wipe All
+defaults nosave
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Apply Tune
+# version
+# Betaflight / STM32F7X2 (S7X2) 4.5.0 Apr 28 2024 / 12:24:25 (c155f5830) MSP API: 1.46
+# config rev: 3068e6e
+
+# start the command batch
+batch start
+
+board_name IFLIGHT_BLITZ_F722
+manufacturer_id IFRC
+
+# name: Nazgul F5 V2
+
+# timer
+timer A00 AF2
+# pin A00: TIM5 CH1 (AF2)
+timer C06 AF3
+# pin C06: TIM8 CH1 (AF3)
+timer C07 AF3
+# pin C07: TIM8 CH2 (AF3)
+timer A01 AF1
+# pin A01: TIM2 CH2 (AF1)
+
+# dma
+dma pin A00 0
+# pin A00: DMA1 Stream 2 Channel 6
+dma pin C06 0
+# pin C06: DMA2 Stream 2 Channel 0
+dma pin C07 1
+# pin C07: DMA2 Stream 3 Channel 7
+dma pin A01 0
+# pin A01: DMA1 Stream 6 Channel 3
+
+# feature
+feature GPS
+feature LED_STRIP
+feature OSD
+
+# serial
+serial 0 131073 115200 57600 0 115200
+serial 3 2 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# led
+led 0 0,0::L:6
+led 1 1,0::L:6
+led 2 2,0::L:6
+led 3 3,0::L:6
+led 4 4,0::L:6
+led 5 5,0::L:6
+led 6 6,0::L:6
+led 7 7,0::L:6
+
+# color
+color 5 91,0,255
+color 6 108,0,255
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 900 2100 0 0
+
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 0
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 130
+set acc_calibration = -54,-13,9,1
+set rc_smoothing_setpoint_cutoff = 12
+set rc_smoothing_feedforward_cutoff = 12
+set blackbox_sample_rate = 1/16
+set dshot_idle_value = 650
+set dshot_bidir = ON
+set yaw_motors_reversed = ON
+set small_angle = 180
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
+set osd_rssi_pos = 379
+set osd_link_quality_pos = 408
+set osd_tim_2_pos = 2569
+set osd_flymode_pos = 366
+set osd_throttle_pos = 245
+set osd_vtx_channel_pos = 373
+set osd_current_pos = 2473
+set osd_mah_drawn_pos = 2505
+set osd_craft_name_pos = 491
+set osd_gps_speed_pos = 3369
+set osd_gps_sats_pos = 3337
+set osd_home_dir_pos = 2582
+set osd_home_dist_pos = 2587
+set osd_altitude_pos = 19785
+set osd_power_pos = 388
+set osd_warnings_pos = 14837
+set osd_avg_cell_voltage_pos = 2537
+set osd_disarmed_pos = 2391
+set rpm_filter_fade_range_hz = 80
+set craft_name = Nazgul F5 V2
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_min_hz = 52
+set dterm_lpf1_dyn_max_hz = 105
+set dterm_lpf1_static_hz = 52
+set vbat_sag_compensation = 100
+set iterm_relax_cutoff = 10
+set pidsum_limit = 1000
+set p_pitch = 62
+set i_pitch = 55
+set d_pitch = 57
+set f_pitch = 139
+set p_roll = 59
+set i_roll = 53
+set d_roll = 50
+set f_roll = 134
+set p_yaw = 59
+set i_yaw = 53
+set f_yaw = 134
+set d_min_roll = 48
+set d_min_pitch = 54
+set feedforward_averaging = 3_POINT
+set dyn_idle_min_rpm = 35
+set simplified_master_multiplier = 140
+set simplified_i_gain = 50
+set simplified_d_gain = 115
+set simplified_pi_gain = 95
+set simplified_dmax_gain = 15
+set simplified_feedforward_gain = 80
+set simplified_dterm_filter = OFF
+set simplified_dterm_filter_multiplier = 70
+set tpa_rate = 60
+set tpa_breakpoint = 1300
+
+rateprofile 0
+
+# rateprofile 0
+set roll_rc_rate = 10
+set pitch_rc_rate = 10
+set yaw_rc_rate = 10
+set roll_expo = 30
+set pitch_expo = 30
+set yaw_expo = 30
+
+# end the command batch
+batch end
+#$ OPTION END
