@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: xing, iflight, dc5
+#$ KEYWORDS: xing, iflight, f5
 #$ AUTHOR: Patrick XING (iFlight)
 
 #$ PARSER: MARKED
@@ -102,7 +102,6 @@ set gyro_lpf2_static_hz = 875
 set dyn_notch_count = 1
 set gyro_lpf1_dyn_min_hz = 0
 set gyro_lpf1_dyn_max_hz = 875
-set acc_calibration = -54,-13,9,1
 set blackbox_sample_rate = 1/16
 set dshot_idle_value = 650
 set dshot_bidir = ON

@@ -2,7 +2,7 @@
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: xing, iflight, f5
+#$ KEYWORDS: xing, iflight, dc5
 #$ AUTHOR: Patrick XING (iFlight)
 
 #$ PARSER: MARKED
@@ -11,33 +11,21 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: This is the official iFlight Tune!
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
-#$ DESCRIPTION: NOT FOR BEGINNERS! DO NOT MINDLESSLY FLASH FIRMWARE! THIS MIGHT BRICK YOUR ELECTRONICS!
+#$ DESCRIPTION: 
 #$ DESCRIPTION:
-#$ DESCRIPTION: Firmware selection:
+#$ DESCRIPTION: WARNING:
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION:* SBUS protocol MUST BE SELECTED when flashing Betaflight 4.5.x.
+#$ DESCRIPTION: NOT FOR BEGINNERS! Only for experienced users!
 #$ DESCRIPTION:
-#$ DESCRIPTION: Factory Dump Version:
+#$ DESCRIPTION: How to:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: XING 2024.06.09
+#$ DESCRIPTION:* Flash Betaflight 4.5.x with Radio Protocol "SBUS" selected
+#$ DESCRIPTION:* Come back & apply this Preset
+#$ DESCRIPTION:* Calibrate the Accelerometer (Page1)
+#$ DESCRIPTION:* Remove permanent Angle Mode if necessary (Modes)
+#$ DESCRIPTION:* Have Fun!
 #$ DESCRIPTION:
-#$ DESCRIPTION: BNF Build Version:
-#$ DESCRIPTION:-------------
-#$ DESCRIPTION:* BLITZ F722 MCU
-#$ DESCRIPTION:
-#$ DESCRIPTION: Recommended ESC Settings:
-#$ DESCRIPTION:-------------
-#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/277576235-2ad4d605-0d0c-4726-9a4a-023101487b9b.png"><img src="https://user-images.githubusercontent.com/31681897/277576235-2ad4d605-0d0c-4726-9a4a-023101487b9b.png" width="200px" style="display: block; float: right;"/></a>
-#$ DESCRIPTION: * Use the recommended factory settings! 
-#$ DESCRIPTION: * 24kHz PWM speed usually has more motor authority than 48kHz.
-#$ DESCRIPTION: * You can use 48kHz for longer flight times!
-#$ DESCRIPTION:
-#$ DESCRIPTION: Tuning aspects:
-#$ DESCRIPTION: ---------------
-#$ DESCRIPTION: * PID tuning with minimal overshoot, minimum Setpoint delay
-#$ DESCRIPTION: * Smooth forward flights with bigger batteries
-#$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
-#$ DESCRIPTION: * Priorized flight performance over flight time
 #$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
 #$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
 
@@ -45,7 +33,7 @@
 defaults nosave
 #$ OPTION END
 
-#$ OPTION BEGIN (CHECKED): Apply Tune
+#$ OPTION BEGIN (CHECKED): Apply Setup
 # version
 # Betaflight / STM32F7X2 (S7X2) 4.3.2 Nov 28 2022 / 07:30:19 (60c9521) MSP API: 1.44
 
