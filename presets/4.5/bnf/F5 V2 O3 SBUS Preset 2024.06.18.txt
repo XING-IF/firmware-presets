@@ -1,8 +1,8 @@
-#$ TITLE: Nazgul F5 V2 O3 DJI RC2
+#$ TITLE: Nazgul DC5 O3 DJI RC2
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: xing, iflight, f5
+#$ KEYWORDS: xing, iflight, dc5
 #$ AUTHOR: Patrick XING (iFlight)
 
 #$ PARSER: MARKED
@@ -11,19 +11,20 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: This is the official iFlight Tune!
 #$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
-#$ DESCRIPTION: NOT FOR BEGINNERS! DO NOT MINDLESSLY FLASH FIRMWARE! THIS MIGHT BRICK YOUR ELECTRONICS!
+#$ DESCRIPTION: 
 #$ DESCRIPTION:
-#$ DESCRIPTION: Firmware selection:
+#$ DESCRIPTION: WARNING:
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION:* SBUS protocol MUST BE SELECTED when flashing Betaflight 4.5.x.
+#$ DESCRIPTION: NOT FOR BEGINNERS! Only for experienced users!
 #$ DESCRIPTION:
 #$ DESCRIPTION: How to:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION: Flash Betaflight 4.5.x with Radio Protocol "SBUS" selected
-#$ DESCRIPTION: Apply this Preset
-#$ DESCRIPTION: Calibrate the Accelerometer on Page1
-#$ DESCRIPTION: Remove permanent Angle Mode if necessary (Modes)
-#$ DESCRIPTION: Have Fun!
+#$ DESCRIPTION:* Flash Betaflight 4.5.x with Radio Protocol "SBUS" selected
+#$ DESCRIPTION:* Apply this Preset
+#$ DESCRIPTION:* Calibrate the Accelerometer on Page1
+#$ DESCRIPTION:* Remove permanent Angle Mode if necessary (Modes)
+#$ DESCRIPTION:* Have Fun!
 #$ DESCRIPTION:
 #$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
 #$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
