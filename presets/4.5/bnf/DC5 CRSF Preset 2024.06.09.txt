@@ -15,7 +15,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: WARNING:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION:* SBUS protocol MUST BE SELECTED when flashing Betaflight 4.5.x.
+#$ DESCRIPTION:* CRSF protocol MUST BE SELECTED when flashing Betaflight 4.5.x.
 #$ DESCRIPTION: NOT FOR BEGINNERS! Only for experienced users!
 #$ DESCRIPTION:
 #$ DESCRIPTION: How to:
