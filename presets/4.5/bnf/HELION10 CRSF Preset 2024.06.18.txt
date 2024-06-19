@@ -1,0 +1,206 @@
+#$ TITLE: HELION 10 O3 CRSF/ELRS
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: xing, iflight, helion
+#$ AUTHOR: Patrick XING (iFlight)
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: This is the official 2RAW Tune!
+#$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION: 
+#$ DESCRIPTION:
+#$ DESCRIPTION: WARNING:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* CRSF protocol MUST BE SELECTED when flashing Betaflight 4.5.x.
+#$ DESCRIPTION: NOT FOR BEGINNERS! Only for experienced users!
+#$ DESCRIPTION:
+#$ DESCRIPTION: How to:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* Flash Betaflight 4.5.x with Radio Protocol "CRSF" selected
+#$ DESCRIPTION:* Come back & apply this Preset
+#$ DESCRIPTION:* Calibrate the Accelerometer (Page1)
+#$ DESCRIPTION:* Have Fun!
+#$ DESCRIPTION:
+#$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
+#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
+
+#$ OPTION BEGIN (CHECKED): Wipe All
+defaults nosave
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Apply Setup
+# Betaflight / STM32F7X2 (S7X2) 4.5.0 Apr 28 2024 / 06:56:11 (c155f5830) MSP API: 1.46
+# config rev: 3068e6e
+
+# start the command batch
+batch start
+
+board_name IFLIGHT_BLITZ_F722
+manufacturer_id IFRC
+
+# resources
+resource MOTOR 5 NONE
+resource PINIO 1 B06
+
+# feature
+feature GPS
+feature TELEMETRY
+feature LED_STRIP
+feature OSD
+
+# serial
+serial 0 131073 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+serial 3 2 115200 57600 0 115200
+
+# led
+led 0 0,0::C:8
+led 1 1,0::C:8
+led 2 2,0::C:8
+led 3 3,0::C:8
+led 4 4,0::C:8
+led 5 5,0::C:8
+led 6 6,0::C:8
+
+# color
+color 5 91,0,255
+color 6 108,0,255
+
+# aux
+aux 0 0 4 1700 2100 0 0
+aux 1 1 0 1700 2100 0 0
+aux 2 46 3 1700 2100 0 0
+aux 3 13 1 1700 2100 0 0
+aux 4 36 5 1700 2100 0 0
+
+# rxfail
+rxfail 3 s 1500
+rxfail 4 s 1800
+rxfail 7 s 1800
+
+# master
+set gyro_lpf1_static_hz = 0
+set gyro_lpf2_static_hz = 350
+set dyn_notch_count = 2
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 60
+set dyn_notch_max_hz = 500
+set gyro_lpf1_dyn_min_hz = 0
+set gyro_lpf1_dyn_max_hz = 0
+set acc_lpf_hz = 10
+set rc_smoothing_auto_factor = 35
+set rc_smoothing_auto_factor_throttle = 28
+set rc_smoothing_setpoint_cutoff = 12
+set rc_smoothing_feedforward_cutoff = 12
+set rc_smoothing_throttle_cutoff = 20
+set blackbox_sample_rate = 1/2
+set dshot_idle_value = 700
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set failsafe_delay = 4
+set failsafe_procedure = GPS-RESCUE
+set yaw_motors_reversed = ON
+set small_angle = 180
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
+set gps_set_home_point_once = ON
+set gps_rescue_allow_arming_without_fix = ON
+set yaw_deadband = 5
+set simplified_gyro_filter = OFF
+set simplified_gyro_filter_multiplier = 105
+set osd_rssi_dbm_alarm = -100
+set osd_vbat_pos = 2304
+set osd_rssi_pos = 2461
+set osd_link_quality_pos = 2461
+set osd_rssi_dbm_pos = 2461
+set osd_tim_1_pos = 2109
+set osd_tim_2_pos = 2141
+set osd_flymode_pos = 2444
+set osd_throttle_pos = 2455
+set osd_vtx_channel_pos = 373
+set osd_current_pos = 2368
+set osd_mah_drawn_pos = 2400
+set osd_craft_name_pos = 2048
+set osd_gps_speed_pos = 2461
+set osd_gps_lon_pos = 2240
+set osd_gps_lat_pos = 2208
+set osd_gps_sats_pos = 2333
+set osd_home_dir_pos = 2456
+set osd_home_dist_pos = 2397
+set osd_flight_dist_pos = 2429
+set osd_altitude_pos = 18749
+set osd_power_pos = 384
+set osd_warnings_pos = 14676
+set osd_avg_cell_voltage_pos = 2336
+set osd_disarmed_pos = 2453
+set osd_core_temp_pos = 2432
+set osd_camera_frame_width = 30
+set osd_camera_frame_height = 16
+set osd_canvas_width = 30
+set osd_canvas_height = 13
+set debug_mode = GYRO_SCALED
+set pinio_box = 40,41,42,43
+set rpm_filter_weights = 100,20,100
+set rpm_filter_min_hz = 50
+set rpm_filter_fade_range_hz = 30
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_min_hz = 0
+set dterm_lpf1_dyn_max_hz = 157
+set dterm_lpf1_type = PT2
+set dterm_lpf1_static_hz = 60
+set dterm_lpf2_static_hz = 0
+set anti_gravity_gain = 90
+set iterm_relax_cutoff = 5
+set pidsum_limit = 1000
+set pidsum_limit_yaw = 1000
+set yaw_lowpass_hz = 50
+set p_pitch = 79
+set i_pitch = 85
+set d_pitch = 99
+set f_pitch = 148
+set p_roll = 76
+set i_roll = 81
+set d_roll = 76
+set f_roll = 142
+set p_yaw = 76
+set i_yaw = 81
+set f_yaw = 142
+set angle_p_gain = 10
+set horizon_level_strength = 50
+set horizon_limit_sticks = 50
+set d_min_roll = 76
+set d_min_pitch = 99
+set thrust_linear = 10
+set feedforward_smooth_factor = 20
+set feedforward_jitter_factor = 15
+set feedforward_boost = 5
+set simplified_master_multiplier = 170
+set simplified_i_gain = 60
+set simplified_d_gain = 150
+set simplified_dmax_gain = 0
+set simplified_feedforward_gain = 70
+set simplified_pitch_d_gain = 115
+set simplified_dterm_filter_multiplier = 80
+set tpa_rate = 50
+set tpa_breakpoint = 1200
+
+rateprofile 0
+
+# rateprofile 0
+set roll_expo = 10
+set pitch_expo = 10
+set yaw_expo = 10
+set roll_srate = 45
+set pitch_srate = 45
+set yaw_srate = 45
+
+# end the command batch
+batch end
+#$ OPTION END
