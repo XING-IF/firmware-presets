@@ -52,6 +52,7 @@ feature OSD
 
 # serial
 serial 0 131073 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
 serial 3 2 115200 57600 0 115200
 
 # beacon

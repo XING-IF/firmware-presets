@@ -2021,7 +2021,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/Chimera7 Pro V2 O3 CRSF Preset 2024.06.18.txt",
-      "hash": "5c2daa6eb68044e161ffe8dc8620d64d1f266f09d75cf73c070f41001aef56f4",
+      "hash": "b619ce935409c52fc286c23e868741d6e50c6bc20b742b8addaed0f81de84cc2",
       "title": "Chimera7 Pro V2 O3 CRSF/ELRS",
       "firmware_version": [
         "4.5"
@@ -2038,7 +2038,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/Chimera7 Pro V2 O3 SBUS Preset 2024.06.18.txt",
-      "hash": "a1e5770210c485a7a687e2d104f7cb306ec2219f5bc89df414d3717b88e13007",
+      "hash": "4ee0c3c667177150e0d114763d2bb196955cab57d7c821061e7729a128f9913e",
       "title": "Chimera7 Pro V2 O3 DJI RC2",
       "firmware_version": [
         "4.5"
@@ -2055,7 +2055,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/DC5 CRSF Preset 2024.06.09.txt",
-      "hash": "13358dc41a6e22f656c249168906b95d717b32a7aaabc0a441b533fa402e9d55",
+      "hash": "4af4a2ad28348546ada656a0878e922a07adee7affc8a94766258946d15c8321",
       "title": "Nazgul DC5 O3 CRSF/ELRS",
       "firmware_version": [
         "4.5"
@@ -2072,7 +2072,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/DC5 SBUS Preset 2024.06.09.txt",
-      "hash": "30afb04e1146048bbd44bc2e7726a23b92b03f666ccd15f3a87edba506809043",
+      "hash": "09768e8d41c0c37c742bed74b84d75d4f7684fea03b554b65101137c83707c66",
       "title": "Nazgul DC5 O3 DJI RC2",
       "firmware_version": [
         "4.5"
@@ -2089,7 +2089,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/F5 V2 O3 CRSF Preset 2024.06.18.txt",
-      "hash": "2cd12b21709a9e76356aa03cd06b9cd22b97ccee2d117d810e298eb8b5dbf993",
+      "hash": "906ea3cc38b2dbc72cff7b2300f211294b69baf29776dfbdd9ee81c1c2e21177",
       "title": "Nazgul F5 V2 O3 CRSF/ELRS",
       "firmware_version": [
         "4.5"
@@ -2106,7 +2106,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/F5 V2 O3 SBUS Preset 2024.06.18.txt",
-      "hash": "a94c49735e40adf0578b423697a5f050d7b49632052379c81ad178646de93006",
+      "hash": "5657ac731fafe1ff6e8b6db705a579e52e52a10361f6957e8bc25730a3e283d1",
       "title": "Nazgul F5 V2 O3 DJI RC2",
       "firmware_version": [
         "4.5"
