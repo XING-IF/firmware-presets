@@ -98,10 +98,11 @@ aux 1 1 1 900 2100 0 0
 
 # master
 set gyro_lpf1_static_hz = 0
-set gyro_lpf2_static_hz = 875
+set gyro_lpf2_static_hz = 1000
 set dyn_notch_count = 1
+set dyn_notch_q = 500
 set gyro_lpf1_dyn_min_hz = 0
-set gyro_lpf1_dyn_max_hz = 875
+set gyro_lpf1_dyn_max_hz = 1000
 set blackbox_sample_rate = 1/16
 set dshot_idle_value = 650
 set dshot_bidir = ON
@@ -109,7 +110,7 @@ set yaw_motors_reversed = ON
 set small_angle = 180
 set gps_sbas_mode = AUTO
 set gps_ublox_use_galileo = ON
-set simplified_gyro_filter_multiplier = 175
+set simplified_gyro_filter_multiplier = 200
 set osd_rssi_pos = 379
 set osd_link_quality_pos = 408
 set osd_tim_2_pos = 2569
@@ -128,16 +129,16 @@ set osd_power_pos = 388
 set osd_warnings_pos = 14837
 set osd_avg_cell_voltage_pos = 2537
 set osd_disarmed_pos = 2391
-set rpm_filter_q = 650
+set rpm_filter_q = 750
 set craft_name = Nazgul F5 V2
 
 profile 0
 
 # profile 0
-set dterm_lpf1_dyn_min_hz = 78
-set dterm_lpf1_dyn_max_hz = 157
-set dterm_lpf1_static_hz = 157
-set dterm_lpf2_static_hz = 157
+set dterm_lpf1_dyn_min_hz = 82
+set dterm_lpf1_dyn_max_hz = 165
+set dterm_lpf1_static_hz = 165
+set dterm_lpf2_static_hz = 165
 set vbat_sag_compensation = 100
 set iterm_relax_cutoff = 10
 set pidsum_limit = 1000
@@ -161,7 +162,7 @@ set simplified_d_gain = 115
 set simplified_pi_gain = 95
 set simplified_dmax_gain = 15
 set simplified_feedforward_gain = 80
-set simplified_dterm_filter_multiplier = 105
+set simplified_dterm_filter_multiplier = 110
 set tpa_rate = 60
 set tpa_breakpoint = 1300
 
