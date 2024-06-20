@@ -22,7 +22,10 @@
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION:* Flash Betaflight 4.5.x with Radio Protocol "CRSF" selected
 #$ DESCRIPTION:* Come back & apply this Preset
-#$ DESCRIPTION:* Calibrate the Accelerometer (Page1)
+#$ DESCRIPTION:* Flash a RC_LINK Preset that fits your Radio Link
+#$ DESCRIPTION:* Calibrate the Accelerometer (Betaflight page1)
+#$ DESCRIPTION:* Change Canvas Mode to HD on your DJI Goggle (Settings-Dispay-)
+#$ DESCRIPTION:* Remove permanent Angle Mode if necessary (Modes)
 #$ DESCRIPTION:* Have Fun!
 #$ DESCRIPTION:
 #$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!

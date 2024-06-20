@@ -2022,7 +2022,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/Chimera7 Pro V2 O3 CRSF Preset 2024.06.18.txt",
-      "hash": "959fe73708767ee6e88370ba37fcd993e7a4090ae193007093690ee5e49c4a5f",
+      "hash": "b5a90494f4745751b69bd6261e392caf739a0929bbe0b33bfb2a95a31cbf926e",
       "title": "Chimera7 Pro V2 O3 CRSF/ELRS",
       "firmware_version": [
         "4.5"
@@ -2039,7 +2039,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/Chimera7 Pro V2 O3 SBUS Preset 2024.06.18.txt",
-      "hash": "4ee0c3c667177150e0d114763d2bb196955cab57d7c821061e7729a128f9913e",
+      "hash": "7defbaa544613ac79939d228585212130ec766d6f726eb52bb92615a6b33bd1a",
       "title": "Chimera7 Pro V2 O3 DJI RC2",
       "firmware_version": [
         "4.5"
@@ -2056,7 +2056,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/DC5 CRSF Preset 2024.06.09.txt",
-      "hash": "124889861f609ee49ac806353db7da40bac09a80057bcb522a97272bf926efda",
+      "hash": "ca065e4ef4cbb59658f86e6eb979857a2466bdcfc70e3bcc26a2c5d7b6e5d9e1",
       "title": "Nazgul DC5 O3 CRSF/ELRS",
       "firmware_version": [
         "4.5"
@@ -2073,7 +2073,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/DC5 SBUS Preset 2024.06.09.txt",
-      "hash": "09768e8d41c0c37c742bed74b84d75d4f7684fea03b554b65101137c83707c66",
+      "hash": "9befe8287d6500d381f93caf4e727cf6b60da1d7b94a9e7bb2b15102687fb6ab",
       "title": "Nazgul DC5 O3 DJI RC2",
       "firmware_version": [
         "4.5"
@@ -2090,7 +2090,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/F5 V2 O3 CRSF Preset 2024.06.18.txt",
-      "hash": "0c2f052af6188aa46dcf5f9fc21d2da959ebd1d15209e9fa9b6828cf9b1bcd7b",
+      "hash": "cf91f61c6a0b029a1ce1e4d64549908581d74ca21287374869784849c0321703",
       "title": "Nazgul F5 V2 O3 CRSF/ELRS",
       "firmware_version": [
         "4.5"
@@ -2107,7 +2107,7 @@
     },
     {
       "fullPath": "presets/4.5/bnf/F5 V2 O3 SBUS Preset 2024.06.18.txt",
-      "hash": "5657ac731fafe1ff6e8b6db705a579e52e52a10361f6957e8bc25730a3e283d1",
+      "hash": "59caf3c467bc24f0e7e7ab07b38e92c0ebf7f5d73b2e4569e97fac225b64faa7",
       "title": "Nazgul F5 V2 O3 DJI RC2",
       "firmware_version": [
         "4.5"
@@ -2123,8 +2123,42 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/bnf/F6 V2 O3 CRSF Preset 2024.06.18.txt",
+      "hash": "4b507979164cba049bcafefb512d7036866122ecfd78c0d15aac9523f3a6abfb",
+      "title": "Nazgul F6 V2 O3 CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "f6"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/bnf/F6 V2 O3 SBUS Preset 2024.06.18.txt",
+      "hash": "27cb9aecdb8700c5b56debe08886ee48d3500b24221dd095720cef998b9a9c89",
+      "title": "Nazgul F6 V2 O3 DJI RC2",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "f6"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/bnf/HELION10 CRSF Preset 2024.06.18.txt",
-      "hash": "5036d34444c13d2ec08ae6ee39da0b0120798067bc52b0b0a141761bcd93d0bf",
+      "hash": "13fce011f20d671602f5ae17278811447a8f9a46b1235d6496048fbd982eeba6",
       "title": "HELION 10 O3 CRSF/ELRS",
       "firmware_version": [
         "4.5"
