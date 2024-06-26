@@ -1,0 +1,179 @@
+#$ TITLE: Defender 25 O3 GPS CRSF/ELRS
+#$ FIRMWARE_VERSION: 4.5
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: xing, iflight, defender
+#$ AUTHOR: Patrick XING (iFlight)
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: This is the official iFlight Tune!
+#$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION: 
+#$ DESCRIPTION:
+#$ DESCRIPTION: WARNING:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* CRSF protocol MUST BE SELECTED when flashing Betaflight 4.5.x.
+#$ DESCRIPTION: NOT FOR BEGINNERS! Only for experienced users!
+#$ DESCRIPTION:
+#$ DESCRIPTION: How to:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* Flash Betaflight 4.5.x with Radio Protocol "CRSF" selected
+#$ DESCRIPTION:* Come back & apply this Preset
+#$ DESCRIPTION:* Flash a RC_LINK Preset that fits your Radio Link
+#$ DESCRIPTION:* Calibrate the Accelerometer (Betaflight page1)
+#$ DESCRIPTION:* Change Canvas Mode to HD on your DJI Goggle (Settings-Dispay-)
+#$ DESCRIPTION:* Remove permanent Angle Mode if necessary (Modes)
+#$ DESCRIPTION:* Have Fun!
+#$ DESCRIPTION:
+#$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
+#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
+
+#$ OPTION BEGIN (CHECKED): Wipe All
+defaults nosave
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Apply Setup
+# Betaflight / STM32F7X2 (S7X2) 4.5.0 Jun 26 2024 / 00:38:44 (c155f5830) MSP API: 1.46
+
+# name: Defender 25
+
+# resources
+resource PINIO 2 C10
+
+# feature
+feature GPS
+feature TELEMETRY
+feature LED_STRIP
+feature OSD
+
+# serial
+serial 0 131073 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+serial 2 2 115200 115200 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# led
+led 0 0,0::L:8
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 900 2100 0 0
+aux 2 40 11 900 2100 0 0
+
+# master
+set gyro_lpf1_static_hz = 337
+set gyro_lpf2_static_hz = 0
+set dyn_notch_count = 1
+set dyn_notch_q = 500
+set gyro_lpf1_dyn_min_hz = 0
+set blackbox_sample_rate = 1/16
+set min_throttle = 1071
+set dshot_idle_value = 1200
+set dshot_bidir = ON
+set motor_poles = 12
+set failsafe_off_delay = 30
+set failsafe_throttle = 1280
+set align_board_yaw = 90
+set small_angle = 180
+set gps_sbas_mode = AUTO
+set gps_ublox_use_galileo = ON
+set gps_rescue_ground_speed = 500
+set gps_rescue_descend_rate = 100
+set gps_rescue_min_sats = 5
+set gps_rescue_throttle_d = 15
+set gps_rescue_velocity_i = 30
+set gps_rescue_velocity_d = 20
+set pid_process_denom = 2
+set simplified_gyro_filter_multiplier = 135
+set osd_warn_bitmask = 302719
+set osd_rssi_dbm_alarm = -100
+set osd_rssi_pos = 379
+set osd_link_quality_pos = 408
+set osd_link_tx_power_pos = 24
+set osd_rssi_dbm_pos = 3337
+set osd_tim_2_pos = 2569
+set osd_flymode_pos = 366
+set osd_throttle_pos = 245
+set osd_vtx_channel_pos = 373
+set osd_current_pos = 2473
+set osd_mah_drawn_pos = 2505
+set osd_craft_name_pos = 491
+set osd_gps_speed_pos = 3369
+set osd_gps_sats_pos = 3305
+set osd_home_dir_pos = 2582
+set osd_home_dist_pos = 2587
+set osd_altitude_pos = 19785
+set osd_power_pos = 388
+set osd_warnings_pos = 14837
+set osd_avg_cell_voltage_pos = 2537
+set osd_disarmed_pos = 2455
+set osd_stat_bitmask = 8402476
+set osd_camera_frame_width = 30
+set osd_camera_frame_height = 16
+set pinio_box = 40,0,0,0
+set gyro_1_sensor_align = CW0FLIP
+set gyro_1_align_yaw = 0
+set craft_name = Defender 25
+set box_user_1_name = VTX_ON_OFF
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_min_hz = 0
+set dterm_lpf1_dyn_max_hz = 180
+set dterm_lpf1_static_hz = 101
+set dterm_lpf2_static_hz = 202
+set vbat_sag_compensation = 100
+set iterm_relax_cutoff = 10
+set pidsum_limit = 1000
+set yaw_lowpass_hz = 0
+set p_pitch = 101
+set i_pitch = 100
+set d_pitch = 72
+set f_pitch = 113
+set p_roll = 97
+set i_roll = 95
+set d_roll = 70
+set f_roll = 109
+set p_yaw = 97
+set i_yaw = 95
+set f_yaw = 109
+set d_min_roll = 58
+set d_min_pitch = 59
+set thrust_linear = 25
+set simplified_master_multiplier = 140
+set simplified_i_gain = 55
+set simplified_d_gain = 140
+set simplified_pi_gain = 155
+set simplified_dmax_gain = 60
+set simplified_feedforward_gain = 65
+set simplified_pitch_d_gain = 90
+set simplified_dterm_filter_multiplier = 135
+set tpa_breakpoint = 1200
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+#$ OPTION END

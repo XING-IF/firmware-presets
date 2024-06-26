@@ -2055,6 +2055,23 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/bnf/D25 GPS CRSF Preset 2024.06.26.txt",
+      "hash": "c81848d86dfb6f5954be869d5f70dab11aa00b74ea9cc60c1d224b5dcfbc63d7",
+      "title": "Defender 25 O3 GPS CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "defender"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/bnf/DC5 CRSF Preset 2024.06.09.txt",
       "hash": "ca065e4ef4cbb59658f86e6eb979857a2466bdcfc70e3bcc26a2c5d7b6e5d9e1",
       "title": "Nazgul DC5 O3 CRSF/ELRS",
