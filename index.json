@@ -179,6 +179,7 @@
       "9ms",
       "A85",
       "actual",
+      "afterburner",
       "Alpha A85",
       "aos",
       "AOS 5，AOS",
@@ -2019,6 +2020,40 @@
       ],
       "author": "Chris Rosser",
       "priority": 100
+    },
+    {
+      "fullPath": "presets/4.5/bnf/Afterburner CRSF Preset 2024.06.27.txt",
+      "hash": "59a778a8138de9ce8ea99b6ce374724fcf0e80be961b35e6d2a614051a4c6050",
+      "title": "Afterburner O3 CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "afterburner"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/bnf/Afterburner SBUS Preset 2024.06.27.txt",
+      "hash": "47ff0227ca8fbcabd04f84b76393800107d3594089af28f4bae4d12cd18f2088",
+      "title": "Afterburner O3 DJI RC2",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "afterburner"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
     },
     {
       "fullPath": "presets/4.5/bnf/Chimera7 Pro V2 O3 CRSF Preset 2024.06.18.txt",
