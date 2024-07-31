@@ -16,7 +16,7 @@
 #$ DESCRIPTION: WARNING:
 #$ DESCRIPTION:-------------
 #$ DESCRIPTION:* SBUS protocol MUST BE SELECTED when flashing Betaflight 4.5.x.
-#$ DESCRIPTION: NOT FOR BEGINNERS! Only for experienced users!
+#$ DESCRIPTION:* NOT FOR BEGINNERS! Only for experienced users!
 #$ DESCRIPTION:
 #$ DESCRIPTION: How to:
 #$ DESCRIPTION:-------------
@@ -24,9 +24,10 @@
 #$ DESCRIPTION:* Come back & apply this Preset
 #$ DESCRIPTION:* Flash a RC_LINK Preset that fits your Radio Link
 #$ DESCRIPTION:* Calibrate the Accelerometer (Betaflight page1)
-#$ DESCRIPTION:* Change Canvas Mode to HD on your DJI Goggle (Settings-Dispay-)
+#$ DESCRIPTION:* Change Canvas Mode to HD on your DJI Goggle (Settings-Display-)
 #$ DESCRIPTION:* Remove permanent Angle Mode if necessary (Modes)
 #$ DESCRIPTION:* Have Fun!
+#$ DESCRIPTION:* -
 #$ DESCRIPTION:
 #$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
 #$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
