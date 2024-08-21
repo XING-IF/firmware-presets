@@ -285,7 +285,8 @@
       "X8",
       "xing",
       "XL10",
-      "XL10 V6"
+      "XL10 V6",
+      "xl5"
     ]
   },
   "presets": [
@@ -2221,6 +2222,23 @@
         "xing",
         "iflight",
         "helion"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/bnf/XL5 ECO CRSF Preset 2024.06.09.txt",
+      "hash": "3ce7647256a9f52627c7fcff13c20a61f75e4b101b6b62b37a4a3543db8ad096",
+      "title": "Nazgul XL5 ECO CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "xl5"
       ],
       "author": "Patrick XING (iFlight)",
       "priority": 0
