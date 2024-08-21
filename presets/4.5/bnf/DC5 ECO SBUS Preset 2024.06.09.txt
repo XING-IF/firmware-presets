@@ -1,4 +1,4 @@
-#$ TITLE: Nazgul DC5 O3 CRSF/ELRS
+#$ TITLE: Nazgul DC5 ECO O3 DJI RC
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
@@ -15,7 +15,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: WARNING:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION:* CRSF protocol MUST BE SELECTED when flashing Betaflight 4.5.x.
+#$ DESCRIPTION:* SBUS protocol MUST BE SELECTED when flashing Betaflight 4.5.x.
 #$ DESCRIPTION:* NOT FOR BEGINNERS! Only for experienced users!
 #$ DESCRIPTION:
 #$ DESCRIPTION: How to:
@@ -37,8 +37,8 @@ defaults nosave
 #$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): Apply Setup
-# Betaflight / AT32F435G (A435) 4.5.0 Apr 28 2024 / 15:26:45 (c155f5830) MSP API: 1.46
-# config rev: 3068e6e
+# Betaflight / AT32F435G (A435) 4.5.0 May  8 2024 / 03:36:43 (c155f5830) MSP API: 1.46
+# config rev: 8d48619
 
 # start the command batch
 batch start
@@ -50,7 +50,6 @@ manufacturer_id IFRC
 
 # feature
 feature GPS
-feature TELEMETRY
 feature LED_STRIP
 feature OSD
 
@@ -104,12 +103,9 @@ set gps_rescue_velocity_d = 15
 set gps_rescue_yaw_p = 40
 set yaw_deadband = 5
 set simplified_gyro_filter_multiplier = 200
-set osd_warn_bitmask = 303103
-set osd_rssi_dbm_alarm = -100
 set osd_rssi_pos = 379
 set osd_link_quality_pos = 408
 set osd_link_tx_power_pos = 24
-set osd_rssi_dbm_pos = 3337
 set osd_tim_2_pos = 2569
 set osd_flymode_pos = 366
 set osd_throttle_pos = 245

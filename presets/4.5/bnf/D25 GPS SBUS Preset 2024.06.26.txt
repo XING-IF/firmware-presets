@@ -1,8 +1,8 @@
-#$ TITLE: Chimera7 Pro V2 O3 DJI RC
+#$ TITLE: Defender 25 O3 GPS DJI RC
 #$ FIRMWARE_VERSION: 4.5
 #$ CATEGORY: BNF
 #$ STATUS: EXPERIMENTAL
-#$ KEYWORDS: xing, iflight, chimera
+#$ KEYWORDS: xing, iflight, defender
 #$ AUTHOR: Patrick XING (iFlight)
 
 #$ PARSER: MARKED
@@ -20,7 +20,7 @@
 #$ DESCRIPTION:
 #$ DESCRIPTION: How to:
 #$ DESCRIPTION:-------------
-#$ DESCRIPTION:* Flash Betaflight 4.5.x with Radio Protocol "CRSF" selected
+#$ DESCRIPTION:* Flash Betaflight 4.5.x with Radio Protocol "SBUS" selected
 #$ DESCRIPTION:* Come back & apply this Preset
 #$ DESCRIPTION:* Flash a RC_LINK Preset that fits your Radio Link
 #$ DESCRIPTION:* Calibrate the Accelerometer (Betaflight page1)
@@ -37,36 +37,24 @@ defaults nosave
 #$ OPTION END
 
 #$ OPTION BEGIN (CHECKED): Apply Setup
-# Betaflight / STM32F7X2 (S7X2) 4.5.0 Apr 28 2024 / 12:24:25 (c155f5830) MSP API: 1.46
-# config rev: 3068e6e
+# Betaflight / STM32F7X2 (S7X2) 4.5.1 Jul 30 2024 / 17:58:22 (77d01ba3b) MSP API: 1.46
+# config rev: bc5da0e
 
 # start the command batch
 batch start
 
-board_name IFLIGHT_BLITZ_F722
+# reset configuration to default settings
+defaults nosave
+
+board_name IFLIGHT_BLITZ_F722_X1
 manufacturer_id IFRC
+mcu_id 001e00223532511239323431
+signature 
 
-# name: Chimera7 V2 Pro
+# name: Defender 25
 
-# timer
-timer A00 AF2
-# pin A00: TIM5 CH1 (AF2)
-timer C06 AF3
-# pin C06: TIM8 CH1 (AF3)
-timer C07 AF3
-# pin C07: TIM8 CH2 (AF3)
-timer A01 AF1
-# pin A01: TIM2 CH2 (AF1)
-
-# dma
-dma pin A00 0
-# pin A00: DMA1 Stream 2 Channel 6
-dma pin C06 0
-# pin C06: DMA2 Stream 2 Channel 0
-dma pin C07 1
-# pin C07: DMA2 Stream 3 Channel 7
-dma pin A01 0
-# pin A01: DMA1 Stream 6 Channel 3
+# resources
+resource PINIO 2 C10
 
 # feature
 feature GPS
@@ -76,61 +64,49 @@ feature OSD
 # serial
 serial 0 131073 115200 57600 0 115200
 serial 1 64 115200 57600 0 115200
-serial 3 2 115200 115200 0 115200
+serial 2 2 115200 115200 0 115200
 
 # beacon
 beacon RX_LOST
 beacon RX_SET
 
 # led
-led 0 0,0::L:0
-led 1 1,0::L:0
-led 2 2,0::L:0
-led 3 3,0::L:1
-
-# color
-color 5 91,0,255
-color 6 108,0,255
+led 0 0,0::L:8
 
 # aux
 aux 0 0 0 1700 2100 0 0
 aux 1 1 1 900 2100 0 0
-
-# vtxtable
-vtxtable bands 5
-vtxtable channels 8
-vtxtable band 1 BOSCAM_A A CUSTOM  5865 5845 5825 5805 5785 5765 5745 5725
-vtxtable band 2 BOSCAM_B B CUSTOM  5733 5752 5771 5790 5809 5828 5847 5866
-vtxtable band 3 BOSCAM_E E CUSTOM  5705 5685 5665    0 5885 5905    0    0
-vtxtable band 4 FATSHARK F CUSTOM  5740 5760 5780 5800 5820 5840 5860 5880
-vtxtable band 5 RACEBAND R CUSTOM  5658 5695 5732 5769 5806 5843 5880 5917
-vtxtable powerlevels 4
-vtxtable powervalues 25 400 800 1600
-vtxtable powerlabels 25 400 800 1K6
+aux 2 40 11 900 2100 0 0
 
 # master
-set gyro_lpf1_static_hz = 200
-set gyro_lpf2_static_hz = 1000
+set gyro_lpf1_static_hz = 337
+set gyro_lpf2_static_hz = 0
+set dyn_notch_count = 1
 set dyn_notch_q = 500
-set dyn_notch_min_hz = 80
-set dyn_notch_max_hz = 500
 set gyro_lpf1_dyn_min_hz = 0
-set gyro_lpf1_dyn_max_hz = 0
 set blackbox_sample_rate = 1/16
-set dshot_idle_value = 800
+set min_throttle = 1071
+set dshot_idle_value = 1200
 set dshot_bidir = ON
-set failsafe_delay = 4
-set yaw_motors_reversed = ON
+set motor_poles = 12
+set failsafe_off_delay = 30
+set failsafe_throttle = 1280
+set align_board_yaw = 90
 set small_angle = 180
 set gps_sbas_mode = AUTO
 set gps_ublox_use_galileo = ON
+set gps_rescue_ground_speed = 500
+set gps_rescue_descend_rate = 100
 set gps_rescue_min_sats = 5
-set yaw_deadband = 5
+set gps_rescue_throttle_d = 15
+set gps_rescue_velocity_i = 30
+set gps_rescue_velocity_d = 20
 set pid_process_denom = 2
-set simplified_gyro_filter = OFF
-set simplified_gyro_filter_multiplier = 105
+set simplified_gyro_filter_multiplier = 135
+set osd_warn_bitmask = 269951
 set osd_rssi_pos = 379
 set osd_link_quality_pos = 408
+set osd_link_tx_power_pos = 24
 set osd_tim_2_pos = 2569
 set osd_flymode_pos = 366
 set osd_throttle_pos = 245
@@ -146,69 +122,70 @@ set osd_altitude_pos = 19785
 set osd_power_pos = 388
 set osd_warnings_pos = 14837
 set osd_avg_cell_voltage_pos = 2537
-set osd_disarmed_pos = 2391
+set osd_disarmed_pos = 2455
+set osd_stat_bitmask = 8402476
 set osd_camera_frame_width = 30
 set osd_camera_frame_height = 16
-set vtx_band = 5
-set vtx_channel = 3
-set vtx_power = 1
-set vtx_freq = 5732
-set rpm_filter_min_hz = 90
-set craft_name = Chimera7 V2 Pro
+set pinio_box = 40,0,0,0
+set gyro_1_sensor_align = CW0FLIP
+set gyro_1_align_yaw = 0
+set craft_name = Defender 25
+set box_user_1_name = VTX_ON_OFF
 
 profile 0
 
 # profile 0
 set dterm_lpf1_dyn_min_hz = 0
-set dterm_lpf1_dyn_max_hz = 157
-set dterm_lpf1_static_hz = 63
-set dterm_lpf2_static_hz = 127
+set dterm_lpf1_dyn_max_hz = 180
+set dterm_lpf1_static_hz = 101
+set dterm_lpf2_static_hz = 202
 set vbat_sag_compensation = 100
 set iterm_relax_cutoff = 10
 set pidsum_limit = 1000
-set pidsum_limit_yaw = 1000
-set yaw_lowpass_hz = 50
-set p_pitch = 99
-set i_pitch = 88
-set d_pitch = 110
-set f_pitch = 142
-set p_roll = 86
-set i_roll = 76
-set d_roll = 88
-set f_roll = 124
-set p_yaw = 100
-set i_yaw = 120
-set f_yaw = 76
-set d_min_roll = 81
-set d_min_pitch = 101
-set thrust_linear = 10
-set simplified_pids_mode = RP
-set simplified_master_multiplier = 160
-set simplified_i_gain = 50
-set simplified_d_gain = 170
-set simplified_pi_gain = 120
-set simplified_dmax_gain = 25
+set yaw_lowpass_hz = 0
+set p_pitch = 101
+set i_pitch = 100
+set d_pitch = 72
+set f_pitch = 113
+set p_roll = 97
+set i_roll = 95
+set d_roll = 70
+set f_roll = 109
+set p_yaw = 97
+set i_yaw = 95
+set f_yaw = 109
+set d_min_roll = 58
+set d_min_pitch = 59
+set thrust_linear = 25
+set simplified_master_multiplier = 140
+set simplified_i_gain = 55
+set simplified_d_gain = 140
+set simplified_pi_gain = 155
+set simplified_dmax_gain = 60
 set simplified_feedforward_gain = 65
-set simplified_pitch_d_gain = 110
-set simplified_pitch_pi_gain = 110
-set simplified_dterm_filter_multiplier = 85
-set tpa_rate = 50
+set simplified_pitch_d_gain = 90
+set simplified_dterm_filter_multiplier = 135
 set tpa_breakpoint = 1200
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
 
 rateprofile 0
 
-# rateprofile 0
-set roll_rc_rate = 18
-set pitch_rc_rate = 18
-set yaw_rc_rate = 18
-set roll_expo = 70
-set pitch_expo = 70
-set yaw_expo = 70
-set roll_srate = 75
-set pitch_srate = 75
-set yaw_srate = 75
+rateprofile 1
 
-# end the command batch
-batch end
+rateprofile 2
 
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+# save configuration
 #$ OPTION END
