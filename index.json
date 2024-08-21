@@ -2057,6 +2057,42 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.5/bnf/BOB57 CRSF Preset 2024.06.18.txt",
+      "hash": "234e79e0d59de729fa843135d039615d335d3cb9b86fdeb124edc83d9b29614c",
+      "title": "BOB57 O3 CRSF/ELRS",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "bob57",
+        "bob"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.5/bnf/BOB57 SBUS Preset 2024.06.18.txt",
+      "hash": "b45afc383ad031a20255e0fde09f9ced591b43b45f85924a9391752671785f10",
+      "title": "BOB57 O3 DJI RC",
+      "firmware_version": [
+        "4.5"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "bob57",
+        "bob"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.5/bnf/Chimera7 Pro V2 O3 CRSF Preset 2024.06.18.txt",
       "hash": "d31b8b5a9d7c7c8a0428a1191b759f96f7ac0785caddea9e8710d388c30f3a32",
       "title": "Chimera7 Pro V2 O3 CRSF/ELRS",
