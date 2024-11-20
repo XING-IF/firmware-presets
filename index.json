@@ -1770,6 +1770,40 @@
       "priority": 0
     },
     {
+      "fullPath": "presets/4.4/bnf/Protek35 V1.4 CRSF 2024.11.20.txt",
+      "hash": "866d73155d1d169f196c654f53a27d3387388a8b710c0a54958fcbac517b17b9",
+      "title": "ProTek35 V1.4 CRSF/ELRS",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "protek"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
+      "fullPath": "presets/4.4/bnf/Protek35 V1.4 DJI 2024.11.20.txt",
+      "hash": "34faeeaf89a4edde81fb1618b690c4bb550c8371631b4053f94f5bd330b3d953",
+      "title": "ProTek35 V1.4 DJI",
+      "firmware_version": [
+        "4.4"
+      ],
+      "category": "BNF",
+      "status": "EXPERIMENTAL",
+      "keywords": [
+        "xing",
+        "iflight",
+        "protek"
+      ],
+      "author": "Patrick XING (iFlight)",
+      "priority": 0
+    },
+    {
       "fullPath": "presets/4.4/filters/aos_rc/aos_3.5_filters.txt",
       "hash": "7e6093be6d2aec003d2e8aa2d5662c2685fc89ee8ec1f31bf4b637913acc9d30",
       "title": "AOS 3.5 Filters",

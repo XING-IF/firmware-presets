@@ -1,0 +1,208 @@
+#$ TITLE: ProTek35 V1.4 DJI
+#$ FIRMWARE_VERSION: 4.4
+#$ CATEGORY: BNF
+#$ STATUS: EXPERIMENTAL
+#$ KEYWORDS: xing, iflight, protek
+#$ AUTHOR: Patrick XING (iFlight)
+
+#$ PARSER: MARKED
+
+#$ DESCRIPTION: <a href="https://shop.iflight-rc.com/"><img src="https://user-images.githubusercontent.com/31681897/180714478-44bcd30e-8c78-4c6d-b295-8dbeb0d263f4.png" width="150px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION:
+#$ DESCRIPTION: This is the official iFlight factory tune (4.4.x XINGtune) for the ProTek35 V1.4!
+#$ DESCRIPTION: Please read instructions carefully! All factory default options have been selected automatically!
+#$ DESCRIPTION:
+#$ DESCRIPTION: NOT FOR BEGINNERS! DO NOT MINDLESSLY FLASH FIRMWARE! THIS MIGHT BRICK YOUR ELECTRONICS!
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:
+#$ DESCRIPTION: Factory Dump Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: XING 2024.11.20
+#$ DESCRIPTION:
+#$ DESCRIPTION: BNF Build Version:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION:* BLITZ F7 AIO (ICM42688P)
+#$ DESCRIPTION:
+#$ DESCRIPTION: Recommended ESC Settings:
+#$ DESCRIPTION:-------------
+#$ DESCRIPTION: <a href="https://user-images.githubusercontent.com/31681897/277576217-d3b89dbc-ca1f-49c2-8fc9-469cf829eef6.jpg"><img src="https://user-images.githubusercontent.com/31681897/277576217-d3b89dbc-ca1f-49c2-8fc9-469cf829eef6.jpg" width="200px" style="display: block; float: right;"/></a>
+#$ DESCRIPTION: * Use the recommended factory settings! 
+#$ DESCRIPTION: * 24kHz PWM speed usually has more motor authority than 48kHz.
+#$ DESCRIPTION: * You can use 48kHz for longer flight times!
+#$ DESCRIPTION:
+#$ DESCRIPTION: GPS Options:
+#$ DESCRIPTION: ---------------
+#$ DESCRIPTION: * GPS functionality; enables the GPS module and OSD values
+#$ DESCRIPTION: * GPS Rescue is not enabled by default (experimental feature)
+#$ DESCRIPTION: * Do your research about GPS Rescue! **Use at your own risk!**
+#$ DESCRIPTION:
+#$ DESCRIPTION: Tuning aspects:
+#$ DESCRIPTION: ---------------
+#$ DESCRIPTION: * PID tuning with minimal overshoot, minimum Setpoint delay
+#$ DESCRIPTION: * Smooth forward flights with bigger batteries
+#$ DESCRIPTION: * Responsive performance without jitter, Freestyle (faster moves) capability
+#$ DESCRIPTION: * Priorized flight performance over flight time
+#$ WARNING: You've read the information attached to these factory defaults and take full responsibility for your own gear! Do a test flight in confined area after updating!
+#$ DISCUSSION: https://github.com/XING-IF/firmware-presets/
+
+#$ OPTION BEGIN (CHECKED): Reset (default)
+defaults nosave
+#$ OPTION END
+
+#$ OPTION BEGIN (CHECKED): Restore Settings (default)
+# Betaflight / STM32F745 (S745) 4.4.2 Mar  4 2024 / 12:23:16 (23d066d08) MSP API: 1.45
+
+# config: YES
+
+# start the command batch
+batch start
+
+# reset configuration to default settings
+defaults nosave
+
+board_name IFLIGHT_BLITZ_F7_AIO
+manufacturer_id IFRC
+mcu_id 003900345448500720393734
+signature 
+
+# name: Protek 35
+
+# feature
+feature LED_STRIP
+
+# serial
+serial 0 131073 115200 57600 0 115200
+serial 1 64 115200 57600 0 115200
+serial 2 0 115200 57600 0 115200
+
+# beacon
+beacon RX_LOST
+beacon RX_SET
+
+# led
+led 0 0,0::L:0
+led 1 1,0::L:0
+led 2 2,0::L:0
+
+# aux
+aux 0 0 0 1700 2100 0 0
+aux 1 1 1 900 2100 0 0
+
+# master
+set gyro_lpf1_static_hz = 300
+set gyro_lpf2_static_hz = 0
+set dyn_notch_count = 0
+set dyn_notch_q = 500
+set dyn_notch_min_hz = 150
+set gyro_lpf1_dyn_min_hz = 300
+set gyro_lpf1_dyn_max_hz = 600
+set acc_lpf_hz = 10
+set rc_smoothing_setpoint_cutoff = 12
+set rc_smoothing_feedforward_cutoff = 12
+set serialrx_provider = SBUS
+set blackbox_sample_rate = 1/16
+set dshot_bidir = ON
+set motor_pwm_protocol = DSHOT300
+set small_angle = 180
+set gps_provider = NMEA
+set gps_rescue_ascend_rate = 500
+set gps_rescue_ground_speed = 2000
+set gps_rescue_descent_dist = 200
+set gps_rescue_landing_alt = 5
+set gps_rescue_throttle_max = 1600
+set gps_rescue_throttle_hover = 1280
+set gps_rescue_sanity_checks = RESCUE_SANITY_ON
+set gps_rescue_throttle_p = 150
+set gps_rescue_throttle_i = 20
+set gps_rescue_throttle_d = 50
+set gps_rescue_velocity_p = 80
+set gps_rescue_velocity_i = 20
+set gps_rescue_velocity_d = 15
+set gps_rescue_yaw_p = 40
+set pid_process_denom = 2
+set simplified_gyro_filter_multiplier = 120
+set osd_rssi_dbm_alarm = -100
+set osd_rssi_pos = 152
+set osd_link_quality_pos = 56
+set osd_link_tx_power_pos = 24
+set osd_rssi_dbm_pos = 1104
+set osd_tim_2_pos = 2656
+set osd_flymode_pos = 398
+set osd_throttle_pos = 245
+set osd_vtx_channel_pos = 373
+set osd_current_pos = 2560
+set osd_mah_drawn_pos = 2592
+set osd_craft_name_pos = 384
+set osd_gps_speed_pos = 1424
+set osd_gps_sats_pos = 1073
+set osd_home_dir_pos = 632
+set osd_home_dist_pos = 634
+set osd_altitude_pos = 19888
+set osd_power_pos = 388
+set osd_warnings_pos = 14934
+set osd_avg_cell_voltage_pos = 2624
+set osd_disarmed_pos = 2455
+set osd_stat_bitmask = 13868
+set osd_displayport_device = MSP
+set debug_mode = GYRO_SCALED
+set vcd_video_system = HD
+set gyro_1_sensor_align = CW90
+set gyro_1_align_yaw = 900
+set craft_name = Protek 35
+
+profile 0
+
+# profile 0
+set dterm_lpf1_dyn_min_hz = 70
+set dterm_lpf1_dyn_max_hz = 110
+set dterm_lpf1_dyn_expo = 8
+set dterm_lpf1_type = BIQUAD
+set dterm_lpf2_static_hz = 0
+set vbat_sag_compensation = 100
+set iterm_relax_cutoff = 8
+set pidsum_limit = 1000
+set p_pitch = 67
+set i_pitch = 60
+set d_pitch = 65
+set f_pitch = 142
+set p_roll = 58
+set i_roll = 52
+set d_roll = 47
+set f_roll = 124
+set p_yaw = 58
+set i_yaw = 52
+set f_yaw = 124
+set d_min_roll = 39
+set d_min_pitch = 53
+set thrust_linear = 35
+set feedforward_averaging = 3_POINT
+set dyn_idle_min_rpm = 30
+set simplified_master_multiplier = 130
+set simplified_i_gain = 50
+set simplified_dmax_gain = 65
+set simplified_feedforward_gain = 80
+set simplified_pitch_d_gain = 120
+set simplified_pitch_pi_gain = 110
+set simplified_dterm_filter = OFF
+
+profile 1
+
+profile 2
+
+profile 3
+
+# restore original profile selection
+profile 0
+
+rateprofile 0
+
+rateprofile 1
+
+rateprofile 2
+
+rateprofile 3
+
+# restore original rateprofile selection
+rateprofile 0
+
+#$ OPTION END
